@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+   printPage();
+});
+
+function printPage() {
+    IEPrint.left = 0;
+    IEPrint.right = 0;
+    IEPrint.top = 0;
+    IEPrint.bottom = 0;
+    IEPrint.header = "";
+    IEPrint.footer = "";
+    IEPrint.printbg = true;     // 이전버전과 달리 true, false로 설정한다.
+    IEPrint.landscape = true;   // 가로 출력을 원하시면 true로 넣으면 됩니다. 세로출력은 false입니다.
+    //IEPrint.paper = "A4";     // 용지설정입니다.
+
+    self.focus();
+    IEPrint.Print();
+}
+
+</script>
+<OBJECT ID="IEPrint" WIDTH="1" HEIGHT="1" CLASSID="CLSID:F290B058-CB26-460E-B3D4-8F36AEEDBE44" codebase="<c:url value='/cab/IEPrint.cab#version=1,0,1,1'/>">
+</OBJECT>
+</head>
+<body>
+<!-- print horizon(가로)-->
+<div id="print" class="horizon">
+	<!-- wrap -->
+	<div class="wrap">
+		<div class="header" style="margin-top: -5mm">
+			<h1 class="print-title">퇴직금 계산서</h1>
+		</div>
+		<div class="table-wrap">
+			<table class="data-table">
+				<caption>연봉계약자 사번, 소속, 직위, 소속, 구분 표</caption>
+				<colgroup>
+					<col style="width: 18%" />
+					<col style="width: 20%" />
+					<col style="width: 18%" />
+					<col style="width: *" />
+					<col style="width: 18%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>사번</th>
+						<th>소속</th>
+						<th>직위</th>
+						<th>소속</th>
+						<th>성명</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>5220012</td>
+						<td>경영세미나팀</td>
+						<td>차장</td>
+						<td>차제4부 화이날자재A조</td>
+						<td>중간 퇴직 소득</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="section-wrap">
+			<div class="section-left w50">
+				<!-- 퇴직기본 -->
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="블릿">퇴직기본</h3>
+				<div class="table-wrap">
+					<table class="data-table left">
+						<caption>퇴직기본정보 표</caption>
+						<colgroup>
+							<col style="width: 15%" />
+							<col style="" />
+							<col style="width: 13%" />
+							<col style="" />
+							<col style="width: 14%" />
+							<col style="" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>입사일자</th>
+								<td>1989.06.01</td>
+								<th>중도정산</th>
+								<td>2004.04.01</td>
+								<th>퇴직기산일</th>
+								<td>2004.04.02</td>
+							</tr>
+							<tr>
+								<th>실퇴직일자</th>
+								<td>2010.10.31</td>
+								<th>근속년수</th>
+								<td>06년 06월 30일</td>
+								<th>지급일자</th>
+								<td>2011.02.17</td>
+							</tr>
+							<tr>
+								<th>평가일(휴직)</th>
+								<td></td>
+								<th>지급은행</th>
+								<td>KEB하나은행</td>
+								<th>지급계좌</th>
+								<td>123-1234-122345</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- // 퇴직기본 -->
+
+				<!-- 평균임금 -->
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="블릿">평균임금</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+						<caption>퇴직기본정보 표</caption>
+						<colgroup>
+							<col style="width: 16%" />
+							<col style="width: *" />
+							<col style="width: 16%" />
+							<col style="width: 16%" />
+							<col style="width: 16%" />
+							<col style="width: 18%" />
+							<col style="width: 16%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th colspan="3">급여</th>
+								<th colspan="2">상여</th>
+								<th colspan="2">연월차</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2010.08</td>
+								<td>31</td>
+								<td class="right">1,422,927</td>
+								<td>2010.09</td>
+								<td class="right">1,422,927</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2010.09</td>
+								<td>31</td>
+								<td class="right">1,422,927</td>
+								<td>2010.02</td>
+								<td class="right">1,422,927</td>
+								<th>평균연월차(c)</th>
+								<td class="right"></td>
+							</tr>
+							<tr>
+								<td>2010.10</td>
+								<td>31</td>
+								<td class="right">1,422,927</td>
+								<td>2010.04</td>
+								<td class="right">1,422,927</td>
+								<th>기타</th>
+								<td class="right"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td>소계</td>
+								<td>92</td>
+								<td class="right">604,200</td>
+								<td>소계</td>
+								<td class="right">604,200</td>
+								<td>소계</td>
+								<td class="right">604,200</td>
+							</tr>
+							<tr>
+								<th colspan="2">평균급여(A)</th>
+								<td class="right">479,636</td>
+								<th>평균상여(B)</th>
+								<td class="right">374,493</td>
+								<th>평균상여(D)</th>
+								<td class="right">89,041</td>
+							</tr>
+							<tr>
+								<th colspan="3">평균임금(A+B+C+D)</th>
+								<td colspan="4" class="right">434,434,432</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<!--// 평균임금 -->
+
+				<!-- 퇴직금 -->
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="블릿">퇴직금</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+						<caption>퇴직기본정보 표</caption>
+						<colgroup>
+							<col style="width: 33.3%" />
+							<col style="width: 33.3%" />
+							<col style="width: 33.3%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>입사일자</th>
+								<th>근속년수</th>
+								<th>퇴직금</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="right">3,000,000,000</td>
+								<td>06년 6월 30일</td>
+								<td class="right">3,000,000,000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- // 퇴직금 -->
+			</div>
+
+			<div class="section-left w50">
+				<!-- 퇴직정산 -->
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="블릿">퇴직정산</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+						<caption></caption>
+						<colgroup>
+							<col style="width: 25%" />
+							<col style="width: 25%" />
+							<col style="width: 25%" />
+							<col style="width: 25%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th colspan="2">지급</th>
+								<th colspan="2">공제</th>
+							</tr>
+							<tr>
+								<th>구분</th>
+								<th>금액</th>
+								<th>구분</th>
+								<th>금액</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>퇴직금</td>
+								<td class="right">612,920</td>
+								<td>소득세</td>
+								<td class="right">80,050</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>주민세</td>
+								<td class="right">80,800</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>채권압류</td>
+								<td class="right"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>소득총액</th>
+								<td class="right">123,123,123</td>
+								<td>공제총액</td>
+								<td class="right">123,123,123</td>
+							</tr>
+							<tr>
+								<th>차인지급액</th>
+								<td colspan="3"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- // 퇴직정산 -->
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="블릿">지급내역</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+						<caption></caption>
+						<colgroup>
+							<col style="width: 25%" />
+							<col style="width: 25%" />
+							<col style="width: 25%" />
+							<col style="width: 25%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>회사지급액</th>
+								<td colspan="3" class="right">123,123,123</td>
+							</tr>
+							<tr>
+								<th>보험사 지급액</th>
+								<td colspan="3" class="right">123,123,123</td>
+							</tr>
+							<tr>
+								<td>교보생명</td>
+								<td></td>
+								<td>삼성생명</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>미래에셋생명</td>
+								<td></td>
+								<td>대한생명</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>외환은행</td>
+								<td></td>
+								<td>신한은행</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>kbd생명</td>
+								<td></td>
+								<td>신한생명</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>현대해상화재</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //wrap -->
+</div>
+<!-- // print -->
+</body>
+</html>
+
+
+
+

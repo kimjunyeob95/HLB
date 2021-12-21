@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KIA</title>
+<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="wsg.css">
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		//gnb 열림
+		$('#allMenu').click(function(){
+			$('.gnb').addClass('active');
+		});
+		//gnb 닫음
+		$('.btn-close').click(function(){
+			$('.gnb').removeClass('active');
+		});
+
+		// 디자인 form요소 적용
+		$('select, input[type=radio], input[type=checkbox], input[type=file]').uniform({
+			fileDefaultHtml: '',
+			fileButtonHtml: '파일첨부'
+		});
+
+
+	});
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+	<div class="header-wrap">
+		<h1><span class="blind">KIA</span></h1>
+		<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+		<div class="gnb">
+			<div class="gnb-wrap">	
+				<h3>PROGRESS</h3>
+				<ul>
+					<li><a href="markup.html">markup</a></li>
+				</ul>
+				<h3>UI LIBRARY</h3>
+				<ul>
+					<li><a href="table.html">layout</a></li>
+					<li><a href="table.html">table</a></li>
+					<li><a href="form.html">form</a></li>
+					<li><a href="fieldset.html">fieldset</a></li>
+					<li><a href="button.html">button</a></li>
+					<li><a href="tab.html">tab</a></li>
+					<li><a href="list.html">list</a></li>
+					<li><a href="popup.html">popup</a></li>
+					<li><a href="print.html">print</a></li>
+					<li><a href="etc.html">etc</a></li>
+				</ul>
+				<a href="#" class="btn-close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+	<h2>WSG / from-list</h2>
+	<!-- section 버튼 -->
+	<div class="section">
+		<h3>from-list</h3>
+		<strong class="preview ">PREVIEW</strong>
+		<div class="question-wrap">
+			<p class="info-message">※ 장기주택저당차입금 이자상환액(주택담보대출)공제 관련 질문입니다. (모두 만족시에만 입력가능)</p>
+			<ul class="question-list">
+				<li>
+					<div class="question">
+						1. 연말 현재 1세대 1주택임을 확인합니다.<br>
+						- 주택수 계산 기준 : 본인 소유의 주택뿐 아니라, 본인과 같이 거주하는 세대원의 주택수도 포함 (배우자는 별거하더라도 동일 세대로 봄)
+					</div>
+					<div class="answer">
+						<div class="radio-wrap">
+							<input type="radio" id="radio1" name="radio"><label class="label" for="radio1">예</label>
+							<input type="radio" id="radio2" name="radio"><label class="label" for="radio2">아니오</label>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="question">
+						1. 연말 현재 1세대 1주택임을 확인합니다.<br>
+						- 주택수 계산 기준 : 본인 소유의 주택뿐 아니라, 본인과 같이 거주하는 세대원의 주택수도 포함 (배우자는 별거하더라도 동일 세대로 봄)
+					</div>
+					<div class="answer">
+						<div class="radio-wrap">
+							<input type="radio" id="radio1" name="radio"><label class="label" for="radio1">예</label>
+							<input type="radio" id="radio2" name="radio"><label class="label" for="radio2">아니오</label>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="question">
+						2. 주택규모가 국민주택규모 (전용면적 85㎡이하)임을 확인합니다. (단, '14.1.1 이후 차입한 경우 면적 무관)
+					</div>
+					<div class="answer">
+						<div class="radio-wrap">
+							<input type="radio" id="radio1" name="radio"><label class="label" for="radio1">예</label>
+							<input type="radio" id="radio2" name="radio"><label class="label" for="radio2">아니오</label>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="question">
+						3. 주택가격이 기준시가 3억원 이하임을 확인합니다. (단, '14.1.1 이후 차입한 경우 4억원 이하, '05.12.31 이전 차입한 경우는 가격 무관)
+					</div>
+					<div class="answer">
+						<div class="radio-wrap">
+							<input type="radio" id="radio1" name="radio"><label class="label" for="radio1">예</label>
+							<input type="radio" id="radio2" name="radio"><label class="label" for="radio2">아니오</label>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;div class="question-wrap"&gt;
+	&lt;p class="info-message"&gt;※ 장기주택저당차입금 이자상환액(주택담보대출)공제 관련 질문입니다. (모두 만족시에만 입력가능)&lt;/p&gt;
+	&lt;ul class="question-list"&gt;
+		&lt;li&gt;
+			&lt;div class="question"&gt;
+				1. 연말 현재 1세대 1주택임을 확인합니다.&lt;br&gt;
+				- 주택수 계산 기준 : 본인 소유의 주택뿐 아니라, 본인과 같이 거주하는 세대원의 주택수도 포함 (배우자는 별거하더라도 동일 세대로 봄)
+			&lt;/div&gt;
+			&lt;div class="answer"&gt;
+				&lt;div class="radio-wrap"&gt;
+					&lt;input type="radio" id="radio1" name="radio"&gt;&lt;label class="label" for="radio1"&gt;예&lt;/label&gt;
+					&lt;input type="radio" id="radio2" name="radio"&gt;&lt;label class="label" for="radio2"&gt;아니오&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="question"&gt;
+				1. 연말 현재 1세대 1주택임을 확인합니다.&lt;br&gt;
+				- 주택수 계산 기준 : 본인 소유의 주택뿐 아니라, 본인과 같이 거주하는 세대원의 주택수도 포함 (배우자는 별거하더라도 동일 세대로 봄)
+			&lt;/div&gt;
+			&lt;div class="answer"&gt;
+				&lt;div class="radio-wrap"&gt;
+					&lt;input type="radio" id="radio1" name="radio"&gt;&lt;label class="label" for="radio1"&gt;예&lt;/label&gt;
+					&lt;input type="radio" id="radio2" name="radio"&gt;&lt;label class="label" for="radio2"&gt;아니오&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="question"&gt;
+				2. 주택규모가 국민주택규모 (전용면적 85㎡이하)임을 확인합니다. (단, '14.1.1 이후 차입한 경우 면적 무관)
+			&lt;/div&gt;
+			&lt;div class="answer"&gt;
+				&lt;div class="radio-wrap"&gt;
+					&lt;input type="radio" id="radio1" name="radio"&gt;&lt;label class="label" for="radio1"&gt;예&lt;/label&gt;
+					&lt;input type="radio" id="radio2" name="radio"&gt;&lt;label class="label" for="radio2"&gt;아니오&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="question"&gt;
+				3. 주택가격이 기준시가 3억원 이하임을 확인합니다. (단, '14.1.1 이후 차입한 경우 4억원 이하, '05.12.31 이전 차입한 경우는 가격 무관)
+			&lt;/div&gt;
+			&lt;div class="answer"&gt;
+				&lt;div class="radio-wrap"&gt;
+					&lt;input type="radio" id="radio1" name="radio"&gt;&lt;label class="label" for="radio1"&gt;예&lt;/label&gt;
+					&lt;input type="radio" id="radio2" name="radio"&gt;&lt;label class="label" for="radio2"&gt;아니오&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+<pre>
+		</div>
+		<!-- // markup -->
+
+	</div>
+	<!-- //section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTORS CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

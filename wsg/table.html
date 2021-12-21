@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/dhtmlxgrid_dhx_web.css">
+<link rel="stylesheet" type="text/css" href="wsg.css?t=20201109">
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		//gnb 열림
+		$('#allMenu').click(function(){
+			$('.gnb').addClass('active');
+		});
+		//gnb 닫음
+		$('.btn-close').click(function(){
+			$('.gnb').removeClass('active');
+		});
+
+		// 디자인 form요소 적용
+		$('select, input[type=radio], input[type=checkbox], input[type=file]').uniform({
+			fileDefaultHtml: '',
+			fileButtonHtml: '파일첨부'
+		});
+
+	});
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+	<div class="header-wrap">
+		<h1><span class="blind">HLB</span></h1>
+		<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+		<div class="gnb">
+			<div class="gnb-wrap">	
+				<h3>PROGRESS</h3>
+				<ul>
+					<li><a href="markup.html">markup</a></li>
+				</ul>
+				<h3>UI LIBRARY</h3>
+				<ul>
+					<li><a href="table.html">layout</a></li>
+					<li><a href="table.html">table</a></li>
+					<li><a href="form.html">form</a></li>
+					<li><a href="fieldset.html">fieldset</a></li>
+					<li><a href="button.html">button</a></li>
+					<li><a href="tab.html">tab</a></li>
+					<li><a href="list.html">list</a></li>
+					<li><a href="popup.html">popup</a></li>
+					<li><a href="print.html">print</a></li>
+					<li><a href="etc.html">etc</a></li>
+				</ul>
+				<a href="#" class="btn-close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+	<h2>WSG / TABLE</h2>
+	<!-- section -->
+	<div class="section">
+		<!-- table-wrap -->
+		<h3>table - gridbox<span>현재 개발 사용중인 템플릿 디자인 고도화</span></h3>
+		<!-- gridbox -->
+		<div class="gridbox  gridbox_dhx_web">
+			<!-- thead 역할 -->
+			<div class="xhdr">
+				<table class="hdr">
+					<colgroup>
+						<col style="width: 6%" />
+						<col style="width: 15%" />
+						<col style="width: 15%" />
+						<col style="width: 15%" />
+						<col style="width: 15%" />
+						<col style="width: * " />
+					</colgroup>
+					<tbody>
+						<tr height="auto">
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr>
+							<td rowspan="2"><div class="hdrcell">No</div></td>
+							<td rowspan="2"><div class="hdrcell">선택</div></td>
+							<td colspan="4"><div class="hdrcell">평가대상자</div></td>
+						</tr>
+						<tr>
+							<td><div class="hdrcell">소속</div></td>
+							<td><div class="hdrcell">사번</div></td>
+							<td><div class="hdrcell">성명</div></td>
+							<td><div class="hdrcell">보직</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- // thead 역할 -->
+			<!-- tbody 역할 -->
+			<div class="objbox">
+				<table class="obj">
+					<colgroup>
+						<col style="width: 6%" />
+						<col style="width: 15%" />
+						<col style="width: 15%" />
+						<col style="width: 15%" />
+						<col style="width: 15%" />
+						<col style="width: * " />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td><div>1</div></td>
+							<td><div>기아자동차</div></td>
+							<td><div><a href="" class="to-link">인사제도팀</a></div></td>
+							<td><div>1234</div></td>
+							<td><div><a href="" class="to-link">홍길동</a></div></td>
+							<td><div>무궁화꽃이 피었을까?</div></td>
+						</tr>
+						<tr>
+							<td><div>2</div></td>
+							<td><div>기아자동차</div></td>
+							<td><div>인사제도팀</div></td>
+							<td><div>1234</div></td>
+							<td><div>홍길동</div></td>
+							<td><div>동공지진</div></td>
+						</tr>
+						<tr>
+							<td><div>3</div></td>
+							<td><div>기아자동차</div></td>
+							<td><div>인사제도팀</div></td>
+							<td><div>1234</div></td>
+							<td><div>홍길동</div></td>
+							<td><div>동공지진</div></td>
+						</tr>
+						<tr>
+							<td><div>4</div></td>
+							<td><div>기아자동차</div></td>
+							<td><div>인사제도팀</div></td>
+							<td><div>1234</div></td>
+							<td><div>홍길동</div></td>
+							<td><div>동공지진</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- // tbody 역할 -->
+		</div>
+		<!--// gridbox -->
+	</div>
+	<!-- //section -->
+	<!-- section -->
+	<div class="section">
+		<h3>table - data-table <span>기본형</span></h3>
+		<div class="table-wrap">
+			<table class="data-table">
+				<caption>data-table 기본형 가이드</caption>
+				<colgroup>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>본부/사업부</th>
+						<th>팀(부서)</th>
+						<th>업무군</th>
+						<th>전결단위업무</th>
+						<th>보직과장/파트장</th>
+						<th>팀장</th>
+						<th>사업부장</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>인사지원담당</td>
+						<td>계획안</td>
+						<td>연구개발투자기획팀</td>
+						<td>SAE 전시 계획안</td>
+						<td>&nbsp;</td>
+						<td>◎</td>
+						<td>★</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!--// table-wrap -->
+		<div class=" table-wrap">
+			<table class="data-table">
+				<caption>data-table 가이드</caption>
+				<colgroup>
+					<col style="width: 14%" />
+					<col style="width: 14%" />
+					<col style="width: *" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>본부/사업부</th>
+						<th>팀(부서)</th>
+						<th>업무군</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>인사지원담당</th>
+						<td>연구개발투자기획팀</td>
+						<td>SAE 전시 계획안</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--// table-wrap -->
+	</div>
+	<!-- //section -->
+
+
+	<!-- markup -->
+	<div class="section markup">
+	<strong>markup 예시</strong>
+<pre>
+&lt;div class="table-wrap"&gt;
+	&lt;table class="data-table"&gt;
+		&lt;caption&gt;data-table 가이드&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width: 14%" /&gt;
+			&lt;col style="width: 14%" /&gt;
+			&lt;col style="width: *" /&gt;
+		&lt;/colgroup&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th&gt;본부/사업부&lt;/th&gt;
+				&lt;th&gt;팀(부서)&lt;/th&gt;
+				&lt;th&gt;업무군&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th&gt;인사지원담당&lt;/th&gt;
+				&lt;td&gt;연구개발투자기획팀&lt;/td&gt;
+				&lt;td&gt;SAE 전시 계획안&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+&ltpre>
+	</div>
+	<!-- //markup -->
+
+
+	<!-- section -->
+	<div class="section">
+		<h3>table - data-table left<span>내용 왼쪽 정렬형</span></h3>
+		<div class="table-wrap">
+			<table class="data-table left">
+				<caption>data-table left 가이드</caption>
+				<colgroup>
+					<col style="width: 14%" />
+					<col style="width: 15%" />
+					<col style="width: 20%" />
+					<col style="width: 28%" />
+					<col style="width: 13%" />
+					<col style="width: 6%" />
+					<col style="width: *" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th rowspan="2">본부/사업부</th>
+						<th rowspan="2">팀(부서)</th>
+						<th>업무군</th>
+						<th >전결단위업무</th>
+						<th>보직과장/파트장</th>
+						<th rowspan="2">팀장</th>
+						<th rowspan="2">사업부장</th>
+					</tr>
+					<tr>
+						<th>본부/사업부</th>
+						<th>팀(부서)</th>
+						<th>업무군</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>인사지원담당</td>
+						<td>계획안</td>
+						<td>연구개발투자기획팀</td>
+						<td colspan="2">SAE 전시 계획안</td>
+						<td>◎</td>
+						<td>★</td>
+					</tr>
+					<tr>
+						<td>인사지원담당</td>
+						<td>계획안</td>
+						<td>연구개발투자기획팀</td>
+						<td>SAE 전시 계획안</td>
+						<td>&nbsp;</td>
+						<td>◎</td>
+						<td>★</td>
+					</tr>
+					<tr>
+						<td>인사지원담당</td>
+						<td>계획안</td>
+						<td>연구개발투자기획팀</td>
+						<td>SAE 전시 계획안</td>
+						<td>&nbsp;</td>
+						<td>◎</td>
+						<td>★</td>
+					</tr>
+					<tr>
+						<td>인사지원담당</td>
+						<td>계획안</td>
+						<td>연구개발투자기획팀</td>
+						<td>SAE 전시 계획안</td>
+						<td>&nbsp;</td>
+						<td>◎</td>
+						<td>★</td>
+					</tr>
+					<tr>
+						<td>인사지원담당</td>
+						<td>계획안</td>
+						<td>연구개발투자기획팀</td>
+						<td>SAE 전시 계획안</td>
+						<td>&nbsp;</td>
+						
+						<td>◎</td>
+						<td>★</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--// table-wrap -->
+		<div class=" table-wrap">
+			<table class="data-table left">
+				<caption>data-table left 가이드</caption>
+				<colgroup>
+					<col style="width: 20%" />
+					<col style="width: *" />
+					<col style="width: 20%" />
+					<col style="width: *" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th><label for="text01">사번</label></la></th>
+						<td colspan="3"><input id="text01" class="input-text" type="text"></td>
+						<!-- <th colspan="2">그룹일자</th> -->
+						<!-- <td>2002.12.16  (14년06월)</td> -->
+					</tr>
+					<tr>
+						<th><label for="text02">성명</label></la></th>
+						<td><input id="text02" class="input-text" type="text"></td>
+						<th>입사일자 </th>
+						<td>2002.12.16  (14년06월)</td>
+					</tr>
+					<tr>
+						<th>영문/한문</th>
+						<td>Hong Kil Dong / 洪吉洞</td>
+						<th> 승진일자 </th>
+						<td>2015.01.01  (02년05월)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--// table-wrap -->
+	</div>
+	<!-- //section -->
+
+
+
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2020 HLB HR SYSTEM , All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

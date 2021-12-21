@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/sonic.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<!--좌측메뉴 활성화 경우에 class : depth03 -->
+<div id="wrap" class="depth03">
+<!-- HEADER -->
+<div id="header">
+	<!-- header-wrap -->
+	<div class="header-wrap">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+		<!-- personal-info -->
+		<div class="personal-info">
+			<div class="belong">양재본사</div>
+			<div class="number">5612336</div>
+			<div class="position"><span class="name">홍길동</span>과장</div>
+			<div class="state logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- // personal-info -->
+		<!-- utill-menu -->
+		<div class="utill-menu">
+			<!-- 활성화 class active -->
+			<ul>
+				<li><a href="#">My HR</a></li>
+				<li><a href="#">나의 팀</a></li>
+				<li class="active"><a href="#">인사 담당</a></li>
+			</ul>
+			<!--// 활성화 class active -->
+		</div>
+		<!--// utill-menu -->
+	</div>
+</div>
+<!-- // HEADER -->
+
+<!-- CONTENT -->
+<div id="container" class="ehr-main">
+	<!-- 사이드 트리 메뉴 -->
+	<div id="aside-menu" class="tree-menu">
+		<h2 class="blind">인사담당 메뉴</h2>
+		<ul class="tree-wrap">
+			<li><a href="#">인사행정</a></li>
+			<li><a href="#">인사기록표</a></li>
+			<li><a href="#">급여</a></li>
+			<li><a href="#">급태</a></li>
+			<!-- 플러스 active시 마이너스로 변경 -->
+			<li class="active"><a href="#">조직정보</a>
+				<ul class="tree">
+					<li class="active">
+						<a href="#">Global HR Knowledge</a>
+						<!-- row 트리 이미지 보임 -->
+						<ul class="row">
+							<li><a href="#">조직정보 수정</a></li>
+							<li class="active"><a href="#">조직정보 수정 조직정보 수정조직정보 수정 조직정보 수정조직정보 수정조직정보 수정조직정보 수정</a></li>
+							<li><a href="#">조직정보 수정</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">업무분장표</a>
+					</li>
+					<li>
+						<a href="#">직무기술서 조회</a>
+					</li>
+					<li>
+						<a href="#">역량사전 조회</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- //사이드 메뉴 -->
+
+	<!-- 내용 -->
+	<div id="content" class="content-primary">
+		<!-- 상단 템플릿 -->
+		<h2 style="font-size: 30px;line-height: 55px;color: #292929;">상단 템플릿</h2>
+		<div class="section">
+			<fieldset class="fieldset large">
+				<legend></legend>
+				<div class="field">
+					<div class="insert">
+						<label class="label" for="orgeh">연도</label>
+						<input type="text" class="input-text" name="" value="2016" style="width: 72px;">
+						<select  class="select" id="orgeh" style="width: 49px;">
+							<option value="0">전체</option>
+							<option>상반기</option>
+							<option>상반기</option>
+						</select>
+					</div>
+					<div class="insert">
+						<label class="label">조직</label>
+						<div class="input-search" style="width: 92px;">
+							<input type="search" name="">
+							<a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+						</div>
+						<input type="text" class="input-text" name="" value="(H) 원가기획팀" style="width: 122px;" disabled>
+					</div>
+					<div class="insert">
+						<label class="label">대상</label>
+						<select class="select">
+							<option value="1">전체</option>
+							<option value="2">소속순</option>
+						</select>
+					</div>
+					<div class="insert">
+						<label class="label">상태</label>
+						<select class="select" style="width:69px;">
+							<option value="0">전체</option>
+							<option>옵션1</option>
+						</select>
+					</div>
+				</div>
+				<div class="field">
+					<div class="insert">
+						<label class="label" for="orgeh">정렬</label>
+						<select  class="select" id="orgeh" style="width:131px;">
+							<option value="0">전체</option>
+							<option>평가집단</option>
+						</select>
+					</div>
+					<div class="insert">
+						<input type="radio" id="radio1" name="radio"><label class="label" for="radio1" style="margin-right: 21px;">평가자</label>
+						<input type="radio" id="radio2" name="radio"><label class="label" for="radio2" style="margin-right: 21px;">피평가자</label>
+						<input type="radio" id="radio3" name="radio"><label class="label" for="radio3" style="margin-right: 12px;">조정자</label>
+					</div>
+					<div class="insert">
+						<label class="label">사번</label>
+						<input type="text" class="input-text" name="" style="width: 122px;">
+						<a href="#" class="btn type01 small">조회</a>
+					</div>
+				</div>
+			</fieldset>
+			<div class="button-area large">
+				<span class="btn-left">
+					<a class="btn type01 small" href="#">엑셀받기</a>
+					<a class="btn type01 small" href="#">가중치수정</a>
+					<a class="btn type01 small" href="#">재선정</a>
+					<a class="btn type01 small" href="#">삭제</a>
+					<a class="btn type01 small" href="#">분할삽입</a>
+					<a class="btn type01 small" href="#">분할삭제</a>
+					<a class="btn type01 small" href="#">저장</a>
+					<a class="btn type01 small" href="#">마감</a>
+				</span>
+				<div class="approval-state">
+					<ul>
+						<li class="type01">결재</li>
+						<li class="type02">미결재</li>
+						<li class="type03">마감</li>
+						<li class="type04">미마감</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // 상단 템플릿 -->
+		<!--  개인정보 유형 01 -->
+		<h2 style="margin-top: 30px;font-size: 30px;line-height: 55px;color: #292929;">개인정보 유형 01</h2>
+		<div class="section-wrap">
+			<div class="grade-wrap">
+				<!-- 프로필 영역 -->
+				<div class="section-left simple-profile type02">
+					<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x130.jpg" alt=""></div>
+					<div class="info-wrap">
+						 <div class="number">2120091</div>
+						 <div class="name">성준아</div>
+						 <div class="position">
+						 	<span>5급사원</span>
+						 	<span>팀장</span>
+						 </div>
+						 <div class="team">품질전략팀</div>
+					</div>
+				</div>
+				<!-- // 프로필 영역 -->
+				<!-- 등급 표 -->
+				<div class="section-left grade-detail">
+					<fieldset class="fieldset large">
+						<legend></legend>
+						<div class="field">
+							<div class="insert">
+								<label class="label" for="orgeh">연도</label>
+								<input type="text" class="input-text" name="" value="2016" style="width: 72px;" >
+								<select  class="select" id="orgeh" style="width: 80px;">
+									<option value="0">전체</option>
+									<option>상반기</option>
+									<option>상반기</option>
+								</select>
+							</div>
+							<div class="insert">
+								<label class="label">평가자</label>
+								<div class="input-search" style="width: 92px;">
+									<input type="search" name="">
+									<a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+								</div>
+								<input type="text" class="input-text" name="" value="차장 조현우" style="width: 122px;" disabled>
+							</div>
+						</div>
+						<div class="field">
+							<div class="insert">
+								<label class="label">소속</label>
+								<select class="select" style="width: 162px;">
+									<option value="1">경북상용고객지원W/G(11)</option>
+								</select>
+							</div>
+							<div class="insert">
+								<label class="label">평가대상</label>
+								<input type="text" class="input-text" name="" style="width: 122px;">
+							</div>
+						</div>
+						<div class="field">
+							<div class="insert">
+								<label class="label" for="orgeh">정렬</label>
+								<select  class="select" id="orgeh" style="width:162px;">
+									<option value="0">전체</option>
+									<option>소속/보직/직위/성명</option>
+								</select>
+								<a href="#" class="btn type01 small">조회</a>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<!-- // 등급 표 -->
+			</div>
+			<div class="button-area large">
+				<ul class="grade-list">
+					<li><img src="../../@resource/images/common/ico_grade_s.png" alt="S">탁월</li>
+					<li><img src="../../@resource/images/common/ico_grade_a.png" alt="A">우수</li>
+					<li><img src="../../@resource/images/common/ico_grade_b.png" alt="B">보통</li>
+					<li><img src="../../@resource/images/common/ico_grade_c.png" alt="C">미흡</li>
+					<li><img src="../../@resource/images/common/ico_grade_d.png" alt="D">매우미흡</li>
+				</ul>
+				<span class="btn-right">
+					<a class="btn type01 small" href="#">엑셀받기</a>
+					<a class="btn type01 small" href="#">평가항목</a>
+					<a class="btn type01 small" href="#">평가항목등록</a>
+					<a class="btn type01 small" href="#">저장</a>
+					<a class="btn type01 small" href="#">전체마감</a>
+				</span>
+			</div>
+		</div>
+		<!-- // 개인정보 유형 01 -->
+		<!--  개인정보 유형 02 -->
+		<h2 style="margin-top: 30px;font-size: 30px;line-height: 55px;color: #292929;">개인정보 유형 02</h2>
+		<div class="section-wrap">
+			<div class="grade-wrap">
+				<!-- 프로필 영역 -->
+				<div class="section-left simple-profile type02">
+					<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x130.jpg" alt=""></div>
+					<div class="info-wrap">
+						 <div class="number">2120091</div>
+						 <div class="name">성준아</div>
+						 <div class="position">
+						 	<span>5급사원</span>
+						 	<span>팀장</span>
+						 </div>
+						 <div class="team">품질전략팀</div>
+						 <div class="current-state">
+							<span>상태 : 목표확정</span>
+							<span>연도 : 2016</span>
+						</div>
+					</div>
+				</div>
+				<!-- // 프로필 영역 -->
+				<!-- 등급 표 -->
+				<div class="section-left grade-detail02">
+					<div class="table-wrap eval">
+						<table class="data-table">
+							<caption>등급 표</caption>
+							<colgroup>
+								<col style="width: 14%">
+								<col style="width: 14%">
+								<col style="width: 14%">
+								<col style="width: 14%">
+								<col style="width: 14%">
+								<col style="width: 14%">
+								<col style="width: *">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">등급</th>
+									<th scope="col">내신자</th>
+									<th scope="col" colspan="4">평가자</th>
+									<th scope="col">확정자</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+											<div>책임연구원</div>
+											<div>이정현</div>
+											<span class="date">16-03-11</span>
+									</td>
+									<td>
+											<div>책임연구원</div>
+											<div>이정현</div>
+											<span class="date">16-03-11</span>
+									</td>
+									<td>
+											<div>책임연구원</div>
+											<div>이정현</div>
+											<span class="date">16-03-11</span>
+									</td>
+									<td>
+											<div>책임연구원</div>
+											<div>이정현</div>
+											<span class="date">16-03-11</span>
+									</td>
+									<td>
+											<div>책임연구원</div>
+											<div>이정현</div>
+											<span class="date">16-03-11</span>
+									</td>
+									<td>
+											<div>책임연구원</div>
+											<div>이정현</div>
+											<span class="date">16-03-11</span>
+									</td>
+									<td>
+											<div>책임연구원</div>
+											<div>이정현</div>
+											<span class="date">16-03-11</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- // 등급 표 -->
+			</div>
+		</div>
+		<!-- // 개인정보 유형 02 -->
+
+		<!-- 평가진행 표시 -->
+		<h2 style="margin-top: 30px;font-size: 30px;line-height: 55px;color: #292929;">평가진행 표시</h2>
+		<div class="section">
+			<h3 class="section-title">피평가자 조회
+				<div class="approval-state">
+					<strong>평가 진행표시</strong>
+					<ul>
+						<li class="type01">결재</li>
+						<li class="type02">미결재</li>
+						<li class="type03">마감</li>
+						<li class="type04">미마감</li>
+						<li class="type05">완료</li>
+						<li class="type06">미완료</li>
+						<li class="type07">평가중</li>
+					</ul>
+				</div>
+			</h3>
+		</div>
+		<!-- // 평가진행 표시 -->
+
+	</div>
+	<!-- // 내용 -->
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTOR COMPANY, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

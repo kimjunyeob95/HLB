@@ -1,0 +1,676 @@
+<!doctype html>
+<html class="fixed sidebar-left-collapsed">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>소통핫라인</title>
+		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- 파비콘 -->
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="assets/images/icon.png" type="image/x-icon" />
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.css" />
+		<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+		<!-- Head Libs -->
+		<script src="assets/vendor/modernizr/modernizr.js"></script>
+
+	</head>
+	<body>
+		<div class="mfp-bg mfp-ready"></div>
+		<div class="mfp-wrap mfp-auto-cursor mfp-ready" tabindex="-1" style="overflow: hidden auto;"><div class="mfp-container mfp-s-ready mfp-inline-holder"><div class="mfp-content"><div id="modalHeaderColorPrimary" class="modal-block modal-header-color modal-block-primary">
+			<section class="panel">
+				<header class="panel-heading center">
+					<h2 class="panel-title">자동 로그아웃 알림</h2>
+				</header>
+				<div class="panel-body">
+					<div class="modal-wrapper">
+						<div class="modal-icon center" style="padding-top: 0; padding-bottom: 2vw; font-size: 5vw;">
+							<i class="glyphicon glyphicon-time"></i>
+						</div>
+						<div class="modal-text center">
+							<p>장시간 입력이 없어</p>
+							<p><span style="color: red; font-size: 18px; font-weight: bold;">01:23</span> 초 후</p>
+							<p>자동으로 로그아웃 됩니다.</p>
+						</div>
+					</div>
+				</div>
+				<footer class="panel-footer">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<button class="btn btn-danger modal-confirm">로그인 유지 하기</button>
+							<button class="btn btn-default modal-dismiss">지금 로그아웃</button>
+						</div>
+					</div>
+				</footer>
+			</section>
+		</div></div></div></div>
+
+
+		<section class="body">
+
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="../1.7.0" class="logo" >
+						<img src="assets/images/logo.png" width="100" alt="logoImg" />
+					</a>
+					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+			
+				<!-- start: search & user box -->
+				<div class="header-right">
+
+					<ul class="notifications" style="margin: 5px 0.5vw 0 0;">
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-bell"></i>
+								<span class="badge">3</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="pull-right label label-default">3</span>
+									Alerts
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-thumbs-down bg-danger"></i>
+												</div>
+												<span class="title">Server is Down!</span>
+												<span class="message">Just now</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-lock bg-warning"></i>
+												</div>
+												<span class="title">User Locked</span>
+												<span class="message">15 minutes ago</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-signal bg-success"></i>
+												</div>
+												<span class="title">Connection Restaured</span>
+												<span class="message">10/10/2016</span>
+											</a>
+										</li>
+									</ul>
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">View All</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div id="userbox" class="userbox" style="margin: 0.5vw 17px 0 0;">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+								<span class="name"><u style="color:red">지평담당자님</u> 환영합니다.</span>
+								<span class="role">administrator</span>
+							</div>
+			
+							<i class="fa custom-caret"></i>
+						</a>
+			
+						<div class="dropdown-menu">
+							<ul class="list-unstyled">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="index.html">지평담당자</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="change_pw.html">비밀번호변경</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="modal.html">로그아웃</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left">
+				
+				    <div class="sidebar-header">
+				        <div class="sidebar-title">
+				            Navigation
+				        </div>
+				        <div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+				            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				        </div>
+				    </div>
+				
+				    <div class="nano">
+				        <div class="nano-content">
+				            <nav id="menu" class="nav-main" role="navigation">
+				            
+				                <ul class="nav nav-main">
+				                    <li class="nav-active">
+				                        <a href="index.html">
+				                            <i class="fa fa-home" aria-hidden="true"></i>
+				                            <span>Dashboard</span>
+				                        </a>                        
+				                    </li>
+				                    <li class="nav-parent">
+				                        <a href="#">
+				                            <i class="fa fa-columns" aria-hidden="true"></i>
+				                            <span>제보 관리</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li>
+				                                <a href="report_management.html">
+				                                    제보 관리
+				                                </a>
+                                            </li>
+                                            <li>
+				                                <a href="report_details.html">
+				                                    제보 내역 상세
+				                                </a>
+											</li>
+											<li>
+				                                <a href="report_board.html">
+				                                    제보 1:1 게시판
+				                                </a>
+				                            </li>
+				                        </ul>
+				                    </li>
+				                    <li class="nav-parent">
+				                        <a href="#">
+				                            <i class="fa fa-copy" aria-hidden="true"></i>
+				                            <span>파트너 관리</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li>
+				                                <a href="pages-signup.html">
+				                                    Sign Up
+				                                </a>
+				                            </li>
+				                        </ul>
+				                    </li>
+				                    <li class="nav-parent">
+				                        <a href="#">
+				                            <i class="fa fa-tasks" aria-hidden="true"></i>
+				                            <span>공지 사항 관리</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li>
+				                                <a href="notice.html">
+				                                    공지사항
+				                                </a>
+											</li>
+											<li>
+				                                <a href="notice_form.html">
+				                                    공지 사항 수정
+				                                </a>
+				                            </li>
+				                            
+				                        </ul>
+				                    </li>
+				                    <li class="nav-parent">
+				                        <a href="#">
+				                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+				                            <span>FAQ 관리</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li>
+				                                <a href="asked_questions.html">
+				                                    자주 묻는 질문 리스트
+				                                </a>
+											</li>
+											<li>
+				                                <a href="asked_questions_form.html">
+				                                    자주 묻는 질문 등록
+				                                </a>
+				                            </li>
+				                        </ul>
+				                    </li>
+				                    <li class="nav-parent">
+				                        <a href="#">
+				                            <i class="fa fa-table" aria-hidden="true"></i>
+				                            <span>파트너 신청 관리</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li>
+				                                <a href="partner_list.html">
+				                                    파트너 신청 리스트
+				                                </a>
+											</li>
+											<li>
+				                                <a href="partner_details.html">
+				                                    파트너 신청 상세
+				                                </a>
+				                            </li>
+				                        </ul>
+				                    </li>
+				                    <li>
+				                        <a href="mailbox-folder.html">
+				                            <span class="pull-right label label-primary">182</span>
+				                            <i class="fa fa-envelope" aria-hidden="true"></i>
+				                            <span>서비스 통계</span>
+				                        </a>                        
+				                    </li>
+				                  
+				        <script>
+				            // Maintain Scroll Position
+				            if (typeof localStorage !== 'undefined') {
+				                if (localStorage.getItem('sidebar-left-position') !== null) {
+				                    var initialPosition = localStorage.getItem('sidebar-left-position'),
+				                        sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+				                    
+				                    sidebarLeft.scrollTop = initialPosition;
+				                }
+				            }
+				        </script>
+				        
+						</div>
+				    </div>
+				
+				</aside>
+				<!-- end: sidebar -->
+
+				<section role="main" class="content-body">
+					<header class="page-header">
+						<h2>대시보드</h2>
+					
+						<div class="right-wrapper pull-right">
+							<ol class="breadcrumbs">
+								<li>
+									<a href="/dashboard">
+										<i class="fa fa-home"></i>
+									</a>
+								</li>
+								<!-- <li><span>Layouts</span></li> -->
+							</ol>
+						</div>
+					</header>
+				
+					<!-- start: page -->
+					<div class="row">
+						<div class="col-md-6">
+							<section class="panel">
+								<header class="panel-heading">
+									<!-- <div class="panel-actions">
+										<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+										<a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+									</div> -->
+					
+									<h2 class="panel-title">제보 현황</h2>
+									<!-- <p class="panel-subtitle">Default Pie Chart</p> -->
+								</header>
+								<div class="panel-body">
+					
+									<!-- Flot: Pie -->
+									<div class="chart chart-md" id="flotPie" style="padding: 0px; position: relative;"><canvas class="flot-base" width="716" height="350" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 716.5px; height: 350px;"></canvas><canvas class="flot-overlay" width="716" height="350" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 716.5px; height: 350px;"></canvas><span class="pieLabel" id="pieLabel0" style="position: absolute; top: 218px; left: 500.25px;"><div style="font-size:large;text-align:center;padding:2px;color:#E36159;">개인<br>63%</div></span><span class="pieLabel" id="pieLabel1" style="position: absolute; top: 84px; left: 176.547px;"><div style="font-size:large;text-align:center;padding:2px;color:#0088cc;">팀<br>38%</div></span></div>
+									<script type="text/javascript">
+					
+										var flotPieData = [
+											{
+											label: "개인",
+											data: [
+												[1, 62.5]
+											],
+											color: '#E36159'
+											},
+											{
+												label: "팀",
+												data: [
+													[1, 37.5]
+												],
+												color: '#0088cc'
+											}
+										];
+					
+										// See: assets/javascripts/ui-elements/examples.charts.js for more settings.
+					
+									</script>
+					
+								</div>
+							</section>
+					</div>
+				
+							
+				
+						<div class="col-lg-6 col-md-6">
+							<section class="panel">
+							<header class="panel-heading">
+								
+					
+									<h2 class="panel-title">파트너 신청 현황</h2>
+									<div class="panel-actions">
+										<button type="button" class="mb-xs  btn btn-default" onclick="move_page('/applicant/list')">
+										<i class="fa fa-list"></i> more</button>
+									</div> 
+									
+								</header>
+								<div class="panel-body">
+									<div class="table-responsive">
+										<table class="table table-striped mb-none">
+											<thead>
+												<tr>
+													<th class="center">No.</th>
+													<th class="center">기관 [기업] 명</th>
+													<th class="center">신청일자</th>
+													<th class="center">성  명</th>
+												</tr>
+											</thead>
+											<tbody>
+													
+												<tr class="center">
+											
+													<td title="helloalexKIMalexKIM">4</td>
+													<td>KT</td>
+													<td>2020.02.13 15:01:00</td>
+													<td>홍길동</td>
+												</tr>
+				
+																				<tr class="center">
+											
+													<td title="UNKNOWN">UNKNOWN</td>
+													<td>박수지</td>
+													<td>개인</td>
+													<td>올라운더</td>
+												</tr>
+				
+																				<tr class="center">
+											
+													<td title="슈구슈구슈">슈구슈구슈</td>
+													<td>김윤정</td>
+													<td>개인</td>
+													<td>올라운더</td>
+												</tr>
+				
+																				<tr class="center">
+											
+													<td title="우리팀이야">우리팀이야</td>
+													<td>오영재</td>
+													<td>개인</td>
+													<td>올라운더</td>
+												</tr>
+				
+																			</tbody>
+										</table>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					
+					<div class="row">
+					
+							<div class="col-md-6">
+								<section class="panel">
+									<header class="panel-heading">
+										<!-- <div class="panel-actions">
+											<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+											<a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+										</div>
+							-->
+										<h2 class="panel-title">제보 분야별 지원통계</h2>
+										<!-- <p class="panel-subtitle">Donut Chart are functionally identical to pie charts.</p> -->
+									</header>
+									<div class="panel-body">
+						
+										<!-- Morris: Donut -->
+										<div class="chart chart-md" id="morrisDonut"><svg height="350" version="1.1" width="716.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#0088cc" d="M358.25,285A110,110,0,0,0,468.2429956371118,173.75866572821306" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#0088cc" stroke="#ffffff" d="M358.25,288A113,113,0,0,0,471.242804609033,173.7248111571643L518.239811835799,173.1944228774008A160,160,0,0,1,358.25,335Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#734ba9" d="M468.2429956371118,173.75866572821306A110,110,0,0,0,302.38240905330895,80.2434050748276" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#734ba9" stroke="#ffffff" d="M471.242804609033,173.7248111571643A113,113,0,0,0,300.8587474820356,77.65913430414109L276.98804953208577,37.17222556338561A160,160,0,0,1,518.239811835799,173.1944228774008Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#e36159" d="M302.38240905330895,80.2434050748276A110,110,0,0,0,358.2154424813789,284.9999945717176" stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path><path fill="#e36159" stroke="#ffffff" d="M300.8587474820356,77.65913430414109A113,113,0,0,0,358.2145000035983,287.99999442367357L358.19816372206833,339.99999185757645A165,165,0,0,1,274.4486135799635,32.86510761224142Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="358.25" y="165" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="15px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;" font-weight="800" transform="matrix(2.5,0,0,2.5,-537.375,-264)" stroke-width="0.4"><tspan dy="6" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">올라운더</tspan></text><text x="358.25" y="185" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;" transform="matrix(2.2917,0,0,2.2917,-462.8809,-228.625)" stroke-width="0.4363636363636364"><tspan dy="5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">41.7</tspan></text></svg></div>
+										<script type="text/javascript">
+						
+											var morrisDonutData = [{
+												label: "트랙&비트메이커",
+												value: 25.0							}, {
+												label: "탑라이너",
+												value: 33.3							}, {
+												label: "올라운더",
+												value: 41.7							}];
+						
+											// See: assets/javascripts/ui-elements/examples.charts.js for more settings.
+						
+										</script>
+						
+									</div>
+								</section>
+								
+							</div>
+
+							<div class="col-md-6">
+								<section class="panel"><!-- panel-featured panel-featured-primary -->
+								<header class="panel-heading">
+									<!-- <div class="panel-actions">
+										<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+										<a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+									</div> -->
+					
+									<h2 class="panel-title">일별 제보 통계</h2>
+									<div class="panel-actions">
+										<button type="button" class="mb-xs  btn btn-default" onclick="move_page('/applicant/list')">
+										<i class="fa fa-list"></i> more</button>
+									</div> 
+									<!-- <p class="panel-subtitle">Customize the graphs as much as you want, there are so many options and features to display information using Porto Admin Template.</p> -->
+								</header>
+								<div class="panel-body">
+	
+	
+								<div class="col-lg-12">
+									<div class="chart-data-selector ready" id="salesSelectorWrapper">
+										
+			
+										<div id="salesSelectorItems" class="chart-data-selector-items mt-sm">
+											<!-- Flot: Sales Porto Admin -->
+											<div class="chart chart-sm chart-active" data-sales-rel="2020" id="flotDashSales1" style="padding: 0px;"><canvas class="flot-base" width="674" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 674.5px; height: 184px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 26px; text-align: center;">1</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 84px; text-align: center;">2</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 142px; text-align: center;">3</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 200px; text-align: center;">4</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 258px; text-align: center;">5</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 316px; text-align: center;">6</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 374px; text-align: center;">7</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 432px; text-align: center;">8</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 490px; text-align: center;">9</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 544px; text-align: center;">10</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 602px; text-align: center;">11</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 56px; top: 161px; left: 660px; text-align: center;">12</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 135px; left: 7px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 90px; left: 7px; text-align: right;">5</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 45px; left: 1px; text-align: right;">10</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 1px; text-align: right;">15</div></div></div><canvas class="flot-overlay" width="674" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 674.5px; height: 184px;"></canvas></div>
+											<script>
+			
+												var flotDashSales1Data = [{
+													data: [
+														["1", 9],
+														["2", 12],
+														["3", 0],
+														["4", 0],
+														["5", 0],
+														["6", 0],
+														["7", 0],
+														["8", 0],
+														["9", 0],
+														["10",0],
+														["11",0],
+														["12",0]
+													],
+													color: "#0088cc"
+												}];
+			
+												// See: assets/javascripts/dashboard/examples.dashboard.js for more settings.
+											</script>
+										</div>
+			
+									</div>
+								</div>
+	
+	
+	
+									<!-- <div class="chart chart-sm" id="flotWidgetsSales1" style="padding: 0px; position: relative;"><canvas class="flot-base" width="312" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 312.75px; height: 184px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 39px; top: 161px; left: 27px; text-align: center;">Jan</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 39px; top: 161px; left: 64px; text-align: center;">Feb</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 39px; top: 161px; left: 101px; text-align: center;">Mar</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 39px; top: 161px; left: 140px; text-align: center;">Apr</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 39px; top: 161px; left: 177px; text-align: center;">May</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 39px; top: 161px; left: 217px; text-align: center;">Jun</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 39px; top: 161px; left: 258px; text-align: center;">Jul</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 39px; top: 161px; left: 292px; text-align: center;">Aug</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 135px; left: 13px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 101px; left: 1px; text-align: right;">100</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 68px; left: 1px; text-align: right;">200</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 34px; left: 1px; text-align: right;">300</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 1px; text-align: right;">400</div></div></div><canvas class="flot-overlay" width="312" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 312.75px; height: 184px;"></canvas></div>
+									<script>
+			
+										var flotWidgetsSales1Data = [{
+											data: [
+												["Jan", 140],
+												["Feb", 240],
+												["Mar", 190],
+												["Apr", 140],
+												["May", 180],
+												["Jun", 320],
+												["Jul", 270],
+												["Aug", 180]
+											],
+											color: "#0088cc"
+										}];
+			
+									</script> -->
+									<!-- <hr class="solid short mt-lg">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="h4 text-weight-bold mb-none mt-lg">488</div>
+											<p class="text-xs text-muted mb-none">Total Sales</p>
+										</div>
+										<div class="col-md-4">
+											<div class="h4 text-weight-bold mb-none mt-lg">$1000</div>
+											<p class="text-xs text-muted mb-none">Profit</p>
+										</div>
+										<div class="col-md-4">
+											<div class="h4 text-weight-bold mb-none mt-lg">123</div>
+											<p class="text-xs text-muted mb-none">Comments</p>
+										</div>
+									</div> -->
+								</div>
+							</section>
+						</div>
+	
+						<div div="" class="col-md-12 text-right"> 2020-03-04 11:45:54초 기준 </div>
+					</div>
+					<!-- end: page -->
+				</section>
+			</div>
+
+			<aside id="sidebar-right" class="sidebar-right">
+				<div class="nano">
+					<div class="nano-content">
+						<a href="#" class="mobile-close visible-xs">
+							Collapse <i class="fa fa-chevron-right"></i>
+						</a>
+			
+						<div class="sidebar-right-wrapper">
+			
+							<div class="sidebar-widget widget-calendar">
+								<h6>Upcoming Tasks</h6>
+								<div data-plugin-datepicker data-plugin-skin="dark" ></div>
+			
+								<ul>
+									<li>
+										<time datetime="2016-04-19T00:00+00:00">04/19/2016</time>
+										<span>Company Meeting</span>
+									</li>
+								</ul>
+							</div>
+			
+							<div class="sidebar-widget widget-friends">
+								<h6>Friends</h6>
+								<ul>
+									<li class="status-online">
+										<figure class="profile-picture">
+											<img src="assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-online">
+										<figure class="profile-picture">
+											<img src="assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-offline">
+										<figure class="profile-picture">
+											<img src="assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-offline">
+										<figure class="profile-picture">
+											<img src="assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+			
+						</div>
+					</div>
+				</div>
+			</aside>
+		</section>
+
+		<!-- Vendor -->
+		<script src="assets/vendor/jquery/jquery.js"></script>
+		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="assets/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->
+		<script src="assets/vendor/jquery-appear/jquery-appear.js"></script>
+		<script src="assets/vendor/owl.carousel/owl.carousel.js"></script>
+		<script src="assets/vendor/isotope/isotope.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="assets/javascripts/theme.custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="assets/javascripts/theme.init.js"></script>
+
+		<!-- Examples -->
+		<script src="assets/javascripts/dashboard/examples.landing.dashboard.js"></script>
+	</body>
+</html>

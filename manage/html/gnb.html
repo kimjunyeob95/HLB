@@ -1,0 +1,138 @@
+<aside id="sidebar-left" class="sidebar-left">
+				
+    <div class="sidebar-header">
+        <div class="sidebar-title">
+            Navigation
+        </div>
+        <div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+        </div>
+    </div>
+
+    <div class="nano">
+        <div class="nano-content">
+            <nav id="menu" class="nav-main" role="navigation">
+            
+                <ul class="nav nav-main">
+                    <li class="nav-active">
+                        <a href="index.html">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </a>                        
+                    </li>
+                    <li class="nav-parent">
+                        <a href="#">
+                            <i class="fa fa-columns" aria-hidden="true"></i>
+                            <span>제보 관리</span>
+                        </a>
+                        <ul class="nav nav-children">
+                            <li>
+                                <a href="report_management.html">
+                                    제보 관리
+                                </a>
+                            </li>
+                            <li>
+                                <a href="report_details.html">
+                                    제보 내역 상세
+                                </a>
+                            </li>
+                            <li>
+                                <a href="report_board.html">
+                                    제보 1:1 게시판
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a href="#">
+                            <i class="fa fa-copy" aria-hidden="true"></i>
+                            <span>파트너 관리</span>
+                        </a>
+                        <ul class="nav nav-children">
+                            <li>
+                                <a href="pages-signup.html">
+                                    Sign Up
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a href="#">
+                            <i class="fa fa-tasks" aria-hidden="true"></i>
+                            <span>공지 사항 관리</span>
+                        </a>
+                        <ul class="nav nav-children">
+                            <li>
+                                <a href="notice.html">
+                                    공지사항
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notice_form.html">
+                                    공지 사항 수정
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a href="#">
+                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                            <span>FAQ 관리</span>
+                        </a>
+                        <ul class="nav nav-children">
+                            <li>
+                                <a href="asked_questions.html">
+                                    자주 묻는 질문 리스트
+                                </a>
+                            </li>
+                            <li>
+                                <a href="asked_questions_form.html">
+                                    자주 묻는 질문 등록
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a href="#">
+                            <i class="fa fa-table" aria-hidden="true"></i>
+                            <span>파트너 신청 관리</span>
+                        </a>
+                        <ul class="nav nav-children">
+                            <li>
+                                <a href="partner_list.html">
+                                    파트너 신청 리스트
+                                </a>
+                            </li>
+                            <li>
+                                <a href="partner_details.html">
+                                    파트너 신청 상세
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mailbox-folder.html">
+                            <span class="pull-right label label-primary">182</span>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>서비스 통계</span>
+                        </a>                        
+                    </li>
+                  
+        <script>
+            // Maintain Scroll Position
+            if (typeof localStorage !== 'undefined') {
+                if (localStorage.getItem('sidebar-left-position') !== null) {
+                    var initialPosition = localStorage.getItem('sidebar-left-position'),
+                        sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+                    
+                    sidebarLeft.scrollTop = initialPosition;
+                }
+            }
+        </script>
+        
+        </div>
+    </div>
+
+
+</aside>

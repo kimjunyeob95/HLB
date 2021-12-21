@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/*현대 - 경력개발*/
+#wrap.depth-main.career-wrap #container{padding-bottom: 0;}
+#wrap.career-wrap #footer{border-top: 0 none;}
+.career-main{min-height: 1097px;background: #f5f5f5 url("../images/career/thumb_1320x440.png") 0 bottom no-repeat; border-radius: 5px; -webkit-border-radius: 5px;}
+.career-main .content-primary{width: 1060px; margin: 0 auto;}
+.career-main .content-primary:after{content: ''; display: block; clear: both}
+.career-main .right-section{float: left; width: 400px}
+.career-main .title{font-size: 50px; line-height: 64px; color: #292929; padding-top: 62px;}
+.career-main .summary{font-size: 15px; line-height: 26px; margin-top: 20px;}
+.career-main .quick-menu{margin-top: 30px}
+.career-main .quick-menu li{height: 44px; line-height: 44px; width: 143px; box-sizing: border-box;border-top: 1px solid #e1e1e1; background:url("../images/common/arrow_02.png") right 16px no-repeat;}
+.career-main .quick-menu li:first-child{border-top: 0 none;}
+.career-main .quick-menu li a{display: block; color: #292929; font-size: 16px}
+.career-section{float: left; margin-left: 20px; margin-top: 70px; width: 220px; padding: 280px 45px 50px; border-radius: 5px; -webkit-border-radius: 5px; background: #ab001c url("../images/career/thumb_310x250.jpg") 0 0 no-repeat; box-shadow: none;}
+.career-section h3{font-size: 27px;line-height: 32px; color: #ffffff; width: 100%}
+.career-section h3 a{display: inline-block; width: 100%}
+.career-section h3 a:after{content: ''; display: block;color: both}
+.career-section h3 .btn-more{float: right; background-image: url("../images/common/ico_more_02.png"); width: 32px; height: 32px; vertical-align: top;}
+.career-section .summary{color: #d8a3a8; line-height: 24px}
+.career-section .mydate-list{margin-top: 20px}
+.career-section .mydate-list li{padding: 13px 0;}
+.career-section .mydate-list li+li{border-top: 1px solid #c44d61;}
+.career-section .mydate-list li:after{content: ''; display: block; clear: both;}
+.career-section .mydate-list li div{float: right; width: 130px; font-size: 15px; line-height: 15px; color: #ffffff; }
+.career-section .mydate-list li .title{float: left; color: #fff; padding-top: 0; line-height: 23px; width: 75px;font-family: '기아 가늘게','기아 Light','KiaL';}
+.career-section .mydate-list li span{display: block; line-height: 23px; text-align: right;}
+.career-section .last-data{color: #ffffff; text-align: center; margin-top: 16px; font-size: 15px;}
+.career-section .button-area{margin-top: 26px;}
+.career-section .button-area a{display: block; width: 205px; box-sizing: border-box; margin: 0 auto; font-size: 15px;}
+.career-section .button-area .btn+.btn{margin:  10px auto 0;}
+.career-section .button-area a.type04{background-color: #8b041b; border: 0 none;-webkit-appearance: none;}
+.apply-section{float: left; width: 210px; margin-top: 235px; margin-bottom: 100px ;margin-left: 20px; padding: 30px 50px; background-color: #292929; border-radius: 5px; -webkit-border-radius: 5px;}
+.apply-section li{padding: 40px 0 34px; border-top: 1px solid #494949}
+.apply-section li:first-child{border-top: 0 none;}
+.apply-section h3{font-size: 27px;line-height: 32px; color: #ffffff; }
+.apply-section h3 .btn-more{background-image: url("../images/common/ico_more_02.png"); width: 32px; height: 32px; vertical-align: top;}
+.apply-section h3:after{content: ''; display: block;color: both}
+.apply-section h3 a{display: inline-block;}
+.apply-section h3 .progress{float: right;font-size: 15px; padding-right: 18px; background:url("../images/career/ico_check.png") right 10px no-repeat;}
+.apply-section .summary{letter-spacing: -0.05em; line-height: 24px; color: #ababab}
+.apply-section .summary span{font-size: 12px;}
+
+
+/*사내이력서*/
+.profile-card .fieldset .label{font-size: 18px; line-height: 18px;}
+.profile-card .fieldset strong{font-weight: normal; font-size: 18px; line-height: 18px;}
+.profile-card .fieldset .all-career{display: inline-block;padding-right: 30px;border-right: 1px solid #d6d6d6;}
+/*.profile-card .fieldset #majorField{width: 598px}*/
+.profile-card .insert{display: inline-block;}
+.profile-card .hope-route .data-table .insert{position: relative; width: 30%; padding-right: 60px; box-sizing: border-box; margin-right: 2%}
+.profile-card .hope-route .data-table .insert.year{padding-right: 40px;}
+.profile-card .hope-route .data-table .insert .label{position: absolute; right: 0; top: 2px;}
+.profile-card .hope-route .data-table .insert .btn.small{position: absolute; right: 0; top: 0;}
+.profile-card .hope-route .notice{margin-top: 10px; padding-bottom: 16px;}
+
+
+/*성과와 평가*/
+/*평가*/
+.result{}
+.result .info-wrap{width: 1060px;margin: 0 auto;}
+.result .info-wrap:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.result .info-wrap .plan{float: left;width: 673px;height: 300px;padding-top: 60px;border-right: 1px solid #e1e1e1;}
+.result .info-wrap .detail{float: left;margin-top: 38px;}
+.result .info-wrap h3.subject{font-size: 30px;line-height: 30px;color: #292929;font-family:'기아 중간','기아 Medium','KiaM';}
+.result .info-wrap .subject .btn-more{display: inline-block; margin-left: 13px; width: 28px; height: 28px; vertical-align: top; background: url(../images/common/ico_more_01.png) 0 0 no-repeat; font-size: 0; line-height: 999em; text-indent: 999em; overflow: hidden; border: 0 none;} 
+.result .info-wrap .plan .detail{min-width: 285px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.result .info-wrap .plan .detail + .detail{padding-left: 35px;border-left: 1px solid #e1e1e1;}
+.result .info-wrap .detail h4{padding-bottom: 15px;font-size: 20px;line-height: 20px;color: #292929;font-family:'기아 중간','기아 Medium','KiaM';}
+.result .info-wrap .detail p{font-size: 24px;line-height: 34px;color: #6b6b6b;font-weight: normal;}
+.result .info-wrap .plan .detail .data-list{}
+.result .info-wrap .plan .detail .data-list li{margin-top: 10px;height: 24px;line-height: 24px;}
+.result .info-wrap .plan .detail .data-list li:first-child{margin-top: 5px;}
+.result .info-wrap .plan .detail .data-list li .tag{margin-right: 6px;padding: 0 6px;}
+.result .info-wrap .take-charge{float: right;width: 385px;height: 300px;padding-top: 60px;padding-left: 60px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.result .info-wrap .take-charge:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.result .info-wrap .take-charge .subject .btn-more{float: right;}
+.result .info-wrap .take-charge .data-list{padding-top: 29px;}
+.result .info-wrap .take-charge .data-list li{width: 100%;border-top: 1px solid #e1e1e1;}
+.result .info-wrap .take-charge .data-list li:first-child{border-top: 2px solid #292929;}
+.result .info-wrap .take-charge .data-list li:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.result .info-wrap .take-charge .data-list li span{display: block;float: left;height: 49px;line-height: 49px;padding-left: 10px;font-size: 15px;color: #6b6b6b;}
+.result .info-wrap .take-charge .data-list li strong{display: block;float: right;height: 49px;line-height: 49px;padding-right: 10px;font-size: 15px;color: #292929;font-weight: normal;font-family:'기아 중간','기아 Medium','KiaM';}
+
+/*faq*/
+.faq .faq-list{margin-top: 30px;border-top: 2px solid #292929;}
+.faq .faq-list li{}
+.faq .faq-list li a{display: block;position: relative;height: 59px;line-height: 59px;padding-left: 54px;font-size: 15px;font-family:'기아 중간','기아 Medium','KiaM';border-bottom: 1px solid #d1d1d1;background: url('../images/career/question.png') 20px 17px no-repeat;}
+.faq .faq-list li.active a{color: #292929;background-image: url('../images/career/question_on.png');}
+.faq .faq-list li a:after{content: '';display: block;position: absolute;right: 30px;top: 24px;width: 12px;height: 12px;background: url('../images/career/more.png') 0 0 no-repeat;}
+.faq .faq-list li.active a:after{background: url('../images/career/less.png') 0 50% no-repeat;}
+.faq .faq-list li .answer{display: none;padding: 23px 95px 24px 73px;font-family:'기아 중간','기아 Medium','KiaM';font-size: 14px;line-height: 25px;background: #f9f9f9 url('../images/career/answer.png') 40px 28px no-repeat;border-bottom: 1px solid #d1d1d1;}
+.faq .faq-list li.active .answer{display: block;}
+.faq .no-data{margin-top: 30px;padding: 80px 0;border-top: 2px solid #292929;border-bottom: 1px solid #d1d1d1;}
+.faq .no-data p{line-height: 40px;text-align: center;font-size: 15px;color: #555;}
+
+/*제도안내*/
+.system-info .about .text-wrap{margin-top: 19px;padding-top: 320px;padding-bottom: 35px;border-radius: 5px;-webkit-border-radius: 5px;}
+.system-info .about.cdp .text-wrap{background: #ece9e6 url('../images/career/thumb_1600x320.jpg') 0 0 no-repeat;}
+.system-info .about.contest .text-wrap{background: #ece9e6 url('../images/career/thumb_1600x320_02.jpg') 0 0 no-repeat;}
+.system-info .about .text-wrap h3{display: inline-block;margin: 0 40px;padding-top: 18px;font-size: 20px;line-height: 40px;color: #292929;border-bottom: 1px solid #292929;}
+.system-info .about .text-wrap p{margin: 0 40px;padding-top: 13px;font-size: 15px;line-height: 25px;color: #6b6b6b;}
+.system-info .about .text-wrap strong{display: inline-block;position: relative;margin-top: 33px;padding-left: 65px;padding-right: 28px;font-size: 20px;line-height: 51px;color: #003166;font-weight: normal;}
+.system-info .about .text-wrap strong:before{content: '';display: block;position: absolute;left: 39px;top:0;width: 19px;height: 16px;background: url('../images/common/mark_left.png') 0 0 no-repeat;}
+.system-info .about .text-wrap strong:after{content: '';display: block;position: absolute;right: 0;top:25px;width: 19px;height: 16px;background: url('../images/common/mark_right.png') 0 0 no-repeat;}
+.system-info .about .text{font-size: 15px;line-height: 25px;color: #292929;}
+.system-info .about .table-wrap .data-table{}
+.system-info .about .table-wrap .data-table tr td strong{display: block;font-size: 14px;line-height: 25px;font-weight: normal;}
+.system-info .about .table-wrap .data-table tr td p{padding-top: 6px;color: #6b6b6b;}
+.system-info .about .table-wrap .data-table tr td ul{padding: 15px 0;}
+.system-info .about .table-wrap .data-table tr td ul:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.system-info .about .table-wrap .data-table tr td ul li{float: left;position: relative;padding-left: 29px;}
+.system-info .about .table-wrap .data-table tr td ul li:first-child{padding-left: 0;}
+.system-info .about .table-wrap .data-table tr td ul li div{width: 85px;height: 65px;padding-top: 13px;font-size: 14px;line-height: 20px;text-align: center;box-sizing: border-box;-webkit-box-sizing: border-box;border-radius: 5px;-webkit-border-radius: 5px;background-color: #ececec;}
+.system-info .about .table-wrap .data-table tr td ul li:after{content: '';display: block;position: absolute;left: 0;top: 27px;width: 19px;height: 11px;background: url('../images/career/arrow.png') 0 0 no-repeat;}
+.system-info .about .table-wrap .data-table tr td ul li:first-child:after{display: none;}
+.system-info .about .table-wrap .data-table tr td ul li.confirm div{background-color: #292929;color: #fff;}
+.system-info .about.cdp .table-wrap .data-table tr td ul li.confirm div{padding-top: 2px;}
+.system-info .about .table-wrap .data-table tr td ul li.migrate div{background-color: #c41230;color: #fff;}

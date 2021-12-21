@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<link rel="stylesheet" type="text/css" href="../../@resource/css/plugin/jquery.mCustomScrollbar.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript">
+// 가로 스크롤
+(function($){
+	$(window).on("load",function(){
+
+		$.mCustomScrollbar.defaults.theme="light-2"; //set "light-2" as the default theme
+
+		$(".timeline").mCustomScrollbar({
+			axis:"x",
+			theme:"rounded-dark",
+			advanced:{autoExpandHorizontalScroll:true},
+            callbacks:{
+                whileScrolling:function(){
+                    var left = $("#mCSB_1_dragger_horizontal").css("left");
+                    var width = Number(left.substr(0, left.indexOf("px")));
+                    $(".mCSB_draggerRail").css("width", width + 30 + "px");
+                }
+            }
+		});
+
+		$(".scrollTo a").click(function(e){
+			e.preventDefault();
+			var $this=$(this),
+				rel=$this.attr("rel"),
+				el=rel==="content-y" ? ".demo-y" : rel==="content-x" ? ".demo-x" : ".demo-yx",
+				data=$this.data("scroll-to"),
+				href=$this.attr("href").split(/#(.+)/)[1],
+				to=data ? $(el).find(".mCSB_container").find(data) : el===".demo-yx" ? eval("("+href+")") : href,
+				output=$("#info > p code"),
+				outputTXTdata=el===".demo-yx" ? data : "'"+data+"'",
+				outputTXThref=el===".demo-yx" ? href : "'"+href+"'",
+				outputTXT=data ? "$('"+el+"').find('.mCSB_container').find("+outputTXTdata+")" : outputTXThref;
+			$(el).mCustomScrollbar("scrollTo",to);
+			output.text("$('"+el+"').mCustomScrollbar('scrollTo',"+outputTXT+");");
+		});
+
+	});
+})(jQuery);
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="depth-main exception mss-sub">
+<!-- HEADER -->
+<div id="header">
+	<!-- header-wrap -->
+	<div class="header-wrap">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+		<!-- personal-info -->
+		<div class="personal-info">
+			<div class="belong">양재본사</div>
+			<div class="number">5612336</div>
+			<div class="position"><span class="name">홍길동</span>과장</div>
+			<div class="state logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- // personal-info -->
+		<!-- utill-menu -->
+		<div class="utill-menu">
+			<ul>
+				<li><a href="#">My HR</a></li>
+				<li class="active"><a href="#">나의 팀</a></li>
+				<li><a href="#">인사 담당</a></li>
+			</ul>
+		</div>
+		<!-- // utill-menu -->
+		<!-- gnb -->
+		<div class="gnb">
+			<ul class="nav">
+				<li class="depth01"><a href="#">조직과 사람</a></li>
+				<li class="depth01"><a href="#">성과와 평가</a></li>
+				<li class="depth01"><a href="#">나의 정보</a></li>
+			</ul>
+			<ul class="nav">
+				<li class="depth01"><a href="#" class="active">HR 안내</a></li>
+				<li class="depth01"><a href="#">HR Leader</a></li>
+			</ul>
+			<div class="btn-area">
+				<!-- <a href="#" class="all-menu"><span class="blind">모든 메뉴</span></a> -->
+				<a class="change-team">조직 변경하기</a>
+				<div class="select-team">
+					<span class="current">인사제도팀</span>
+					<ul class="select-list">
+						<li cla=""><a href="#">인사제도팀</a></li>
+						<li><a href="#">해외커뮤니케이션팀</a></li>
+						<li><a href="#">크리에이티브전략팀</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // gnb -->
+	</div>
+	<!--// header-wrap -->
+</div>
+<!-- // HEADER -->
+
+<!-- CONTENT -->
+<div id="container" class="talented-person hr-info">
+	<!-- 사이드 메뉴 -->
+	<div id="aside-menu" class="side-menu">
+		<h2>HR 안내</h2>
+		<ul class="lnb">
+			<li><a href="#" class="active">HR 안내</a></li>
+		</ul>
+	</div>
+	<!-- //사이드 메뉴 -->
+	<div id="content" class="content-primary">
+		<div class="visual">
+			<h2 class="content-title">회사생활에 대한 궁금증과 <br>
+			어려움을 해소해 드립니다.</h2>
+			<p class="notice">※ 컨텐츠가 지속 보강될 예정입니다.</p>
+			<div class="timeline">
+				<ul class="data-list">
+					<!-- <li class="list01"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120.jpg" alt=""></div>
+						<strong>신규 입사자</strong>
+						<p>멋진 기아차의 임직원으로<br> 첫걸음을 떼기 위해, 무엇을<br> 먼저 알아야 할까요? </p>
+					</a></li>
+					<li class="list02"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_02.jpg" alt=""></div>
+						<strong>인사정보 관리</strong>
+						<p>소중한 나의 인사 정보,<br> 올바른 입력/관리 방법은<br> 무엇일까요?</p>
+					</a></li> -->
+					<li class="list01"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_03.jpg" alt=""></div>
+						<strong>근태관리</strong>
+						<p>회사생활의 기본인 근태,<br> 어떻게 지켜야 할까요?</p>
+					</a></li>
+					<!-- <li class="list04"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_04.jpg" alt=""></div>
+						<strong>보상</strong>
+						<p>나의 땀방울과 성과를 위한<br> 보상체계는 어떻게 이루어져<br> 있을까요?</p>
+					</a></li> -->
+					<li class="list02"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_05.jpg" alt=""></div>
+						<strong>복리후생/<br> 업무환경 지원</strong>
+						<p>업무에 걱정없이 집중하기 위해 기아차에서 나에게 제공해주는 것은 무엇이 있을까요?</p>
+					</a></li>
+					<!-- <li class="list06"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_06.jpg" alt=""></div>
+						<strong>성과와 평가</strong>
+						<p>나의 업무와 성과는 어떻게<br> 관리하고, 어떤 기준으로<br> 평가받게 될까요?</p>
+					</a></li>
+					<li class="list07"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_07.jpg" alt=""></div>
+						<strong>경력개발</strong>
+						<p>더욱 발전하고 성장하는 나,<br> 어떻게 새로운 기회에<br> 도전할 수 있을까요?</p>
+					</a></li> -->
+					<li class="list03"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_11.jpg" alt=""></div>
+						<strong>직장 내<br> 성희롱 예방</strong>
+						<p>몸과 마음을 아프게 하는<br> 직장 내 성희롱,<br> 어떻게 예방할 수 있을까요?</p>
+					</a></li>
+					<!-- <li class="list08"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_08.jpg" alt=""></div>
+						<strong>인사고충</strong>
+						<p>회사생활 속에 느끼는 어려움과<br> 고민거리, 어떻게 나누고<br> 해결할 수 있을까요?</p>
+					</a></li>
+					<li class="list09"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_09.jpg" alt=""></div>
+						<strong>일과 가정 양립</strong>
+						<p>업무만큼 소중한 나의 삶과<br> 가정, '워라벨'을 위한 제도는<br> 무엇이 있을까요?</p>
+					</a></li> -->
+					<li class="list04"><a href="">
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_180x120_10.jpg" alt=""></div>
+						<strong>퇴직</strong>
+						<p>정든 회사와 이별,<br> 어떻게 '아름다운 이별'을<br> 완성할 수  있을까요?</p>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTOR COMPANY, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*KIA - my profile*/
+#wrap .my-profile + #footer{border-top: 0 none;}
+.depth-main#wrap #container.my-profile{background-color: #f5f5f5; border-radius: 5px; padding: 60px 0;}
+.my-profile .content-primary{width: 1060px; margin: 0 auto;}
+.my-profile .profile-header{margin-bottom: 40px;}
+.my-profile .profile-header:after{content: ''; display: block;clear: both;}
+.my-profile .profile-header .item-info{float: left;}
+.my-profile .profile-header .thumb{float: left;width: 130px; height: 130px; border-radius: 30px; -webkit-border-radius: 30px; overflow: hidden;}
+.my-profile .profile-header .thumb img{width: 100%;margin-top: -10px;}
+.my-profile .profile-header .data-info{float: left; margin-top: 15px; margin-left: 30px; font-size: 26px; line-height: 35px; color: #292929;}
+.my-profile .profile-header .data-info .date{color: #c41230; } 
+.my-profile .profile-header .btn-area{float: right; margin-top: 2px}
+.my-profile .profile-header .btn-area a{display: block; min-width: 200px; text-align: center; margin-top: 10px}
+.my-profile .profile-section{margin-left: -20px;}
+.my-profile .profile-section:after{content: ''; display: block; clear: both;}
+.my-profile .cont{float: left;width: 340px; margin-left: 20px; margin-top: 20px; background-color: #ffffff; border-radius: 5px; -webkit-border-radius: 5px; text-align: center;}
+.my-profile .cont .cont-title{font-size: 20px; line-height: 20px; padding: 114px 0 29px; color: #292929; font-weight: normal; box-sizing: border-box;}
+.my-profile .cont01,
+.my-profile .cont02,
+.my-profile .cont03{height: 487px;}
+.my-profile .cont04,
+.my-profile .cont05,
+.my-profile .cont06{height: 316px;}
+.my-profile .cont01 .cont-title{background: url("../images/common/menu_ico_01.png") center 44px no-repeat; border-bottom: 1px solid #e1e1e1;}
+.my-profile .cont02 .cont-title{background: url("../images/common/menu_ico_02.png") center 44px no-repeat; border-bottom: 1px solid #e1e1e1;}
+.my-profile .cont03 .cont-title{background: url("../images/common/menu_ico_03.png") center 40px no-repeat; border-bottom: 1px solid #e1e1e1;}
+.my-profile .cont04 .cont-title{background: url("../images/common/menu_ico_04.png") center 34px no-repeat; padding-bottom: 20px;}
+.my-profile .cont05 .cont-title{background: url("../images/common/menu_ico_05.png") center 40px no-repeat; padding-bottom: 20px;}
+.my-profile .cont06 .cont-title{background: url("../images/common/menu_ico_06.png") center 46px no-repeat; padding-bottom: 20px;}
+.my-profile .cont .data-info strong{display: block; margin-top:  36px; font-size: 24px; line-height: 30px; color: #292929; font-weight: normal; }
+.my-profile .cont .data-info span{display: inline-block; margin-top: 11px;}
+.my-profile .cont .data-info ul{margin-top: 10px; line-height: 23px;}
+.my-profile .cont02 .data-info{padding-bottom: 26px;}
+.my-profile .cont03 .data-info{padding-bottom: 18px;}
+.my-profile .cont .data-list{max-width: 230px; padding: 20px 0  30px; margin: 0 auto;}
+.my-profile .cont .data-list li{display: block; height: 65px; line-height: 65px; border-top: 1px solid #e1e1e1; font-size: 16px; color: #292929;}
+.my-profile .cont .data-list li:first-child{border-top: 0 none}
+/*.my-profile .cont .chrat{margin-top: 26px;text-align: center;}
+.my-profile .cont .chrat:after{content: ''; display: block;clear: both;}*/
+.my-profile .cont .chrat .thumb{width: 120px; overflow: hidden;}
+.my-profile .cont03 .chrat .thumb{float: left; margin-left: 40px;}
+.my-profile .cont03 .chrat .chrat-data{float: left; text-align: left; margin-left :20px; font-size: 14px; line-height: 25px; margin-top: 24px;}
+.my-profile .cont04 .data-info ul,
+.my-profile .cont05 .data-info ul,
+.my-profile .cont06 .data-info ul{margin-top: 0;}
+.my-profile .cont .btn.medium{font-size: 13px; margin-top: 14px;}
+
+/*인사기록카드*/
+.my-profile-card .content-primary{width: auto; margin: 0 auto;}
+.my-profile-card .profile-section{margin-top: 30px}

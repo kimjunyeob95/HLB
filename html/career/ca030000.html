@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.faq-list li a').on('click', function (e) {
+		var eq = $('.faq-list li a').index(this);
+		$(this).siblings('.answer').slideToggle();
+
+		$('.faq-list>li').each(function (i) {
+			if (eq != i) {
+				$(this).removeClass('active');
+			} else {
+				if ($(this).hasClass('active')) {
+					$(this).removeClass('active');
+				} else {
+					$(this).addClass('active');
+				}
+			}
+		});
+
+		$(this).parents('li').siblings('li').children('.answer').slideUp();
+		return false;
+	});
+})
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="depth03">
+<!-- HEADER -->
+<div id="header">
+	<!-- header-wrap -->
+	<div class="header-wrap active">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+		<!-- personal-info -->
+		<div class="personal-info">
+			<div class="belong">양재본사</div>
+			<div class="number">5612336</div>
+			<div class="position"><span class="name">홍길동</span>과장</div>
+			<div class="state logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- // personal-info -->
+		<!-- utill-menu -->
+		<div class="utill-menu">
+			<ul>
+				<li class="active"><a href="#">My HR</a></li>
+				<li><a href="#">나의 팀</a></li>
+				<li><a href="#">인사 담당</a></li>
+			</ul>
+		</div>
+		<!-- // utill-menu -->
+		<!-- gnb -->
+		<div class="gnb">
+			<ul class="nav">
+				<li class="depth01"><a href="#">My profile</a>
+					<ul class="depth02">
+						<li><a href="#">개인정보</a></li>
+						<li><a href="#">커리어정보</a></li>
+						<li><a href="#">역량정보</a></li>
+						<li><a href="#">커뮤니케이션</a></li>
+						<li><a href="#">사직원신청</a></li>
+					</ul>
+				</li>
+				<li class="depth01"><a href="#">성과와 평가</a>
+					<ul class="depth02">
+						<li><a href="#">팀미션/사업계획</a></li>
+						<li><a href="#">인사평가</a></li>
+						<li><a href="#">성과평가</a></li>
+						<li><a href="#">역량평가</a></li>
+						<li><a href="#">임원평가</a></li>
+						<li><a href="#">다면평가</a></li>
+						<li><a href="#">역할역량서베이</a></li>
+					</ul>
+				</li>
+				<li class="depth01 active"><a href="#" class="active">경력 개발</a>
+					<ul class="depth02">
+						<li class="active"><a href="#">제도안내</a></li>
+						<li><a href="#">자기신고서</a></li>
+						<li><a href="#">정기전보</a></li>
+						<li><a href="#">사내공모</a></li>
+						<li><a href="#">경력경로조회</a></li>
+						<li><a href="#">나의 지원이력보기</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</li>
+				<li class="depth01"><a href="#">근태</a>
+					<ul class="depth02">
+						<li><a href="#">근태가이드</a></li>
+						<li><a href="#">예약근태등록</a></li>
+						<li><a href="#">근태내역조회</a></li>
+						<li><a href="#">휴가내역조회</a></li>
+						<li><a href="#">휴가사용계획</a></li>
+						<li><a href="#">휴복직신청</a></li>
+						<li><a href="#">모성보호</a></li>
+					</ul>
+				</li>
+				<li class="depth01"><a href="#">보상</a>
+					<ul class="depth02">
+						<li><a href="#">급여명세</a></li>
+						<li><a href="#">연봉계약</a></li>
+						<li><a href="#">연말정산</a></li>
+						<li><a href="#">예상퇴직금</a></li>
+						<li><a href="#">진료비</a></li>
+						<li><a href="#">변경신청</a></li>
+						<li><a href="#">소모임관리</a></li>
+						<li><a href="#">최종차량구입비용</a></li>
+					</ul>
+				</li>
+				<li class="depth01"><a href="#" class="">Global HR</a>
+					<ul class="depth02">
+						<li><a href="#">Global HR Knowledge</a></li>
+						<li><a href="#">부임지원</a></li>
+						<li><a href="#">주재원 정보</a></li>
+						<li><a href="#">귀임지원</a></li>
+						<li><a href="#">현지법인관리</a></li>
+					</ul>
+				</li>
+				<li class="depth01"><a href="#">HR 안내</a>
+					<ul class="depth02">
+						<li><a href="#">HR안내</a></li>
+						<li><a href="#">공지사항</a></li>
+						<li><a href="#">발령지조회</a></li>
+						<li><a href="#">업무전결규정</a></li>
+						<li><a href="#">One Click HR</a></li>
+						<li><a href="#">포상신청</a></li>
+						<li><a href="#">사원신청</a></li>
+						<li><a href="#">소모임</a></li>
+						<li><a href="#">동호회</a></li>
+						<li><a href="#">사직원신청</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="btn-area">
+				<a href="#" class="all-menu"><span class="blind">모든 메뉴</span></a>
+			</div>
+		</div>
+		<!-- // gnb -->
+	</div>
+	<!--// header-wrap -->
+</div>
+<!-- // HEADER -->
+
+<!-- CONTENT -->
+<div id="container" class="faq">
+	<!-- 사이드 메뉴 -->
+	<div id="aside-menu" class="side-menu">
+		<h2>경력개발 제도안내</h2>
+		<ul class="lnb">
+			<li><a href="#" class="active">경력개발 제도안내</a></li>
+		</ul>
+	</div>
+	<!-- //사이드 메뉴 -->
+	<div id="content" class="content-primary">
+		<div class="system-info">
+			<div class="tab-wrap">
+				<!-- TAB -->
+				<ul class="tab">
+					<li class="active"><a href="#">정기전보</a></li>
+					<li><a href="#">사내공모</a></li>
+				</ul>
+				<!-- // TAB -->
+
+				<!-- 정기전보 -->
+				<div class="about cdp">
+					<div class="text-wrap">
+						<h3>정기전보</h3>
+						<p>직원들이 다양한 경험을 갖춘 인재로 성장할 수 있도록 직무 이동 기회를 제공합니다. <br>
+						폭넓은 직무전문성을 갖출 수 있으며, 부문간 이해와 소통을 강화하는데 기여를 하게 됩니다.</p>
+					</div>
+					<h3 class="section-title">정기전보 모집안내</h3>
+					<div class="table-wrap">
+						<table class="data-table left">
+							<caption>정기전보 모집안내 표</caption>
+							<colgroup>
+								<col style="width: 15%" />
+								<col style="width: *" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">모집시기</th>
+									<td>년 1회 실시 (1월~2월경)</td>
+								</tr>
+								<tr>
+									<th scope="row">지원자격</th>
+									<td>일반/연구직 (해외근무자, 휴직자, 당해년도 신입사원 제외)</td>
+								</tr>
+								<tr>
+									<th scope="row">절차</th>
+									<td>
+										<ul>
+											<li><div>Needs<br> 조사</div></li>
+											<li><div>인터뷰<br> 대상자 선정</div></li>
+											<li><div>대상자<br> 인터뷰</div></li>
+											<li class="confirm"><div>최종<br> 선정명단<br> 본부 전달</div></li>
+											<li class="migrate"><div>정기<br> 부서 이동</div></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- // 정기전보 -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // CONTENT -->
+
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 HLB CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

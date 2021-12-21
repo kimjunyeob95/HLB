@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KIA</title>
+<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="wsg.css">
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function () {
+		//gnb 열림
+		$('#allMenu').click(function(){
+			$('.gnb').addClass('active');
+		});
+		//gnb 닫음
+		$('.btn-close').click(function(){
+			$('.gnb').removeClass('active');
+		});
+
+		// 디자인 form요소 적용
+		$('select, input[type=radio], input[type=checkbox], input[type=file]').uniform({
+			fileDefaultHtml: '',
+			fileButtonHtml: '파일첨부'
+		});
+		
+		
+
+	    
+	    
+	/*    $(function(){
+			$(".input-date input:disabled").each(function(){
+				$(this).parent().addClass('disabled');
+			});
+
+			$(this).removeAttr('disabled');
+			$(this).parent(".input-date").removeClass('disabled');
+		});
+	    */
+
+		$(function(){
+			$(".input-search input:disabled").each(function(){
+				$(this).parent().addClass('disabled');
+			});
+			$(this).removeAttr('disabled');
+			$(this).parent(".input-search").removeClass('disabled');
+		});
+
+
+
+
+	});
+
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+	<div class="header-wrap">
+		<h1><span class="blind">KIA</span></h1>
+		<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+		<div class="gnb">
+			<div class="gnb-wrap">	
+				<h3>PROGRESS</h3>
+				<ul>
+					<li><a href="markup.html">markup</a></li>
+				</ul>
+				<h3>UI LIBRARY</h3>
+				<ul>
+					<li><a href="table.html">layout</a></li>
+					<li><a href="table.html">table</a></li>
+					<li><a href="form.html">form</a></li>
+					<li><a href="fieldset.html">fieldset</a></li>
+					<li><a href="button.html">button</a></li>
+					<li><a href="tab.html">tab</a></li>
+					<li><a href="list.html">list</a></li>
+					<li><a href="popup.html">popup</a></li>
+					<li><a href="print.html">print</a></li>
+					<li><a href="etc.html">etc</a></li>
+				</ul>
+				<a href="#" class="btn-close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+	<h2>WSG / FORM</h2>
+	<!-- section -->
+	<div class="section">
+		<h3>form - basic</h3>
+		<div class="table-wrap">
+			<table class="data-table left">
+				<caption></caption>
+				<colgroup>
+					<col style="width: 20%" />
+					<col style="width: *" />
+				</colgroup>
+				<thead>
+					<tr>	
+						<th>구분</th>
+						<th>PREVIEW</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>input text</th>
+						<td><input type="text" class="input-text" name=""></td>
+					</tr>
+					<tr>
+						<th>input text disabled</th>
+						<td><input type="text" class="input-text" name="" disabled></td>
+					</tr>
+					<tr>
+						<th>input password</th>
+						<td><input type="password" class="input-text"  name=""></td>
+					</tr>
+					<tr>
+						<th>input search</th>
+						<td>
+							<div class="input-search">
+								<input type="search" name="">
+								<a class="btn" href="#"><img alt="검색" src="../@resource/images/common/search02.png"></a>
+							</div>
+							<br>
+							<div class="input-search">
+								<input type="search" name="" disabled="disabled">
+								<a class="btn" href="#"><img alt="검색" src="../@resource/images/common/search02.png"></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>input date</th>
+						<td>
+							<div class="input-date">
+								<input type="text" name="">
+								<a class="btn" href="#"><img alt="달력" src="../@resource/images/common/calendar.png"></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>input file</th>
+						<td><input type="file" id="inputFile" title="파일선택"></td>
+					</tr>
+					<tr>
+						<th>input radio</th>
+						<td>
+							<input type="radio" id="radio1" name="radio"><label class="label" for="radio1">예</label>
+							<input type="radio" id="radio2" name="radio"><label class="label" for="radio2">아니오</label>
+							<input type="radio" id="radio3" name="radio" checked disabled><label class="label" for="radio3">disabled</label>
+							<input type="radio" id="radio4" name="radio" disabled><label class="label" for="radio4">disabled</label>
+						</td>
+					</tr>
+					<tr>
+						<th>input checkbox</th>
+						<td>
+							<input type="checkbox" id="checkbox1" name="checkbox" ><label class="label" for="checkbox1">선택1</label>
+							<input type="checkbox" id="checkbox2" name="checkbox" ><label class="label" for="checkbox2">선택2</label>
+							<input type="checkbox" id="checkbox3" name="checkbox" checked disabled><label class="label" for="checkbox3">disabled</label>
+							<input type="checkbox" id="checkbox4" name="checkbox" disabled><label class="label" for="checkbox4">disabled</label>
+						</td>
+					</tr>
+					<tr>
+						<th>select</th>
+						<td>
+							<div class="insert">
+								<label class="label" for="selectTag">선택</label>
+								<select class="select" id="selectTag">
+									<option>옵션 1</option>
+									<option>옵션 2</option>
+								</select>
+							</div><br>
+							<div class="insert">
+								<label class="label" for="selectTag">disabled</label>
+								<select class="select" id="selectTag" disabled>
+									<option>옵션 1</option>
+									<option>옵션 2</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>textarea</th>
+						<td><textarea class="text-area" id="" name="" cols="" rows="" placeholder="작성해주세요"></textarea></td>
+					</tr>
+					<tr>
+						<th>textarea disabled</th>
+						<td><textarea class="text-area" id="" name="" cols="" rows="" placeholder="작성해주세요" disabled></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- //section -->
+
+	<!-- section markup PREVIEW -->
+	<div class="section">
+		<!-- content  input -->
+		<div class="content">
+			<h3>input[type="text"], input[type="password"], input[type="num"]</h3>
+			<strong class="preview ">PREVIEW</strong>
+			<input type="text" class="input-text" name="">
+			<input type="password" class="input-text" name="">
+			<input type="num" class="input-text" name="">
+			<!-- markup -->
+			<div class="markup">
+			<strong>markup 예시</strong>
+<pre>
+&lt;input type="text" class="input-text" name=""&gt;
+&lt;input type="password" class="input-text" name=""&gt;
+&lt;input type="num" class="input-text" name=""&gt;
+<pre>
+			</div>
+			<!-- // markup -->
+		</div>
+		<!--//  content -->
+		<!-- content input search -->
+		<div class="content">
+			<h3>input search</h3>
+			<strong class="preview">PREVIEW</strong>
+			<div class="input-search">
+				<input type="search" name="">
+				<a class="btn" href="#"><img alt="검색" src="../@resource/images/common/search02.png"></a>
+			</div>
+			<!-- markup -->
+			<div class="markup">
+			<strong>markup 예시</strong>
+<pre>
+&lt;div class="input-search"&gt;
+	&lt;input type="search" name=""&gt;
+	&lt;a class="btn" href="#"&gt;&lt;img alt="검색" src="../@resource/images/common/search02.png"&gt;&lt;/a&gt;
+&lt;/div&gt;
+<pre>
+			</div>
+			<!-- // markup -->
+		</div>
+		<!-- content input search  -->
+
+		<!-- content input date -->
+		<div class="content">
+			<h3>input date</h3>
+			<strong class="preview">PREVIEW</strong>
+			<div class="input-date">
+				<input type="text" name="">
+				<a class="btn" href="#"><img alt="달력" src="../@resource/images/common/calendar.png"></a>
+			</div>
+            <br>
+			<div class="input-date">
+				<input type="text" name="" disabled="disabled">
+				<a class="btn" href="#"><img alt="달력" src="../@resource/images/common/calendar.png"></a>
+			</div>
+			<!-- markup -->
+			<div class="markup">
+			<strong>markup 예시</strong>
+<pre>
+&lt;div class="input-date"&gt;
+	&lt;input type="text" name=""&gt;
+	&lt;a class="btn" href="#"&gt;&lt;img alt="달력" src="../@resource/images/common/calendar.png"&gt;&lt;/a&gt;
+&lt;/div&gt;
+<pre>
+			</div>
+			<!-- // markup -->
+		</div>
+		<!-- content input date  -->
+
+		<!-- content input file -->
+		<div class="content">
+			<h3>input file</h3>
+			<strong class="preview">PREVIEW</strong>
+			<input type="file" id="inputFile" title="파일선택">
+			<!-- markup -->
+			<div class="markup">
+			<strong>markup 예시</strong>
+<pre>
+&lt;input type="file" title="파일선택"&gt;
+<pre>
+			</div>
+			<!-- // markup -->
+		</div>
+		<!-- content input file  -->
+
+		<!-- content input radio -->
+		<div class="content">
+			<h3>radio</h3>
+			<strong class="preview">PREVIEW</strong>
+			<input type="radio" id="radio1" name="radio"> <label class="label" for="radio1">예</label>
+			<input type="radio" id="radio2" name="radio"> <label class="label" for="radio2">아니오</label>
+			<!-- markup -->
+			<div class="markup">
+			<strong>markup 예시</strong>
+<pre>
+&lt;input type="radio" id="radio1" name="radio"&gt;&lt;label class="label" for="radio1"&gt;예&lt;/label&gt;
+&lt;input type="radio" id="radio2" name="radio"&gt;&lt;label class="label" for="radio2"&gt;아니오&lt;/label&gt;
+<pre>
+			</div>
+			<!-- // markup -->
+		</div>
+		<!-- content input radio  -->
+
+		<!-- content input checkbox -->
+		<div class="content">
+			<h3>checkbox</h3>
+			<strong class="preview">PREVIEW</strong>
+			<div class="insert"><input type="checkbox" id="checkbox1" name="checkbox"> <label class="label" for="checkbox1">예</label></div>
+			<div class="insert"><input type="checkbox" id="checkbox2" name="checkbox"> <label class="label" for="checkbox2">아니오</label></div>
+			<!-- markup -->
+			<div class="markup">
+			<strong>markup 예시</strong>
+<pre>
+&lt;div class="insert"&gt;&lt;input type="checkbox" id="checkbox1" name="checkbox"&gt;&lt;label for="checkbox1"&gt;예&lt;/label&gt;&lt;/div&gt;
+&lt;div class="insert"&gt;&lt;input type="checkbox" id="checkbox2" name="checkbox"&gt;&lt;label for="checkbox2"&gt;아니오&lt;/label&gt;&lt;/div&gt;
+<pre>
+			</div>
+			<!-- // markup -->
+		</div>
+		<!-- content input checkbox  -->
+
+
+		<!-- content select -->
+		<div class="content">
+			<h3>select</h3>
+			<div class="insert">
+				<label class="label" for="selectTag">선택</label>
+				<select class="select" id="selectTag">
+					<option>옵션 1</option>
+					<option>옵션 2</option>
+				</select>
+			</div>
+			<!-- markup -->
+			<div class="markup">
+			<strong>markup 예시</strong>
+<pre>
+&lt;div class="insert"&gt;
+	&lt;label class="label" for="selectTag"&gt;선택&lt;/label&gt;
+	&lt;select class="select" id="selectTag"&gt;
+		&lt;option&gt;옵션 1&lt;/option&gt;
+		&lt;option&gt;옵션 2&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+<pre>
+			</div>
+			<!-- // markup -->
+		</div>
+		<!-- content input select  -->
+
+		<!-- content textarea -->
+		<div class="content">
+			<h3>textarea</h3>
+			<strong class="preview">PREVIEW</strong>
+			<textarea class="text-area" id="" name="" cols="" rows="" placeholder="작성해주세요"></textarea>
+			<!-- markup -->
+			<div class="markup">
+			<strong>markup 예시</strong>
+<pre>
+&lt;textarea class="text-area" id="" name="" cols="" rows="" placeholder="작성해주세요"&gt; &lt;/textarea&gt;
+<pre>
+			</div>
+			<!-- // markup -->
+		</div>
+		<!-- content textarea  -->
+	</div>
+	<!--// section -->
+
+
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTORS CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

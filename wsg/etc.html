@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KIA</title>
+<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="wsg.css">
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		//gnb 열림
+		$('#allMenu').click(function(){
+			$('.gnb').addClass('active');
+		});
+		//gnb 닫음
+		$('.btn-close').click(function(){
+			$('.gnb').removeClass('active');
+		});
+
+		// 디자인 form요소 적용
+		$('select, input[type=radio], input[type=checkbox], input[type=file]').uniform({
+			fileDefaultHtml: '',
+			fileButtonHtml: '파일첨부'
+		});
+
+
+	});
+</script>
+<style type="text/css">
+	.wsg #container h3 span{display: inline-block;}
+</style>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+	<div class="header-wrap">
+		<h1><span class="blind">KIA</span></h1>
+		<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+		<div class="gnb">
+			<div class="gnb-wrap">	
+				<h3>PROGRESS</h3>
+				<ul>
+					<li><a href="markup.html">markup</a></li>
+				</ul>
+				<h3>UI LIBRARY</h3>
+				<ul>
+					<li><a href="table.html">layout</a></li>
+					<li><a href="table.html">table</a></li>
+					<li><a href="form.html">form</a></li>
+					<li><a href="fieldset.html">fieldset</a></li>
+					<li><a href="button.html">button</a></li>
+					<li><a href="tab.html">tab</a></li>
+					<li><a href="list.html">list</a></li>
+					<li><a href="popup.html">popup</a></li>
+					<li><a href="print.html">print</a></li>
+					<li><a href="etc.html">etc</a></li>
+				</ul>
+				<a href="#" class="btn-close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+	<h2>WSG / ETC</h2>
+	<!-- section 버튼 -->
+	<div class="section">
+		<h3>타이틀</h3>
+		<strong class="preview ">PREVIEW</strong>
+		<h2 class="content-title">content-title</h2>
+		<h3 class="section-title">section-title</h3>
+		<h3 class="section-title">section-title<span class="section-aside">section-aside</span></h3>
+		<h3 class="section-title">조회결과
+			<span class="section-aside">
+				<div class="info-state">
+					<ul>
+						<li>승진대상 : <span>0</span></li>
+						<li>T/O : <span>12</span></li>
+						<li>추천 : <span>0</span></li>
+						<li>과부족 : <span>-12</span></li>
+					</ul>
+				</div>
+			</span>
+		</h3>
+		<div class="section-title"><h3>section-title</h3><span class="section-aside w80"><input type="text" class="input-text w100" name=""></span></div>
+
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;h2 class="content-title"&gt;content-title&lt;/h2&gt;
+&lt;h3 class="section-title"&gt;section-title&lt;/h3&gt;
+&lt;h3 class="section-title"&gt;section-title&lt;span class="section-aside"&gt;section-aside&lt;/span&gt;&lt;/h3&gt;
+&lt;h3 class="section-title"&gt;조회결과
+	&lt;span class="section-aside"&gt;
+		&lt;ul class="info-state"&gt;
+			&lt;li&gt;승진대상 : &lt;span&gt;0&lt;/span&gt;&lt;/li&gt;
+			&lt;li&gt;T/O : &lt;span&gt;12&lt;/span&gt;&lt;/li&gt;
+			&lt;li&gt;추천 : &lt;span&gt;0&lt;/span&gt;&lt;/li&gt;
+			&lt;li&gt;과부족 : &lt;span&gt;-12&lt;/span&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/span&gt;
+&lt;/h3&gt;
+&lt;div class="section-title"&gt;&lt;h3&gt;section-title&lt;/h3&gt;&lt;span class="section-aside w80"&gt;&lt;input type="text" class="input-text w100" name=""&gt;&lt;/span&gt;&lt;/div&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+
+	</div>
+	<!-- //section -->
+	<div class="section">
+		<h3>텍스트 컬러 강조</h3>
+		<strong class="preview ">PREVIEW</strong>
+		<em class="em weight">동해물과 백두산이</em>
+
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;h2 class="content-title"&gt;content-title&lt;/h2&gt;
+&lt;em class="em weight"&gt; 동해물과 백두산이&lt;/em&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+	</div>
+
+	<div class="section">
+		<strong class="preview ">PREVIEW</strong>
+		<span class="asterisk-message">표시는 필수 입력 사항입니다.</span>
+		<!--// table-wrap -->
+		<div class=" table-wrap">
+			<table class="data-table">
+				<caption>data-table 가이드</caption>
+				<colgroup>
+					<col style="width: 14%" />
+					<col style="width: 14%" />
+					<col style="width: *" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>본부/사업부</th>
+						<th>팀(부서)</th>
+						<th>업무군</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="asterisk">인사지원담당</th>
+						<td>연구개발투자기획팀</td>
+						<td>SAE 전시 계획안</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--// table-wrap -->
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;span class="asterisk-message"&gt;표시는 필수 입력 사항입니다.&lt;/span&gt;
+
+&lt;div class=" table-wrap"&gt;
+	&lt;table class="data-table"&gt;
+		&lt;caption&gt;data-table 가이드&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width: 14%" /&gt;
+			&lt;col style="width: 14%" /&gt;
+			&lt;col style="width: *" /&gt;
+		&lt;/colgroup&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th&gt;본부/사업부&lt;/th&gt;
+				&lt;th&gt;팀(부서)&lt;/th&gt;
+				&lt;th&gt;업무군&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th class="asterisk"&gt;인사지원담당&lt;/th&gt;
+				&lt;td&gt;연구개발투자기획팀&lt;/td&gt;
+				&lt;td&gt;SAE 전시 계획안&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+
+</pre>
+		</div>
+		<!-- // markup -->
+	</div>
+
+	<!-- pagination -->
+	<div class="section">
+		<h3>PAGINATION</h3>
+		<strong class="preview ">PREVIEW</strong>
+		<div class="pagination">
+			<a href="javascript:void(0);" class="first">처음</a>
+			<a href="javascript:void(0);" class="prev">이전</a>
+			<span class="page">
+				<strong>1</strong>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+			</span>
+			<a href="javascript:void(0);" class="next">다음</a>
+			<a href="javascript:void(0);" class="last">끝</a>
+		</div>
+
+
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;div class="pagination"&gt;
+	&lt;a href="javascript:void(0);" class="first"&gt;처음&lt;/a&gt;
+	&lt;a href="javascript:void(0);" class="prev"&gt;이전&lt;/a&gt;
+	&lt;span class="page"&gt;
+		&lt;strong title="현위치"&gt;1&lt;/strong&gt;
+		&lt;a href="#"&gt;2&lt;/a&gt;
+		&lt;a href="#"&gt;3&lt;/a&gt;
+		&lt;a href="#"&gt;4&lt;/a&gt;
+		&lt;a href="#"&gt;5&lt;/a&gt;
+		&lt;a href="#"&gt;6&lt;/a&gt;
+		&lt;a href="#"&gt;7&lt;/a&gt;
+		&lt;a href="#"&gt;8&lt;/a&gt;
+		&lt;a href="#"&gt;9&lt;/a&gt;
+		&lt;a href="#"&gt;10&lt;/a&gt;
+	&lt;/span&gt;
+	&lt;a href="javascript:void(0);" class="next"&gt;다음&lt;/a&gt;
+	&lt;a href="javascript:void(0);" class="last"&gt;끝&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+
+	</div>
+	<!-- //pagination -->
+
+
+	<!-- 아이콘 -->
+	<div class="section">
+		<h3>ICON</h3>
+		<strong class="preview ">PREVIEW</strong>
+		<div class="">
+			<div class="btn small type01">아이콘 <span class="ico search"></span></div>
+			<div class="btn small type03">아이콘 <span class="ico search_01"></span></div>
+			<div class="btn small type01">아이콘 <span class="ico date"></span></div>
+			<div class="btn small type03">아이콘 <span class="ico check"></span></div>
+			<div class="btn small type01">아이콘 <span class="ico check01"></span></div>
+			<div class="btn small type01"><span class="ico sum"></span> 아이콘 </div>
+			<div class="btn small type01"><span class="ico sum01"></span> 아이콘</div>
+			<div class="btn small type01"><span class="ico info"></span>아이콘</div>
+			<div class="btn small type01"> <span class="ico calendar"></span>아이콘</div>
+			<div class="btn small type01"><span class="ico camera"></span> 아이콘</div>
+			<div class="btn small type01">아이콘 <span class="ico pop"></span></div>
+		</div>
+
+
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+		<p>아이콘 순서대로.</p>
+<pre>
+&lt;span class="ico search"&gt;&lt;/span&gt;
+&lt;span class="ico search_01"&gt;&lt;/span&gt;
+&lt;span class="ico date"&gt;&lt;/span&gt;
+&lt;span class="ico check"&gt;&lt;/span&gt;
+&lt;span class="ico check01"&gt;&lt;/span&gt;
+&lt;span class="ico sum"&gt;&lt;/span&gt;  
+&lt;span class="ico sum01"&gt;&lt;/span&gt; 
+&lt;span class="ico info"&gt;&lt;/span&gt;
+&lt;span class="ico calendar"&gt;&lt;/span&gt;
+&lt;span class="ico camera"&gt;&lt;/span&gt; 
+&lt;span class="ico pop"&gt;&lt;/span&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+
+	</div>
+
+	<!-- tag -->
+	<div class="section">
+		<h3>TAG</h3>
+		<strong class="preview ">PREVIEW</strong>
+
+		<span class="tag type01">type01</span>
+		<span class="tag type02">type02</span>
+		<span class="tag type03">type03</span>
+		<span class="tag type04">type04</span>
+		<span class="tag type05">type05</span>
+		<span class="tag type06">type06</span>
+		<span class="tag type07">type07</span>
+		<span class="tag type08">type08</span>
+		<span class="tag type09">type09</span>
+
+
+
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;span class="tag type01"&gt;type01&lt;/span&gt;
+&lt;span class="tag type02"&gt;type02&lt;/span&gt;
+&lt;span class="tag type03"&gt;type03&lt;/span&gt;
+&lt;span class="tag type04"&gt;type04&lt;/span&gt;
+&lt;span class="tag type05"&gt;type05&lt;/span&gt;
+&lt;span class="tag type06"&gt;type06&lt;/span&gt;
+&lt;span class="tag type07"&gt;type07&lt;/span&gt;
+&lt;span class="tag type08"&gt;type08&lt;/span&gt;
+&lt;span class="tag type09"&gt;type09&lt;/span&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+
+	</div>
+	<!-- //pagination -->
+
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTOR CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+   printPage();
+});
+
+function printPage() {
+    IEPrint.left = 0;
+    IEPrint.right = 0;
+    IEPrint.top = 0;
+    IEPrint.bottom = 0;
+    IEPrint.header = "";
+    IEPrint.footer = "";
+    IEPrint.printbg = true;     // 이전버전과 달리 true, false로 설정한다.
+    IEPrint.landscape = true;   // 가로 출력을 원하시면 true로 넣으면 됩니다. 세로출력은 false입니다.
+    //IEPrint.paper = "A4";     // 용지설정입니다.
+
+    self.focus();
+    IEPrint.Print();
+}
+</script>
+<OBJECT ID="IEPrint" WIDTH="1" HEIGHT="1" CLASSID="CLSID:F290B058-CB26-460E-B3D4-8F36AEEDBE44" codebase="<c:url value='/cab/IEPrint.cab#version=1,0,1,1'/>" >
+</OBJECT>
+</head>
+<body>
+<!-- print horizon(가로)-->
+<div id="print" class="horizon">
+	<!-- wrap -->
+	<div class="wrap">
+		<div class="header">
+			<h1 class="print-title">서열 조정 사유서</h1>
+		</div>
+		<div class="personnel-info">
+			<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x130.jpg" alt="프로필 사진"></div>
+			<div class="table-wrap">
+				<table class="data-table left">
+					<caption></caption>
+					<colgroup>
+						<col style="width: 11%" />
+						<col style="width: 12.4%" />
+						<col style="width: 10%" />
+						<col style="width: 12%" />
+						<col style="width: 10.8%" />
+						<col />
+						<col style="width: 13%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="2">성명/직위(년차)</th>
+							<td rowspan="2">전태현 부장(5)</td>
+							<th scope="row" rowspan="2">생년월일</th>
+							<td rowspan="2">60.08.01<br>(만 54세)</td>
+							<th scope="row" rowspan="6" class="center">학력전공</th>
+							<td rowspan="6">
+								<ul>
+									<li>(박) 한양대학교 경영학</li>
+									<li>(석) 한양대학교 경영학</li>
+									<li>(학) 한양대학교 경영학</li>
+									<li>(고) 서울 외국어 대학교</li>
+								</ul>
+							</td>
+							<th scope="row">승진점수</th>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th scope="row">인사평가</th>
+							<td>60.0 (평가 8회)</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">부서/직책</th>
+							<td rowspan="2">차량IT개발센터<br>사업부장</td>
+							<th scope="row" rowspan="2">근무지</th>
+							<td rowspan="2">양재</td>
+							<th scope="row">교육점수</th>
+							<td>19.0</td>
+						</tr>
+						<tr>
+							<th scope="row">외국어가점</th>
+							<td>1</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">입사일(근속)</th>
+							<td rowspan="2">86.12.01<br>(28년)</td>
+							<th scope="row" rowspan="2">승진일</th>
+							<td rowspan="2">12.07.03</td>
+							<th scope="row">논문가점 (연구직限)</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">징계감점</th>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="section-wrap">
+			<div class="section-left w50">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목">서열조정 사유</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+					<caption></caption>
+					<colgroup>
+						<col style="width: 20%" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th rowspan="2" scope="row">사유</th>
+							<td class="left top" style="height: 56mm">
+								<ul>
+									<li>1) 차상위 직위로 승진하기에 보유 역량이 부족함</li>
+									<li>2) 업무 상 결격사유 발생으로 당해 승진을 보류함</li>
+									<li>3) 상기 직원 승진 시 조직 내 불만 발생 소지가 있음</li>
+									<li>4) 상기 직원 승진 시 본부 내 타조직의 불만 발생 소지가 있음</li>
+									<li>5) 기 타 ( 근태 이슈가 많아, 조직 내외 인원들의 불만 소지 예상 )</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="left top"  style="height: 56mm">
+								<span class="tag type01">기타</span>
+								근태 이슈가 많아, 조직 내외 인원들의 불만 소지 예상
+							</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="section-left w50">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목">상세내용</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+					<caption></caption>
+					<colgroup>
+						<col style="width: 20%" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<th scope="row">내용</th>
+						<td class="left top"  style="height: 112mm">
+							<ul>
+								<li>- QTc 프로젝트 PM 역할을 수행하였으나, 역량 수준 미달로 중간 교체 됨</li>
+								<li>- 전반적인 근태에 대한 이슈가 많아 주변의 눈총을 받고 있음</li>
+								<li>- 평소 조직에 대한 불만을 이야기하나, 개선하려는 노력은 없음</li>
+							</ul>
+						</td>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //wrap -->
+</div>
+<!-- // print -->
+</body>
+</html>
+
+
+
+

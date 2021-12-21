@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/sonic.js"></script>
+<script type="text/javascript">
+$(function (){
+	$('.detail-list li .title').on('click', function (e) {
+		var eq = $('.detail-list li .title').index(this);
+		$(this).siblings('.view-more').slideToggle();
+
+		$('.detail-list li').each(function (i) {
+			if (eq != i) {
+				$(this).removeClass('active');
+			} else {
+				if ($(this).hasClass('active')) {
+					$(this).removeClass('active');
+				} else {
+					$(this).addClass('active');
+				}
+			}
+
+			if ($('.detail-list ul li:last-child').hasClass('active')){
+				$('.detail-list').css('background-color', '#8b041b');
+			} else {
+				$('.detail-list').css('background-color', '#ab001c');
+			}
+		});
+
+		$(this).parents('li').siblings('li').children('.view-more').slideUp();
+		return false;
+	});
+});
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="depth-main">
+<!-- HEADER -->
+<div id="header">
+	<!-- header-wrap -->
+	<div class="header-wrap">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+		<!-- personal-info -->
+		<div class="personal-info">
+			<div class="belong">양재본사</div>
+			<div class="number">5612336</div>
+			<div class="position"><span class="name">홍길동</span>과장</div>
+			<div class="state logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- // personal-info -->
+		<!-- utill-menu -->
+		<div class="utill-menu">
+			<ul>
+				<li><a href="#">My HR</a></li>
+				<li class="active"><a href="#">나의 팀</a></li>
+				<li><a href="#">인사 담당</a></li>
+			</ul>
+		</div>
+		<!-- // utill-menu -->
+		<!-- gnb -->
+		<div class="gnb">
+			<ul class="nav">
+				<li class="depth01"><a href="#">조직과 업무</a>
+					<ul class="depth02">
+						<li><a href="#">워킹그룹 조직도</a></li>
+						<li><a href="#">워킹그룹 관리</a></li>
+						<li><a href="#">업무분장</a></li>
+						<li><a href="#">일반근태</a></li>
+						<li><a href="#">생산근태</a></li>
+					</ul>
+				</li>
+				<li class="depth01"><a href="result.html" class="active">성과관리와 평가</a>
+					<ul class="depth02">
+						<li><a href="result02.html">팀 미션 관리</a></li>
+						<li><a href="#">사업계획 관리</a></li>
+						<li><a href="#">성과평가</a></li>
+						<li><a href="#">역량평가</a></li>
+						<li><a href="#">인사평가</a></li>
+						<li><a href="#">다면평가</a></li>
+						<li><a href="#">역할역량서베이</a></li>
+					</ul>
+				</li>
+				<li class="depth01"><a href="education.html">육성과 동기부여</a>
+					<ul class="depth02">
+						<li><a href="#">리더스라운지</a></li>
+						<li><a href="#">인사기록조회</a></li>
+						<li><a href="#">성과평가 관리</a></li>
+						<li><a href="#">적성관찰표</a></li>
+						<li><a href="#">교육지원</a></li>
+						<li><a href="#">커뮤니케이션</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="btn-area">
+				<!-- <a href="#" class="all-menu"><span class="blind">모든 메뉴</span></a> -->
+				<a class="change-team">팀 변경하기</a>
+				<div class="select-team">
+					<span class="current">인사제도팀</span>
+					<ul class="select-list">
+						<li cla><a href="#">인사제도팀</a></li>
+						<li><a href="#">해외커뮤니케이션팀</a></li>
+						<li><a href="#">크리에이티브전략팀</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // gnb -->
+	</div>
+	<!--// header-wrap -->
+</div>
+<!-- // HEADER -->
+
+<!-- CONTENT -->
+<div id="container" class="assessment-main">
+	<div id="content" >
+		<div class="intro-text">
+			<h2>팀장님들은 회사와 구성원이 <br>
+			정체되지 않고 지속적으로 발전할 수 있도록 <br>
+			조직과 구성원의 성과를 관리하고<br>
+			공정하게 평가해야 합니다. </h2>
+			<p>우리 기아자동차의 성과관리는 단순한 고과의 책정이나 부여가 아닙니다. <br>
+			회사와 구성원 개개인의 성장과 발전이 촘촘히 이어지는 하나의 과정입니다.</p>
+		</div>
+		<ul class="data-list">
+			<li>
+				<span class="thumb"><img src="../../@resource/images/mss/thumb_320x260.jpg"></span>
+				<h3>팀미션</h3>
+				<p>우리 팀의 존재 의의와 목표는 모든 구성원이 <br>
+				숙지해야할 나침반과 같습니다.<br>
+				조직이 지향하는 목표를 명확하게 하기 위해<br>
+				팀 미션을 관리해주세요.</p>
+				<strong>※ 변경시 인사부서의 승인이 필요하며  <br>타 조직에 공개됩니다.</strong>
+				<a class="btn large type07">바로가기<span class="ico check"></span></a>
+			</li>
+			<li>
+				<span class="thumb"><img src="../../@resource/images/mss/thumb_320x260_02.jpg"></span>
+				<h3>사업 계획</h3>
+				<p>올바른 성과관리를 위해서는 전략적이고 <br>
+				체계적인 년간 사업계획의 관리가<br>
+				필수적입니다. 매년 사업계획을 수립하고<br>
+				팀/구성원의 성과목표 수립과 점검에<br>
+				참고하세요.</p>
+				<strong>※ 주요 업무 변경시 수정이 가능합니다.</strong>
+				<a class="btn large type07">바로가기<span class="ico check"></span></a>
+			</li>
+			<li class="detail-list">
+				<ul>
+					<li class="active">
+						<a href="" class="title">간부 사원 평가</a>
+						<div class="read-more">
+							<p>기아자동차의 과장 이상 간부사원 평가는 <br> 조직의 목표와 연계하여 수립된 직원 개인의 <br> 성과 목표에 기반한 성과평가와 당사 핵심<br> 가치 및 수행 직무에 연계된 역량평가로 <br> 구분되어집니다.</p> <a class="btn">바로가기<span class="ico check"></a>
+						</div>
+					</li>
+					<li>
+						<a href="" class="title">종합 평가(대리 이하)</a>
+						<div class="read-more">
+							<p>기아자동차의 과장 이상 간부사원 평가는 조직의 목표와 연계하여 수립된 직원 개인의 성과 목표에 기반한 성과평가와 당사 핵심 가치 및 수행 직무에 연계된 역량평가로 구분되어집니다.</p>
+							<a class="btn">바로가기<span class="ico check"></a>
+						</div>
+					</li>
+					<li>
+						<a href="" class="title">다면 평가(본인평가/결과)</a>
+						<div class="read-more">
+							<p>기아자동차의 과장 이상 간부사원 평가는 조직의 목표와 연계하여 수립된 직원 개인의 성과 목표에 기반한 성과평가와 당사 핵심 가치 및 수행 직무에 연계된 역량평가로 구분되어집니다.</p>
+							<a class="btn">바로가기<span class="ico check"></a>
+						</div>
+					</li>
+					<li>
+						<a href="" class="title">역할 역량 서베이</a>
+						<div class="read-more">
+							<p>기아자동차의 과장 이상 간부사원 평가는 조직의 목표와 연계하여 수립된 직원 개인의 성과 목표에 기반한 성과평가와 당사 핵심 가치 및 수행 직무에 연계된 역량평가로 구분되어집니다.</p>
+							<a class="btn">바로가기<span class="ico check"></a>
+						</div>
+					</li>
+					<li>
+						<a href="" class="title">수습평가</a>
+						<div class="read-more">
+							<p>기아자동차의 과장 이상 간부사원 평가는 조직의 목표와 연계하여 수립된 직원 개인의 성과 목표에 기반한 성과평가와 당사 핵심 가치 및 수행 직무에 연계된 역량평가로 구분되어집니다.</p>
+							<a class="btn">바로가기<span class="ico check"></a>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTORS CORP. All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

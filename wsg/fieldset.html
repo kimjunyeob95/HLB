@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KIA</title>
+<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="wsg.css">
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		//gnb 열림
+		$('#allMenu').click(function(){
+			$('.gnb').addClass('active');
+		});
+		//gnb 닫음
+		$('.btn-close').click(function(){
+			$('.gnb').removeClass('active');
+		});
+
+		// 디자인 form요소 적용
+		$('select, input[type=radio], input[type=checkbox], input[type=file]').uniform({
+			fileDefaultHtml: '',
+			fileButtonHtml: '파일첨부'
+		});
+
+	});
+
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+	<div class="header-wrap">
+		<h1><span class="blind">KIA</span></h1>
+		<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+		<div class="gnb">
+			<div class="gnb-wrap">	
+				<h3>PROGRESS</h3>
+				<ul>
+					<li><a href="markup.html">markup</a></li>
+				</ul>
+				<h3>UI LIBRARY</h3>
+				<ul>
+					<li><a href="table.html">layout</a></li>
+					<li><a href="table.html">table</a></li>
+					<li><a href="form.html">form</a></li>
+					<li><a href="fieldset.html">fieldset</a></li>
+					<li><a href="button.html">button</a></li>
+					<li><a href="tab.html">tab</a></li>
+					<li><a href="list.html">list</a></li>
+					<li><a href="popup.html">popup</a></li>
+					<li><a href="print.html">print</a></li>
+					<li><a href="etc.html">etc</a></li>
+				</ul>
+				<a href="#" class="btn-close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+	<h2>WSG / FIELDSET</h2>
+	<!-- section -->
+	<div class="section">
+		<p>각각 요소를 묶은것을 insert class 를 사용합니다.</p>
+		<strong class="preview">PREVIEW</strong>
+		<fieldset class="fieldset large">
+			<legend></legend>
+			<div class="field">
+				<div class="insert">
+					<label class="label" for="input01">기간</label>
+					<div class="input-date">
+						<input type="text" name="">
+						<a class="btn" href="#"><img alt="달력" src="../@resource/images/common/calendar.png"></a>
+					</div>
+					<span class="hypen">-</span>
+					<div class="input-date">
+						<input type="text" name="">
+						<a class="btn" href="#"><img alt="달력" src="../@resource/images/common/calendar.png"></a>
+					</div>
+				</div>
+				<div class="insert">
+					<input type="text" class="input-text" name="" placeholder="성명" title="성명">
+					<input type="text" class="input-text" name="" placeholder="직위" title="직위">
+					<input type="text" class="input-text" name="" placeholder="부서" title="부서">
+				</div>
+			</div>
+		</fieldset>
+	<!-- markup -->
+	<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;fieldset class="fieldset large"&gt;
+	&lt;legend&gt;&lt;/legend&gt;
+	&lt;div class="insert"&gt;
+		&lt;label class="label" for="input01"&gt;기간&lt;/label&gt;
+		&lt;div class="input-date"&gt;
+			&lt;input type="text" name=""&gt;
+			&lt;a class="btn" href="#"&gt;&lt;img alt="달력" src="../@resource/images/common/calendar.png"&gt;&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;span class="hypen"&gt;-&lt;/span&gt;
+		&lt;div class="input-date"&gt;
+			&lt;input type="text" name=""&gt;
+			&lt;a class="btn" href="#"&gt;&lt;img alt="달력" src="../@resource/images/common/calendar.png"&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="insert"&gt;
+		&lt;input type="text" class="input-text" name="" placeholder="성명" title="성명"&gt;
+		&lt;input type="text" class="input-text" name="" placeholder="직위" title="직위"&gt;
+		&lt;input type="text" class="input-text" name="" placeholder="부서" title="부서"&gt;
+	&lt;/div&gt;
+
+&lt;/fieldset&gt;
+<pre>
+	</div>
+	<!-- // markup -->
+
+	</div>
+	<!-- //section -->
+	<div class="section">
+		<fieldset class="fieldset large">
+			<legend></legend>
+			<div class="field">
+				<div class="insert">
+					<label class="label" for="input01">기간</label>
+					<div class="input-date">
+						<input type="text" name="">
+						<a class="btn" href="#"><img alt="달력" src="../@resource/images/common/calendar.png"></a>
+					</div>
+					<span class="hypen">-</span>
+					<div class="input-date">
+						<input type="text" name="">
+						<a class="btn" href="#"><img alt="달력" src="../@resource/images/common/calendar.png"></a>
+					</div>
+				</div>
+				<div class="insert">
+					<input type="text" class="input-text" name="" placeholder="성명" title="성명" style="width: 100px">
+					<input type="text" class="input-text" name="" placeholder="직위" title="직위" style="width: 150px">
+					<input type="text" class="input-text" name="" placeholder="부서" title="부서" style="width: 200px">
+				</div>
+			</div>
+
+			<div class="field">
+				<div class="insert">
+					<label class="label" for="input01">기간</label>
+					<div class="input-date">
+						<input type="text" name="">
+						<a class="btn" href="#"><img alt="달력" src="../@resource/images/common/calendar.png"></a>
+					</div>
+					<span class="hypen">-</span>
+					<div class="input-date">
+						<input type="text" name="">
+						<a class="btn" href="#"><img alt="달력" src="../@resource/images/common/calendar.png"></a>
+					</div>
+				</div>
+				<div class="insert">
+					<input type="text" class="input-text" name="" placeholder="성명" title="성명" style="width: 100px">
+					<input type="text" class="input-text" name="" placeholder="직위" title="직위" style="width: 150px">
+				</div>
+				<div class="insert">
+					<label class="label" for="search">찾기</label>
+					<div class="input-search">
+						<input type="search"  id="search" name="">
+						<a class="btn" href="#"><img alt="검색" src="../@resource/images/common/search02.png"></a>
+					</div>
+				</div>
+			</div>
+		</fieldset>	
+	</div>
+
+	<div class="section">
+		<p>여러개의 insert들이 모인것 field 사용합니다.</p>
+		<strong class="preview">PREVIEW</strong>
+		<fieldset class="fieldset large">
+			<legend></legend>
+			<div class="field">
+				<div class="insert">
+					<span class="label">년 월 :</span>
+					<span class="data">2016</span>
+				</div>
+				<div class="insert">
+					<label class="label" for="orgeh">부서 :</label>
+					<select  class="select" id="orgeh" >
+						<option value="0">전체</option>
+						<option>도장생기1팀</option>
+						<option>물류운영팀</option>
+						<option>소)노사협력팀</option>
+						<option>소)도장1부</option>
+						<option>소)도장2부</option>
+						<option>소)보전1부</option>
+						<option>소)보전2부</option>
+						<option>소)생산관리1부</option>
+						<option>소)생산관리2부</option>
+						<option>소)시설관리팀</option>
+						<option>소)안전환경팀</option>
+						<option>소)엔진1부</option>
+						<option>소)엔진2부</option>
+						<option>소)엔진보전부</option>
+						<option>소)엔진생산관리부</option>
+						<option>소)엔진품질관리부</option>
+						<option>소)조립1부</option>
+						<option>소)조립2부</option>
+						<option>소)종합관리팀</option>
+						<option>소)차체1부</option>
+						<option>소)차체2부</option>
+						<option>소)총무팀</option>
+						<option>소)품질관리1부</option>
+						<option>소)품질관리2부</option>
+						<option>소)프레스부</option>
+						<option>수출선적팀</option>
+						<option>자재관리2팀</option>
+						<option>차체부품생기팀(기아)</option>
+						<option>품질기술1팀(기아)</option>
+						<option>품질보증1팀</option>
+						<option>품질운영팀(기아)</option>
+						<option>품질전략팀</option>
+						<option>해외서비스기술정보팀</option>
+					</select>
+				</div>
+				<div class="insert">
+					<label class="label">평가대상자 :</label>
+					<input type="text" class="input-text" name="">
+				</div>
+				<div class="insert">
+					<label class="label">정렬 :</label>
+					<select class="select">
+						<option value="1">소속+보직</option>
+						<option value="2">소속순</option>
+						<option value="3">보직순</option>
+						<option value="4">성명순</option>
+					</select>
+				</div>
+				<div class="insert">
+					<label class="label">대상 :</label>
+					<select class="select">
+						<option value="0">전체</option>
+						<option>옵션1</option>
+					</select>
+				</div>
+			</div>
+		</fieldset>
+
+
+	<!-- markup -->
+	<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;fieldset class="fieldset large"&gt;
+	&lt;legend&gt;&lt;/legend&gt;
+	&lt;div class="field"&gt;
+		&lt;div class="insert"&gt;
+			&lt;span class="label"&gt;년 월 :&lt;/span&gt;
+			&lt;span class="data"&gt;2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="insert"&gt;
+			&lt;label class="label" for="orgeh"&gt;부서 :&lt;/label&gt;
+			&lt;select  class="select" id="orgeh" &gt;
+				&lt;option value="0"&gt;전체&lt;/option&gt;
+				&lt;option&gt;도장생기1팀&lt;/option&gt;
+				&lt;option&gt;물류운영팀&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+		&lt;div class="insert"&gt;
+			&lt;label class="label"&gt;평가대상자 :&lt;/label&gt;
+			&lt;input type="text" class="input-text" name=""&gt;
+		&lt;/div&gt;
+		&lt;div class="insert"&gt;
+			&lt;label class="label"&gt;정렬 :&lt;/label&gt;
+			&lt;select class="select"&gt;
+				&lt;option value="1"&gt;소속+보직&lt;/option&gt;
+				&lt;option value="2"&gt;소속순&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+		&lt;div class="insert"&gt;
+			&lt;label class="label"&gt;대상 :&lt;/label&gt;
+			&lt;select class="select"&gt;
+				&lt;option value="0"&gt;전체&lt;/option&gt;
+				&lt;option&gt;옵션1&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/fieldset&gt;
+<pre>
+	</div>
+	<!-- // markup -->
+
+
+
+	</div>
+	<!-- //section -->
+
+
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTORS CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

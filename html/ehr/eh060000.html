@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/sonic.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<!--좌측메뉴 활성화 경우에 class : depth03 -->
+<div id="wrap" class="depth03">
+<!-- HEADER -->
+<div id="header">
+	<!-- header-wrap -->
+	<div class="header-wrap">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+		<!-- personal-info -->
+		<div class="personal-info">
+			<div class="belong">양재본사</div>
+			<div class="number">5612336</div>
+			<div class="position"><span class="name">홍길동</span>과장</div>
+			<div class="state logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- // personal-info -->
+		<!-- utill-menu -->
+		<div class="utill-menu">
+			<!-- 활성화 class active -->
+			<ul>
+				<li><a href="#">My HR</a></li>
+				<li><a href="#">나의 팀</a></li>
+				<li class="active"><a href="#">인사 담당</a></li>
+			</ul>
+			<!--// 활성화 class active -->
+		</div>
+		<!--// utill-menu -->
+	</div>
+</div>
+<!-- // HEADER -->
+
+<!-- CONTENT -->
+<div id="container" class="ehr-main">
+	<!-- 사이드 트리 메뉴 -->
+	<div id="aside-menu" class="tree-menu">
+		<h2 class="blind">인사담당 메뉴</h2>
+		<ul class="tree-wrap">
+			<li><a href="#">인사행정</a></li>
+			<li><a href="#">인사기록표</a></li>
+			<li><a href="#">급여</a></li>
+			<li><a href="#">급태</a></li>
+			<!-- 플러스 active시 마이너스로 변경 -->
+			<li class="active"><a href="#">조직정보</a>
+				<ul class="tree">
+					<li class="active">
+						<a href="#">Global HR Knowledge</a>
+						<!-- row 트리 이미지 보임 -->
+						<ul class="row">
+							<li><a href="#">조직정보 수정</a></li>
+							<li class="active"><a href="#">조직정보 수정 조직정보 수정조직정보 수정 조직정보 수정조직정보 수정조직정보 수정조직정보 수정</a></li>
+							<li><a href="#">조직정보 수정</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">업무분장표</a>
+					</li>
+					<li>
+						<a href="#">직무기술서 조회</a>
+					</li>
+					<li>
+						<a href="#">역량사전 조회</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- //사이드 메뉴 -->
+
+	<!-- 내용 -->
+	<div id="content" class="content-primary">
+		<!-- 등급유형 1 -->
+		<h2 style="font-size: 30px;line-height: 55px;color: #292929;">등급유형 01</h2>
+		<div class="section">
+			<div class="table-wrap eval">
+				<table class="data-table">
+					<caption>등급 표</caption>
+					<colgroup>
+						<col style="width: 20%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+						<col >
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">등급</th>
+							<th scope="col" colspan="2"><img src="../../@resource/images/common/ico_grade_s.png" alt="S"></th>
+							<th scope="col" colspan="2"><img src="../../@resource/images/common/ico_grade_a.png" alt="A"></th>
+							<th scope="col" colspan="2"><img src="../../@resource/images/common/ico_grade_b.png" alt="B"></th>
+							<th scope="col" colspan="2"><img src="../../@resource/images/common/ico_grade_c.png" alt="C"></th>
+							<th scope="col" colspan="2"><img src="../../@resource/images/common/ico_grade_d.png" alt="D"></th>
+							<th scope="col" rowspan="2">계</th>
+						</tr>
+						<tr>
+							<!-- S 등급 -->
+							<th>최대</th>
+							<th>필수</th>
+							<!-- // S 등급 -->
+							<!-- A 등급 -->
+							<th>최대</th>
+							<th>필수</th>
+							<!-- // A 등급 -->
+							<!-- B 등급 -->
+							<th>최대</th>
+							<th>필수</th>
+							<!-- // B 등급 -->
+							<!-- C 등급 -->
+							<th>최대</th>
+							<th>필수</th>
+							<!-- // C 등급 -->
+							<!-- D 등급 -->
+							<th>최대</th>
+							<th>필수</th>
+							<!-- // D 등급 -->
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="2" class="sub-header">등급별 배분 기준</th>
+							<td>1</td>
+							<td>0</td>
+							<td>5</td>
+							<td>4</td>
+							<td>8</td>
+							<td>7</td>
+							<td>2</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td rowspan="2">15</td>
+						</tr>
+						<!-- 총 합계 -->
+						<tr>
+							<td colspan="6"><div class="total-grade">[ 2 ]</div></td>
+							<td colspan="4"><div class="total-grade">[ 1 ]</div></td>
+						</tr>
+						<!-- // 총 합계 -->
+						<tr>
+							<th rowspan="row" class="sub-header">입력현황</th>
+							<td colspan="2">1</td>
+							<td colspan="2">5</td>
+							<td colspan="2">8</td>
+							<td colspan="2">1</td>
+							<td colspan="2">0</td>
+							<td>15</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- // 등급유형 1 -->
+		<!--  등급유형 2 -->
+		<h2 style="margin-top: 30px;font-size: 30px;line-height: 55px;color: #292929;">등급유형 02</h2>
+		<div class="section-wrap grade-wrap">
+			<!-- 프로필 영역 -->
+			<div class="section-left simple-profile">
+				<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x130.jpg" alt=""></div>
+				<div class="info-wrap">
+					 <div class="number">2120091</div>
+					 <div class="name">성준아</div>
+					 <div class="position">
+					 	<span>5급사원</span>
+					 	<span>팀장</span>
+					 </div>
+					 <div class="team">품질전략팀</div>
+				</div>
+			</div>
+			<!-- // 프로필 영역 -->
+			<!-- 등급 표 -->
+			<div class="section-left grade-detail">
+				<div class="table-wrap eval">
+					<table class="data-table">
+						<caption>등급 표</caption>
+						<colgroup>
+							<col style="width: 13%">
+							<col style="width: 14%">
+							<col style="width: 14%">
+							<col style="width: 14%">
+							<col style="width: 14%">
+							<col style="width: 14%">
+							<col style="width: *">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">등급</th>
+								<th scope="col"><img src="../../@resource/images/common/ico_grade_s.png" alt="S"></th>
+								<th scope="col"><img src="../../@resource/images/common/ico_grade_a.png" alt="A"></th>
+								<th scope="col"><img src="../../@resource/images/common/ico_grade_b.png" alt="B"></th>
+								<th scope="col"><img src="../../@resource/images/common/ico_grade_c.png" alt="C"></th>
+								<th scope="col"><img src="../../@resource/images/common/ico_grade_d.png" alt="D"></th>
+								<th scope="col">계</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row" class="sub-header">등급분포</th>
+								<!-- S 등급 -->
+								<td><span>0</span></td>
+								<!-- // S 등급 -->
+								<!-- A 등급 -->
+								<td><span>0</span></td>
+								<!-- // A 등급 -->
+								<!-- B 등급 -->
+								<td><span>0</span></td>
+								<!-- // B 등급 -->
+								<!-- C 등급 -->
+								<td><span>0</span></td>
+								<!-- // C 등급 -->
+								<!-- D 등급 -->
+								<td><span>0</span></td>
+								<!-- // D 등급 -->
+								<!-- 계 -->
+								<td><span>0</span></td>
+								<!-- // 계 -->
+							</tr>
+							<tr>
+								<th scope="row" class="sub-header">조정현황</th>
+								<!-- S 등급 -->
+								<td><span>0</span></td>
+								<!-- // S 등급 -->
+								<!-- A 등급 -->
+								<td><span>0</span></td>
+								<!-- // A 등급 -->
+								<!-- B 등급 -->
+								<td><span>0</span></td>
+								<!-- // B 등급 -->
+								<!-- C 등급 -->
+								<td><span>0</span></td>
+								<!-- // C 등급 -->
+								<!-- D 등급 -->
+								<td><span>0</span></td>
+								<!-- // D 등급 -->
+								<!-- 계 -->
+								<td><span>0</span></td>
+								<!-- // 계 -->
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- // 등급 표 -->
+		</div>
+		<!-- // 등급유형 2 -->
+		<!--  등급유형 3 -->
+		<h2 style="margin-top: 30px;font-size: 30px;line-height: 55px;color: #292929;">등급유형 03</h2>
+		<div class="section">
+			<div class="table-wrap eval">
+				<table class="data-table">
+					<caption>등급 표</caption>
+					<colgroup>
+						<col style="width: *">
+						<col style="width: 7%">
+						<col style="width: 16%">
+						<col style="width: 9%">
+						<col style="width: 9%">
+						<col style="width: 9%">
+						<col style="width: 9%">
+						<col style="width: 9%">
+						<col style="width: 10%">
+						<col style="width: 10%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">항목</th>
+							<th scope="col" rowspan="2">인원</th>
+							<th scope="col" rowspan="2">구분</th>
+							<th scope="col" colspan="5">평가</th>
+							<th scope="col" rowspan="2">입력</th>
+							<th scope="col" rowspan="2">미입력</th>
+						</tr>
+						<tr>
+							<th>10%</th>
+							<th>15%</th>
+							<th>50%</th>
+							<th>15%</th>
+							<th>10%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2"></td>
+							<td rowspan="2">2</td>
+							<td>등급분포</td>
+							<td><img src="../../@resource/images/common/ico_grade_s.png" alt="S"></td>
+							<td><img src="../../@resource/images/common/ico_grade_a.png" alt="A"></td>
+							<td><img src="../../@resource/images/common/ico_grade_b.png" alt="B"></td>
+							<td><img src="../../@resource/images/common/ico_grade_c.png" alt="C"></td>
+							<td><img src="../../@resource/images/common/ico_grade_d.png" alt="D"></td>
+							<td rowspan="2">0</td>
+							<td rowspan="2">0</td>
+						</tr>
+						<tr>
+							<td>조정현황</td>
+							<td><img src="../../@resource/images/common/ico_grade_s.png" alt="S"></td>
+							<td><img src="../../@resource/images/common/ico_grade_a.png" alt="A"></td>
+							<td><img src="../../@resource/images/common/ico_grade_b.png" alt="B"></td>
+							<td><img src="../../@resource/images/common/ico_grade_c.png" alt="C"></td>
+							<td><img src="../../@resource/images/common/ico_grade_d.png" alt="D"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- // 등급유형 3 -->
+
+	</div>
+	<!-- // 내용 -->
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTOR COMPANY, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KAI</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<!--  Body window-popup-->
+<div class="window-popup">
+	<h2 class="popup-title">건강보험 감면 신청 </h2>
+
+	<!-- popup-wrap -->
+	<div class="popup-wrap">
+		<h3 class="section-title">안내</h3>
+		<h4>1. 신청대상</h4>
+		<p class="cont">- 입출국일을 제외한 1개월 이상 국외 체류한 자 (해외주재원 또는 해외 파견/출장자) , 최대 3년 이내 신고 가능<br>
+			<em class="em weighty">(예시 : 출국 3/1 - 입국 4/1 인 경우 신고대상 아님. 단, 2월의 경우 예외)</em></p>
+
+		<h4>2. 신청구분</h4>
+		<div class="table-wrap">
+			<table class="data-table">
+				<caption>신청구문표</caption>
+				<colgroup>
+					<col width="*"/>
+					<col width="25%"/>
+					<col width="25%"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">구분</th>
+						<th scope="col">신청내용</th>
+						<th scope="col">신청사유</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>본인만 출국하고 피부양자 잔류시</td>
+						<td>본인출국</td>
+						<td>반액경감</td>
+					</tr>
+					<tr>
+						<td>본인과 피부양자 전원출국하고 피부양자 잔류 없을시</td>
+						<td>본인출국</td>
+						<td>전액면제</td>
+					</tr>
+					<tr>
+						<td>본인출국 이후 피부양자 전원 출국시</td>
+						<td>피부양자출국</td>
+						<td>전액면제</td>
+					</tr>
+					<tr>
+						<td>본인은 해외에 있고 피부양자만 입국시</td>
+						<td>피부양자입국</td>
+						<td>반액경감</td>
+					</tr>
+					<tr>
+						<td>본인만 국내 복귀 or 일시 귀국시</td>
+						<td>본인입국</td>
+						<td>감면해제</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<h4>3. 증빙서류</h4>
+		<p class="cont">- 없음 <em class="em weighty">(단, 일시 귀국이거나, 귀국 후 바로 병원을 이용 필요 시 E-ticket, Itinerary, 예약을 증빙할 수 있는 서류 필수 첨부)</em></p>
+
+		<h4>4. 감면적용</h4>
+		<p class="cont">- 출국일의 익월부터 입국월까지 월단위 적용<br><em class="em weighty"> (예: 출국 3/3 ~ 입국 7/2인 경우, 4월 ~ 7월까지 감면. 단, 7/1 입국이면 4월~ 6월까지만 감면)</em></p>
+
+		<h4>5. 보험료 부과 관련 참고사항 (일시 귀국 및 병원 이용시)</h4>
+		<div class="table-wrap">
+			<table class="data-table" cellspacing="0" cellpadding="0">
+				<caption>신청구문표</caption>
+				<colgroup>
+					<col width="*"/>
+					<col width="50%"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">구분</th>
+						<th scope="col">보험료 부과</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1개월 이상 국내체류 </td>
+						<td rowspan="2">입국월을 제외한 출국월 보험료 부과<br>(단, 입국일이 매월 1일인경우 보험료 부과)</td>
+					</tr>
+					<tr>
+						<td>1개월 미만 국내체류 및 진료 이용시</td>
+					</tr>
+					<tr>
+						<td>1개월 미만 국내체류 및 진료 미이용시</td>
+						<td>보험료 미부과 (변동신청 불요)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<h4>중요참고 사항</h4>
+		<ul class="cont">
+			<li>- 공단 신고는 입국당일 부터 가능하며 (사전 신고 불가) 주말입국, 당일 입국후 병원 이용시 담당자에게 문의 필요 (인사지원팀 이민호 대리)</li>
+			<li>- 공단 신고 후 병원 전산에 반영 되기까지 1시간에서 길게는 3시간 정도 소요 </li>
+			<li>- 1달이상 해외출국시 공단 직권으로 건강보험 자동정지</li>
+		</ul>
+		<div class="button-area large">
+			<input type="button" id="btn_appr" class="btn small type01" onclick="storeHlthIsreRaePtt(this)" value="상신">
+			<input type="button" id="btn_delAppl" class="btn small type01" onclick="deleteSecrAacPtt(this)" value="삭제" disabled="">
+			<input type="button" id="btn_close" class="btn small type01" onclick="self.close()" value="닫기">
+		</div>
+	</div>
+	<!-- //popup-wrap -->
+</div>
+<!-- // Body window-popup-->
+<!-- // WRAP -->
+</body>
+</html>

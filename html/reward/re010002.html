@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript" src="../../@resource/js/sonic.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+			printPage();
+});
+
+function printPage() {
+				IEPrint.left = 0;
+				IEPrint.right = 0;
+				IEPrint.top = 0;
+				IEPrint.bottom = 0;
+				IEPrint.header = "";
+				IEPrint.footer = "";
+				IEPrint.printbg = true;     // 이전버전과 달리 true, false로 설정한다.
+				IEPrint.landscape = false;   // 가로 출력을 원하시면 true로 넣으면 됩니다. 세로출력은 false입니다.
+				//IEPrint.paper = "A4";     // 용지설정입니다.
+
+				self.focus();
+				IEPrint.Print();
+}
+</script>
+<OBJECT ID="IEPrint" WIDTH="1" HEIGHT="1" CLASSID="CLSID:F290B058-CB26-460E-B3D4-8F36AEEDBE44" codebase="<c:url value='/cab/IEPrint.cab#version=1,0,1,1'/>" >
+</OBJECT>
+</head>
+<body>
+<!-- print -->
+<div id="print" class="reward-pay">
+	<!-- wrap -->
+	<div class="wrap">
+		<div class="header" style="margin-bottom: 3mm;">
+			<span class="main-logo" style="display: inline-block;"><img src="../../@resource/images/common/print_logo.png" id="printLogo" alt="로고" style="height: 100%;"></span>
+			<div class="pint-data" style="padding-top: 1.9mm;">지급일 : 2017.11.25</div>
+		</div>
+		<div class="content-header" style="height:35.9mm;">
+			<img src="../../@resource/images/common/print_header.png" id="printLogo" alt="급여명세서" style="height: 100%;">
+		</div>
+		<div class="section-wrap">
+			<div class="section-left w50">
+				<h3 class="content-title">8월 수령액</h3>
+				<span class="notice">※ 2017.08.31 지급기준</span>
+				<ul class="data-list medium">
+					<li>
+						<!-- <div class="title"></div> -->
+						<div class="em weight"><em>5,430,000</em><span>원</span></div>
+					</li>
+					<li>
+						<div class="title">지급액(계)</div>
+						<div>2,530,000원</div>
+					</li>
+					<li>
+						<div class="title">공제액(계)</div>
+						<div>2,900,000원</div>
+					</li>
+					<li>
+						<div class="title">차인지급액(계)</div>
+						<div>7,200,000원</div>
+					</li>
+				</ul>
+			</div>
+			<div class="section-left w50">
+				<h3 class="content-title">’17년 누적지급액 </h3>
+				<span class="notice">※ 2017.08.31 지급기준</span>
+				<ul class="data-list medium">
+					<li>
+						<!-- <div class="title">실지급액 (지급계 - 공제계)</div> -->
+						<div class="em weight"><em>26,140,000</em><span>원</span></div>
+					</li>
+				</ul>
+				<div class="notice-box">※ 누적지급액에는 복지포인트, 주간연속2교대포인트, <br>
+					독감예방접종 등 기타 지급항목도 포함됩니다.</div>
+			</div>
+		</div>
+		<div class="section pay-list">
+			<!-- 정기급여 -->
+			<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목">급여</h3>
+			<div class=" table-wrap">
+				<table class="data-table left">
+					<caption>정기급여 지급내역 및 공제내역 정보</caption>
+					<colgroup>
+						<col style="width: 12.5%" />
+						<col style="width: 12.5%" />
+						<col style="width: 12.5%" />
+						<col style="width: 12.5%" />
+						<col style="width: 12.5%" />
+						<col style="width: 12.5%" />
+						<col style="width: 12.5%" />
+						<col style="width: 12.5%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" colspan="4">지급내역</th>
+							<th scope="col" colspan="4">공제내역</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td colspan="8"><img src="../../@resource/images/common/print_ico_sum.png" alt="계산기">실지급액 <span>(지급계 – 공제계) </span> :  3,200,000원</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<th scope="row">기본급</th>
+							<td class="right">1,130,000</td>
+							<th scope="row">휴일정취근무</th>
+							<td class="right">80,000</td>
+							<th scope="row">갑근세</th>
+							<td class="right">85,000</td>
+							<th scope="row">버스요금</th>
+							<td class="right">14,000</td>
+						</tr>
+						<tr>
+							<th scope="row">가족수당</th>
+							<td class="right">30,000</td>
+							<th scope="row" class="cellselected">급여재정산</th>
+							<td class="cellselected right">200,000</td>
+							<th scope="row">주민세</th>
+							<td class="right">13,000</td>
+							<th scope="row">건보료정산</th>
+							<td class="right">200,000</td>
+						</tr>
+						<tr>
+							<th scope="row">연구수당</th>
+							<td class="right">16,000</td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row">국민연금</th>
+							<td class="right">230,000</td>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">근속수당</th>
+							<td class="right">8,000</td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row">건강보험</th>
+							<td class="right">80,000</td>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">시간외수당</th>
+							<td class="right">320,000</td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row">고용보험</th>
+							<td class="right">135,000</td>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">유해수당</th>
+							<td class="right">30,000</td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row">식비</th>
+							<td class="right">30,0000</td>
+							<th scope="row"></th>
+							<td class="right"></td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+							<th scope="row"></th>
+							<td class="right"></td>
+						</tr>
+						<tr>
+							<td class="center" colspan="4"><span class="label">지급(계)  :</span>  1,171,000원</td>
+							<td class="center" colspan="4"><span class="label">공제(계)  :</span>  787,000원</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //정기급여 -->
+			<!-- 상여금 -->
+			<div class="section-wrap etc-pay">
+				<div class="section">
+					<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목"> 상여금</h3>
+					<div class="table-wrap">
+						<table class="data-table left">
+							<caption>정기급여 지급내역 및 공제내역 정보</caption>
+							<colgroup>
+								<col style="width: 12.5%" />
+								<col style="width: 12.5%" />
+								<col style="width: 12.5%" />
+								<col style="width: 12.5%" />
+								<col style="width: 12.5%" />
+								<col style="width: 12.5%" />
+								<col style="width: 12.5%" />
+								<col style="width: 12.5%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="4">지급내역</th>
+									<th scope="col" colspan="4">공제내역</th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<td colspan="8"><img src="../../@resource/images/common/print_ico_sum.png" alt="계산기">차인지급액 <span>(지급계 – 공제계) </span> :  3,600,000원</td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<th scope="row">기본급</th>
+									<td class="right">1,130,000</td>
+									<th scope="row"></th>
+									<td class="right"></td>
+									<th scope="row">소득세</th>
+									<td class="right">85,000</td>
+									<th scope="row"></th>
+									<td class="right"></td>
+								</tr>
+								<tr>
+									<th scope="row">직급수당</th>
+									<td class="right">30,000</td>
+									<th scope="row"></th>
+									<td class="right"></td>
+									<th scope="row">주민세</th>
+									<td class="right">13,000</td>
+									<th scope="row"></th>
+									<td class="right"></td>
+								</tr>
+								<tr>
+									<th scope="row">본인수당</th>
+									<td class="right">16,000</td>
+									<th scope="row"></th>
+									<td class="right"></td>
+									<th scope="row"></th>
+									<td class="right"></td>
+									<th scope="row"></th>
+									<td class="right"></td>
+								</tr>
+								<tr>
+									<td class="center" colspan="4"><span class="label">지급(계)  :</span> 1,546,000원</td>
+									<td class="center" colspan="4"><span class="label">공제(계)  :</span>  40,000원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- // 상여금 -->
+			<!-- 성과 및 기타 -->
+			<div class="etc-pay">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목"> 성과 및 기타</h3>
+				<div class="table-wrap">
+					<table class="data-table left">
+						<caption>성과 및 기타 정보</caption>
+						<colgroup>
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" colspan="4">지급내역</th>
+								<th scope="col" colspan="4">공제내역</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="8"><img src="../../@resource/images/common/print_ico_sum.png" alt="계산기">차인지급액 <span>(지급계 – 공제계) </span> :  10,350,000원</td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<th scope="row">경영성과금</th>
+								<td class="right">3,000,000</td>
+								<th scope="row"></th>
+								<td class="right"></td>
+								<th scope="row">소득세</th>
+								<td class="right">30,000</td>
+								<th scope="row"></th>
+								<td class="right"></td>
+							</tr>
+							<tr>
+								<th scope="row">목표달성격려금</th>
+								<td class="right">4,000,000</td>
+								<th scope="row"></th>
+								<td class="right"></td>
+								<th scope="row">주민세</th>
+								<td class="right">30,000</td>
+								<th scope="row"></th>
+								<td class="right"></td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td class="right"></td>
+								<th scope="row"></th>
+								<td class="right"></td>
+								<th scope="row"></th>
+								<td class="right"></td>
+								<th scope="row"></th>
+								<td class="right"></td>
+							</tr>
+							<tr>
+								<td class="center" colspan="4"><span class="label">지급(계)  :</span> 9,800,000원</td>
+								<td class="center" colspan="4"><span class="label">공제(계)  :</span> 550,000원</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- 성과 및 기타 -->
+			<!-- 정기급여반영 휴일근무내역 -->
+			<div class="section pay-list">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목"> 정기급여반영 휴일근무내역</h3>
+				<div class="table-wrap" style="margin-top: 3mm;">
+					<table class="data-table">
+						<caption>정기급여반영 휴일근무내역 정보</caption>
+						<colgroup>
+							<col style="width: *" />
+							<col style="width: 19%" />
+							<col style="width: 19%" />
+							<col style="width: 19%" />
+							<col style="width: 19%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">일자</th>
+								<th scope="col">정취</th>
+								<th scope="col">연장</th>
+								<th scope="col">할증</th>
+								<th scope="col">심야</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">2016.08.14</th>
+								<td>8.3</td>
+								<td>0.3</td>
+								<td>3.2</td>
+								<td>8.3</td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="notice" style="margin-top:2mm;font-size:8pt;color:#6b6b6b;">※ 2018년 3월 이전 특근은 조회가 안됩니다. </div>
+			</div>
+			<!-- // 정기급여반영 휴일근무내역 -->
+			<!-- 월근태내역-->
+			<div class="section">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목"> 월근태내역</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+						<caption>월근태내역 정보</caption>
+						<colgroup>
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">근태일수</th>
+								<th scope="col">근태시간</th>
+								<th scope="col">연장</th>
+								<th scope="col">심야</th>
+								<th scope="col">휴일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>9</td>
+								<td>10</td>
+								<td>1</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- // 월근태내역 -->
+			<!-- 판매실적-->
+			<div class="section">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목"> 판매실적</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+						<caption>판매실적 정보</caption>
+						<colgroup>
+							<col style="width: 25%" />
+							<col style="width: 25%" />
+							<col style="width: 25%" />
+							<col style="width: 25%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">판매능률</th>
+								<th scope="col">판매수당</th>
+								<th scope="col">누진</th>
+								<th scope="col">목표미달</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>9</td>
+								<td>10</td>
+								<td>1</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- // 판매실적 -->
+			<!-- 저축관리-->
+			<div class="section">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목"> 저축관리</h3>
+				<div class="table-wrap" style="margin-top: 3mm;">
+					<table class="data-table">
+						<caption>저축관리 정보</caption>
+						<colgroup>
+							<col style="width: *" />
+							<col style="width: 15%" />
+							<col style="width: 15%" />
+							<col style="width: 15%" />
+							<col style="width: 15%" />
+							<col style="width: 15%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">저축</th>
+								<th scope="col">월불입금</th>
+								<th scope="col">불입회</th>
+								<th scope="col">불입누계</th>
+								<th scope="col">만기일자</th>
+								<th scope="col">대출잔액</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>단체개인연금(KEB하나은행)</td>
+								<td>150,000</td>
+								<td>14</td>
+								<td>16,970,000</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- // 저축관리 -->
+			<!-- 대부내역 -->
+			<div class="etc-pay">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목"> 대부내역</h3>
+				<div class="table-wrap">
+					<table class="data-table left">
+						<caption>대부내역 정보</caption>
+						<colgroup>
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+						</colgroup>
+						<thead>
+							<th scope="col">종류</th>
+							<th scope="col">월상환액</th>
+							<th scope="col">상환총액</th>
+							<th scope="col">대부잔액</th>
+							<th scope="col">대부기관</th>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">복지기금</th>
+								<td class="right">100,000</td>
+								<td class="right">23,550,000</td>
+								<td class="right">23,550,000</td>
+								<td class="center">현대라이프</td>
+							</tr>
+							<tr>
+								<th scope="row"></th>
+								<td class="right"></td>
+								<td class="right"></td>
+								<td class="right"></td>
+								<td class="center"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- 대부내역 -->
+		</div>
+		<!-- // section pay-list -->
+		<!-- 급여담당자 안내-->
+		<div class="section">
+			<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목"> 급여담당자 안내</h3>
+			<div class="charge-info" style="margin-top: 3mm;">
+				<div class="charge-list">
+					<h4>1. 급여일반</h4>
+					<div><img src="../../@resource/images/common/print_bl_02.png">인사지원팀: 최재호 대리 (T.02-3464-0000) <span>우정민 사원 (T.02-3464-0000)</span></div>
+					<h4>2. 근태/특근/휴복직</h4>
+					<div><img src="../../@resource/images/common/print_bl_02.png">인사지원팀: 곽태호 사원 (T.02-3464-0000</div>
+					<h4>3. 건강보험/국민연금</h4>
+					<div><img src="../../@resource/images/common/print_bl_02.png">인사지원팀: 김채경 사원 (T.02-3464-8988)</div>
+					<h4>4. 압류</h4>
+					<div><img src="../../@resource/images/common/print_bl_02.png">인사지원팀: 박진아 대리 (T.02-3464-0000)</div>
+				</div>
+				<div class="charge-list">
+					<h4>5. 차량할부금</h4>
+					<div><img src="../../@resource/images/common/print_bl_02.png">특판팀: 박현정 대리 (T.02-3464-0000)</div>
+					<h4>6. 학자금</h4>
+					<div><img src="../../@resource/images/common/print_bl_02.png">해당주관부서: 사업장별 총무팀</div>
+					<h4>7. 우리사주</h4>
+					<div><img src="../../@resource/images/common/print_bl_02.png">주식관리팀: 이선희 사원 (T.02-3464-8988)</div>
+					<h4>8. 어학교육</h4>
+					<div><img src="../../@resource/images/common/print_bl_02.png">글로벌교육팀: 이지숙 사원 (T.02-3464-0000)</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 급여담당자 안내 -->
+		<!-- 안내말씀 -->
+		<div class="section">
+			<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목"> <span>홍길동</span>님께 드리는 안내말씀</h3>
+			<div class="info-summary">
+				<p>내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.  <br>
+내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. <br>
+내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.</p>
+				<p>내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. <br>
+내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. <br>
+내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.</p>
+			</div>
+		</div>
+		<!-- // 안내말씀 -->
+		<div class="signature">
+			<div class="signature-data">
+				<span class="label">출력일자 : </span><span class="data">2017. 08. 28</span>
+			</div>
+			<strong class="stamp">기아자동차 주식회사<span class="logo"><img src="../../@resource/images/common/kia_stamp.jpg" alt="기아인"></span></strong>
+		</div>
+	</div>
+	<!-- //wrap -->
+</div>
+<!-- // print -->
+</body>
+</html>
+
+
+
+

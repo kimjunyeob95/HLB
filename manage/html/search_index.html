@@ -1,0 +1,115 @@
+<section class="panel panel-featured">
+    <header class="panel-heading">
+            <div class="panel-actions">
+            <a href="#" class="panel-action panel-action-toggle" data-panel-toggle=""></a>
+            <!-- <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss=""></a> -->
+        </div> 
+
+        <h2 class="panel-title">검색필터</h2>
+    </header>
+    <div class="panel-body center" style="display: block;">
+        
+    <!-- <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">제보유형</label>
+            <div class="col-sm-2">
+                <select class="form-control mb-md" id="search_option" name="search_option">
+                    <option>전체</option>
+                    <option>금품수수</option>
+                    <option>노사관계</option>
+                    <option>괴롭힘,성희롱</option> 
+                    <option>불공정 거래</option> 
+                    <option>기타 규정 위반</option> 
+                </select>
+            </div>
+        
+            <label class="col-sm-1 control-label" >진행단계</label>
+            <div class="col-sm-4" style="text-align: left;">
+                <div class="checkbox-inline checkbox-custom">
+                    <input type="checkbox" value="option1">
+                    <label for="checkboxExample1">전체</label>
+                </div>
+
+                <div class="checkbox-custom checkbox-default checkbox-inline">
+                    <input type="checkbox" value="option1" checked>
+                    <label for="checkboxExample1">미확인</label>
+                </div>
+
+                <div class="checkbox-custom checkbox-inline">
+                    <input type="checkbox" value="option1" checked>
+                    <label for="checkboxExample1">진행중</label>
+                </div>
+
+                <div class="checkbox-custom checkbox-inline">
+                    <input type="checkbox" value="option1">
+                    <label for="checkboxExample1">종결</label>
+                </div>
+            </div>
+        </div>
+    </form>									 -->
+    
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-md-2 control-label">제보기간</label>
+            <div class="col-md-6">
+                <div class="input-daterange input-group" data-plugin-datepicker="" style="z-index: 9999;">
+                    <span class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </span>
+                    <input type="text" readonly="" class="form-control" name="sdate" id="start_date" placeholder="시작일시" value="">
+                    <span class="input-group-addon"> ~ </span>
+                    <input type="text" readonly="" class="form-control" name="edate" id="end_date" placeholder="마감일시" value="">
+
+                    <div class="input-group-btn">
+                        <button tabindex="-1" class="btn btn-primary" type="button"><i class="fa fa-remove"></i> </button>
+                    </div>
+
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" type="button" >제보 기간 초기화</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+         <div class="form-group">
+        <label class="col-md-2 control-label">검 색 어</label>
+            <div class="col-md-2">
+                <select class="form-control mb-md" id="search_order_target" name="search_order_target">
+                    <option>업체명</option>
+                    <option>제목</option>
+                    <option>제보자명</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" value="" name="search_text" id="search_text" placeholder="Search...">
+            </div>
+        </div>
+    </form>	
+        
+    
+
+        <div class="form-group">
+
+        <!-- <div class="col-md-2 text-left">
+                <select class="form-control mb-md" id="search_cnt" name="search_cnt">
+                    <option value="10">10개씩 보기</option>
+                    <option value="50">50개씩 보기</option>
+                    <option value="100">100개씩 보기</option>
+                </select>
+         </div> -->
+         
+            <div class="col-md-10" style="text-align:right;">
+                <button tabindex="-1" class="btn btn-primary" type="button" onclick="fn_search()">검색하기 <i class="fa fa-search"></i> </button>
+                <button tabindex="-1" class="btn btn-primary" type="button" onclick="fn_clear()">검색 조건 초기화 </button>
+              
+
+                <!--<a class="popup-with-form btn btn-primary" href="#form" >엑셀다운로드</a>-->
+            </div>
+     
+        
+        
+            
+        </div>
+</div>
+</section>

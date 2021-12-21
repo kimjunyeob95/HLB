@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KIA</title>
+<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="wsg.css">
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		//gnb 열림
+		$('#allMenu').click(function(){
+			$('.gnb').addClass('active');
+		});
+		//gnb 닫음
+		$('.btn-close').click(function(){
+			$('.gnb').removeClass('active');
+		});
+
+	});
+</script>
+<style type="text/css">
+.wsg .section .table-wrap{width: 100%;}
+</style>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+	<div class="header-wrap">
+		<h1><span class="blind">KIA</span></h1>
+		<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+		<div class="gnb">
+			<div class="gnb-wrap">	
+				<h3>PROGRESS</h3>
+				<ul>
+					<li><a href="markup.html">markup</a></li>
+				</ul>
+				<h3>UI LIBRARY</h3>
+				<ul>
+					<li><a href="table.html">layout</a></li>
+					<li><a href="table.html">table</a></li>
+					<li><a href="form.html">form</a></li>
+					<li><a href="fieldset.html">fieldset</a></li>
+					<li><a href="button.html">button</a></li>
+					<li><a href="tab.html">tab</a></li>
+					<li><a href="list.html">list</a></li>
+					<li><a href="popup.html">popup</a></li>
+					<li><a href="print.html">print</a></li>
+					<li><a href="etc.html">etc</a></li>
+				</ul>
+				<a href="#" class="btn-close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+	<h2>WSG / PRINT</h2>
+	<!-- section -->
+	<div class="section">
+		<div class="content">
+			<div class="aticle" style="background-color: #f5f5f5; padding: 20px;">
+				<h3><em class="ico info"></em>공통 적용시 주의사항</h3>
+				<ul class="data-list small">
+					<li>공통 <em class="em weighty">id="print"</em>를 쓰며, 가로일 경우에는 id와 함께 <em class="em weighty">class="horizon"</em>를 추가 한다.
+						<div class="ex">
+							세로형 - &lt;div id="print"&gt; &lt;/div&gt;<br>
+							가로형 - &lt;div id="print" class="horizon"&gt; &lt;/div&gt;
+						</div>
+					</li>
+					<li>인쇄코딩시 <em class="em weighty">bg 대신 &lt;img&gt;를 태그 반드시</em> 사용 해야 한다.</li>
+				</ul>
+			</div>
+			<div class="button-area large">
+				<span class="btn-left">
+					<a class="btn medium type01" href="../html/reward/re030300.html" target="_blank">세로형 페이지보기</a>
+					<a class="btn medium type01" href="../html/reward/re030400.html" target="_blank">가로형 페이지보기</a>
+				</span>
+			</div>
+
+			<strong class="preview">PREVIEW</strong>
+			<!-- print(기본-세로) -->
+			<div id="print" style="border: 1px solid #d1d1d1;">
+				<!-- wrap -->
+				<div class="wrap">
+					<div class="header">
+						<h1 class="print-title">연봉계약서</h1>
+						<span class="serial-number">계약서 NO : <span class="number">2017_5220012</span></span>
+						<span class="use-keep">(개인보관용)<br><img class="logo" src="../@resource/images/common/print_logo.png" alt="기아자동차"></span>
+					</div>
+					<h3 class="section-title"><img src="../@resource/images/common/print_bl.png" alt="제목">계약자 및 계약기간</h3>
+					<div class="table-wrap">
+						<table class="data-table">
+							<caption>연봉계약자 사번, 소속, 직위, 주민등록번호, 성명 표</caption>
+							<colgroup>
+								<col style="width: 15%" />
+								<col style="width: 15%" />
+								<col style="width: 15%" />
+								<col style="width: *" />
+								<col style="width: *" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>사번</th>
+									<th>성명</th>
+									<th>직위</th>
+									<th>소속</th>
+									<th>연봉계약기간</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2448969</td>
+									<td>홍길동</td>
+									<td>부장</td>
+									<td>서부)구로디지털지점 운영과</td>
+									<td>2017. 1. 1 ~ 2017. 12. 31(1년간) </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h3 class="section-title"><img src="../@resource/images/common/print_bl.png" alt="제목">계약연봉액 및 책정기준</h3>
+					<div class="table-wrap">
+						<table class="data-table">
+							<caption>연봉등급, 기초급, 능력급, 업적급, 부가급, 총연봉 표</caption>
+							<colgroup>
+								<col style="width: 15%" />
+								<col style="width: 15%" />
+								<col style="width: 15%" />
+								<col style="width: *" />
+								<col style="width: *" />
+								<col style="width: *" />
+								<col style="width: *" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>연봉등급</th>
+									<th>기초급</th>
+									<th>능력급</th>
+									<th>업적급</th>
+									<th>부가급</th>
+									<th>총연봉</th>
+									<th>비고</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>B등급</td>
+									<td class="right">9,600,000</td>
+									<td class="right">6,000,000</td>
+									<td class="right">2,400,000</td>
+									<td class="right">0</td>
+									<td class="right">18,000,000</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div><br>
+					<div class="table-wrap">
+						<table class="data-table left">
+							<caption>연봉계약자 사번, 소속, 직위, 주민등록번호, 성명 표</caption>
+							<colgroup>
+								<col style="width: 15%" />
+								<col style="width: *" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>기초급(누적)</th>
+									<td>
+										<ul style="padding: 1mm 0;line-height: 5.5mm;">
+											<li>- 전년도 개인별 성과평가 결과에 따라 차등 책정<br>* 기초급 = 전년 기초급 + 등급별 기초급 조정액</li>
+											<li>- 기준 근로시간에 대한 임금으로 법정 통상임금 기준으로 활용 <br>* 기준 근로시간 연간 2,912시간 (소정 주40시간 + 유급 주16시간) </li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th>능력급(누적)</th>
+									<td>
+										<ul style="padding: 1mm 0;line-height: 5.5mm;">
+											<li>- 전년도 개인별 성과평가 결과에 따라 차등 책정 <br>* 능력급 = 전년 능력급 + 등급별 능력급 조정액</li>
+											<li>- 소정근로시간외 근로에 대한 포괄임금으로 연간 936시간(가산율 반영) 등 </li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th>업적급(비누적)</th>
+									<td>
+										<ul style="padding: 1mm 0;line-height: 5.5mm;">
+											<li>- 전년도 개인별 성과평가 결과에 따라 등급별 지급율 적용 <br>* 업적급 = (전년 기초급 + 능력급) × 연봉 등급별 업적급 지급율</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th>지급방법</th>
+									<td>
+										<ul style="padding: 1mm 0;line-height: 5.5mm;">
+											<li>- 개인별 책정된 연봉은 12회 분할하여 매월 25일 본인 계좌로 지급</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th>기타</th>
+									<td>
+										<ul style="padding: 1mm 0;line-height: 5.5mm;">
+											<li>- 승진자는 직급별 초임을 적용하며, 직무수당, 조정수당 등은 해당자에 한하여 지급</li>
+											<li>- 기본급(기초급+능력급) 및 업적급의 경우 회사 경영성과, 외부 경영환경 변화 등에 따라 조정 가능함</li>
+											<li>- 상기 연봉외 회사 경영실적 및 성과평가 결과를 고려하여 별도의 성과급을 지급할 수 있음</li>
+											<li>- 결근, 휴직, 징계, 퇴직, 년차 등 기타 제반사항은 간부사원 취업규칙 및 제규정에 의함</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h3 class="section-title"><img src="../@resource/images/common/print_bl.png" alt="제목">기타사항</h3>
+					<div class="cont">
+						<ul class="data-list">
+							<li>- 연봉 책정금액에 오류가 있을 경우 조회 기간 내 소속 팀장과의 면담을 통해 인사지원팀에 서면으로 이의신청을 할 수 있으며,<br>별도 이의신청이 없을 경우 상기 연봉 금액에 동의한 것으로 간주함</li>
+							<li>- 본인의 연봉을 대외(경쟁사 등) 및 타인에게 공개되지 않도록 주의함</li>
+						</ul>
+					</div>
+
+					<div class="signature">
+						<p class="text">본인은 상기 연봉계약서에 동의하며, 준수사항을 엄수하겠습니다.</p>
+						<div class="signature-data">
+							<span class="label">통보일자 : </span><span class="data">2017. 01. 13</span>
+							<span class="label">동의일자 : </span><span class="data">2017. 08. 28</span>
+							<span class="label">성명 : </span><span class="data">홍 길 동</span>
+						</div>
+						<strong class="stamp">기아자동차 주식회사<span class="logo"><img src="../@resource/images/common/kia_stamp.jpg" alt="기아인"></span></strong>
+					</div>
+				</div>
+				<!-- //wrap -->
+			</div>
+			<!-- // print -->
+		</div>
+		
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;!-- print(기본-세로) --&gt;
+<!-- print(기본-세로) -->
+&lt;div id="print"&gt;
+	&lt;!-- wrap --&gt;
+	&lt;div class="wrap"&gt;
+		&lt;div class="header"&gt;
+			&lt;h1 class="print-title"&gt;연봉계약서&lt;/h1&gt;
+			&lt;span class="serial-number"&gt;계약서 NO : &lt;span class="number"&gt;2017_5220012&lt;/span&gt;&lt;/span&gt;
+			&lt;span class="use-keep"&gt;(개인보관용)&lt;br&gt;&lt;img class="logo" src="../../@resource/images/common/print_logo.png" alt="기아자동차"&gt;&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;h3 class="section-title"&gt;&lt;img src="../../@resource/images/common/print_bl.png" alt="제목"&gt;계약자 및 계약기간&lt;/h3&gt;
+		&lt;div class="table-wrap"&gt;
+			&lt;table class="data-table"&gt;
+				&lt;caption&gt;연봉계약자 사번, 소속, 직위, 주민등록번호, 성명 표&lt;/caption&gt;
+				&lt;colgroup&gt;
+					&lt;col style="width: 15%" /&gt;
+					&lt;col style="width: 15%" /&gt;
+					&lt;col style="width: 15%" /&gt;
+					&lt;col style="width: *" /&gt;
+					&lt;col style="width: *" /&gt;
+				&lt;/colgroup&gt;
+				&lt;thead&gt;
+					&lt;tr&gt;
+						&lt;th&gt;사번&lt;/th&gt;
+						&lt;th&gt;성명&lt;/th&gt;
+						&lt;th&gt;직위&lt;/th&gt;
+						&lt;th&gt;소속&lt;/th&gt;
+						&lt;th&gt;연봉계약기간&lt;/th&gt;
+					&lt;/tr&gt;
+				&lt;/thead&gt;
+				&lt;tbody&gt;
+					&lt;tr&gt;
+						&lt;td&gt;2448969&lt;/td&gt;
+						&lt;td&gt;홍길동&lt;/td&gt;
+						&lt;td&gt;부장&lt;/td&gt;
+						&lt;td&gt;서부)구로디지털지점 운영과&lt;/td&gt;
+						&lt;td&gt;2017. 1. 1 ~ 2017. 12. 31(1년간) &lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/tbody&gt;
+			&lt;/table&gt;
+		&lt;/div&gt;
+		&lt;h3 class="section-title"&gt;&lt;img src="../../@resource/images/common/print_bl.png" alt="제목"&gt;계약연봉액 및 책정기준&lt;/h3&gt;
+		&lt;div class="table-wrap"&gt;
+			&lt;table class="data-table"&gt;
+				&lt;caption&gt;연봉등급, 기초급, 능력급, 업적급, 부가급, 총연봉 표&lt;/caption&gt;
+				&lt;colgroup&gt;
+					&lt;col style="width: 15%" /&gt;
+					&lt;col style="width: 15%" /&gt;
+					&lt;col style="width: 15%" /&gt;
+					&lt;col style="width: *" /&gt;
+					&lt;col style="width: *" /&gt;
+					&lt;col style="width: *" /&gt;
+					&lt;col style="width: *" /&gt;
+				&lt;/colgroup&gt;
+				&lt;thead&gt;
+					&lt;tr&gt;
+						&lt;th&gt;연봉등급&lt;/th&gt;
+						&lt;th&gt;기초급&lt;/th&gt;
+						&lt;th&gt;능력급&lt;/th&gt;
+						&lt;th&gt;업적급&lt;/th&gt;
+						&lt;th&gt;부가급&lt;/th&gt;
+						&lt;th&gt;총연봉&lt;/th&gt;
+						&lt;th&gt;비고&lt;/th&gt;
+					&lt;/tr&gt;
+				&lt;/thead&gt;
+				&lt;tbody&gt;
+					&lt;tr&gt;
+						&lt;td&gt;B등급&lt;/td&gt;
+						&lt;td class="right"&gt;9,600,000&lt;/td&gt;
+						&lt;td class="right"&gt;6,000,000&lt;/td&gt;
+						&lt;td class="right"&gt;2,400,000&lt;/td&gt;
+						&lt;td class="right"&gt;0&lt;/td&gt;
+						&lt;td class="right"&gt;18,000,000&lt;/td&gt;
+						&lt;td&gt;&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/tbody&gt;
+			&lt;/table&gt;
+		&lt;/div&gt;&lt;br&gt;
+		&lt;div class="table-wrap"&gt;
+			&lt;table class="data-table left"&gt;
+				&lt;caption&gt;연봉계약자 사번, 소속, 직위, 주민등록번호, 성명 표&lt;/caption&gt;
+				&lt;colgroup&gt;
+					&lt;col style="width: 15%" /&gt;
+					&lt;col style="width: *" /&gt;
+				&lt;/colgroup&gt;
+				&lt;tbody&gt;
+					&lt;tr&gt;
+						&lt;th&gt;기초급(누적)&lt;/th&gt;
+						&lt;td&gt;
+							&lt;ul style="padding: 1mm 0;line-height: 5.5mm;"&gt;
+								&lt;li&gt;- 전년도 개인별 성과평가 결과에 따라 차등 책정&lt;br&gt;* 기초급 = 전년 기초급 + 등급별 기초급 조정액&lt;/li&gt;
+								&lt;li&gt;- 기준 근로시간에 대한 임금으로 법정 통상임금 기준으로 활용 &lt;br&gt;* 기준 근로시간 연간 2,912시간 (소정 주40시간 + 유급 주16시간) &lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;th&gt;능력급(누적)&lt;/th&gt;
+						&lt;td&gt;
+							&lt;ul style="padding: 1mm 0;line-height: 5.5mm;"&gt;
+								&lt;li&gt;- 전년도 개인별 성과평가 결과에 따라 차등 책정 &lt;br&gt;* 능력급 = 전년 능력급 + 등급별 능력급 조정액&lt;/li&gt;
+								&lt;li&gt;- 소정근로시간외 근로에 대한 포괄임금으로 연간 936시간(가산율 반영) 등 &lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;th&gt;업적급(비누적)&lt;/th&gt;
+						&lt;td&gt;
+							&lt;ul style="padding: 1mm 0;line-height: 5.5mm;"&gt;
+								&lt;li&gt;- 전년도 개인별 성과평가 결과에 따라 등급별 지급율 적용 &lt;br&gt;* 업적급 = (전년 기초급 + 능력급) × 연봉 등급별 업적급 지급율&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;th&gt;지급방법&lt;/th&gt;
+						&lt;td&gt;
+							&lt;ul style="padding: 1mm 0;line-height: 5.5mm;"&gt;
+								&lt;li&gt;- 개인별 책정된 연봉은 12회 분할하여 매월 25일 본인 계좌로 지급&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;th&gt;기타&lt;/th&gt;
+						&lt;td&gt;
+							&lt;ul style="padding: 1mm 0;line-height: 5.5mm;"&gt;
+								&lt;li&gt;- 승진자는 직급별 초임을 적용하며, 직무수당, 조정수당 등은 해당자에 한하여 지급&lt;/li&gt;
+								&lt;li&gt;- 기본급(기초급+능력급) 및 업적급의 경우 회사 경영성과, 외부 경영환경 변화 등에 따라 조정 가능함&lt;/li&gt;
+								&lt;li&gt;- 상기 연봉외 회사 경영실적 및 성과평가 결과를 고려하여 별도의 성과급을 지급할 수 있음&lt;/li&gt;
+								&lt;li&gt;- 결근, 휴직, 징계, 퇴직, 년차 등 기타 제반사항은 간부사원 취업규칙 및 제규정에 의함&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/tbody&gt;
+			&lt;/table&gt;
+		&lt;/div&gt;
+
+		&lt;h3 class="section-title"&gt;&lt;img src="../../@resource/images/common/print_bl.png" alt="제목"&gt;기타사항&lt;/h3&gt;
+		&lt;div class="cont"&gt;
+			&lt;ul class="data-list"&gt;
+				&lt;li&gt;- 연봉 책정금액에 오류가 있을 경우 조회 기간 내 소속 팀장과의 면담을 통해 인사지원팀에 서면으로 이의신청을 할 수 있으며,&lt;br&gt;별도 이의신청이 없을 경우 상기 연봉 금액에 동의한 것으로 간주함&lt;/li&gt;
+				&lt;li&gt;- 본인의 연봉을 대외(경쟁사 등) 및 타인에게 공개되지 않도록 주의함&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+
+		&lt;div class="signature"&gt;
+			&lt;p class="text"&gt;본인은 상기 연봉계약서에 동의하며, 준수사항을 엄수하겠습니다.&lt;/p&gt;
+			&lt;div class="signature-data"&gt;
+				&lt;span class="label"&gt;통보일자 : &lt;/span&gt;&lt;span class="data"&gt;2017. 01. 13&lt;/span&gt;
+				&lt;span class="label"&gt;동의일자 : &lt;/span&gt;&lt;span class="data"&gt;2017. 08. 28&lt;/span&gt;
+				&lt;span class="label"&gt;성명 : &lt;/span&gt;&lt;span class="data"&gt;홍 길 동&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;strong class="stamp"&gt;기아자동차 주식회사&lt;span class="logo"&gt;&lt;img src="../../@resource/images/common/kia_stamp.jpg" alt="기아인"&gt;&lt;/span&gt;&lt;/strong&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- //wrap --&gt;
+&lt;/div&gt;
+&lt;!-- // print --&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+	</div>
+	<!-- //section -->
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTOR CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/*KIA - ESS MAIN*/
+
+#wrap.depth-main #container{padding-bottom: 0;}
+.ess-visual{position: relative;max-width: 1320px;}
+.ess-visual .bx-wrapper{border-top-right-radius: 5px; border-top-left-radius: 5px; overflow: hidden; }
+.ess-visual .bx-controls{position: absolute; left: 0; right: 0; bottom:  40px; text-align: center; z-index: 51;}
+.ess-visual .bx-controls .bx-pager-item{display: inline-block; text-align: center; width: 16px; height: 16px; border-radius: 16px; overflow: hidden; margin: 0 6px;}
+.ess-visual .bx-controls .bx-pager-item a{display: inline-block; width: 100%; height: 100%;  color: transparent;background: rgba(255,255,255,0.54);}
+.ess-visual .bx-controls .bx-pager-item a.active{background-color: #ffffff}
+.ess-visual .bx-controls-auto{display: none}
+.ess-visual .ess-slider{}
+.ess-visual .ess-slider li{position: relative;}
+.ess-visual .ess-slider li .info-text{position: absolute; left: 130px; top: 0;width: 1060px; margin: 0 auto; color: #ffffff}
+.ess-visual .ess-slider li .info-text strong{width: 790px;display: inline-block; padding-top: 92px;  font-size: 70px; line-height: 83px;}
+.ess-visual .ess-slider li .info-text p{width: 790px;margin-top: 9px;font-size: 16px;line-height: 27px;}
+.ess-visual .ess-slider li img{vertical-align: top;}
+
+.ess-main .section{width: 1060px; margin: 0 auto;}
+.ess-main .section:after{content: ''; display: block; clear: both;}
+.ess-main .section h3{font-size: 30px;line-height: 30px; color: #292929; margin-top: 57px; }
+
+
+.profile-wrap{height: 308px; background-color: #ececec; overflow: hidden;}
+.ess-main.production .profile-wrap{height: 308px; background: #ececec url(../images/ess_main/bg_02.jpg) 50% 0 no-repeat;}
+.profile-wrap .section:after{content: ''; display: block; clear: both;}
+.profile-wrap .section>div{float: left; height: 308px;}
+.profile-wrap .section>div+div{border-left: 1px solid #d1d1d1;margin-left: -1px}
+.profile-wrap .item-info {position: relative;margin-top: 44px; width: 370px}
+.profile-wrap .item-info:after{content: ''; display: block; clear: both;}
+.profile-wrap .item-info .thumb{float: left;width: 130px; height: 150px; border-radius: 24px;-webkit-border-radius: 24px; overflow: hidden; text-align: center; background-color: #ffffff;overflow: hidden;}
+.profile-wrap .item-info .thumb img{width: 100%;}
+.profile-wrap .item-info .info{float: left; margin-left: 30px}
+.profile-wrap .item-info .info .number{color: #c41230; font-size: 15px; line-height: 15px; margin-top: 30px;}
+.profile-wrap .item-info .info .user{color: #292929; font-size: 26px;line-height: 26px; margin-top: 10px;}
+.profile-wrap .item-info .info .team{width: 185px;color: #292929; font-size: 20px; line-height: 25px; margin-top: 10px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-break: break-all;}
+.profile-wrap .item-info .info .sub-team{width: 185px;color: #292929; font-size: 15px; line-height: 25px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-break: break-all;}
+.profile-wrap .item-info .today-event{display: inline-block;position: absolute;left:90px;top:-24px;height: 40px;line-height: 40px;padding: 0 20px;font-size: 14px;color: #fff;background: #c41230;border-radius: 20px;-webkit-border-radius: 20px;}
+.profile-wrap .item-info .today-event:after{content: '';display: block;position:absolute;left:25px;bottom:-6px;width: 11px;height: 6px;background: url('../images/common/bg_event.png') 0 0 no-repeat;}
+.profile-wrap .item-info .today-event .ico.event{margin-right: 6px;}
+.profile-wrap .profile .cont-footer{position: relative;padding-right: 50px}
+.profile-wrap .profile .cont-footer:after{content: ''; display: block; clear: both;}
+.profile-wrap .profile .cont-footer .update{float: left; margin-top: 29px; margin-left: 20px; padding-left: 50px; line-height: 17px; font-size: 14px; color: #6b6b6b; background: url('../images/common/ico_camera.gif') 0 0 no-repeat;}
+.profile-wrap .profile .cont-footer .btn.medium{position: absolute;right: 38px;top: -5px;display: block;width: 172px;text-align: center;height: 35px;padding: 0 20px;line-height: 34px;}
+.profile-wrap .profile .cont-footer .btn + .btn{top: 34px;}
+
+.profile-wrap .mydate{width: 370px;}
+.profile-wrap .mydate .cont-header{height: 80px; line-height: 80px; padding: 0 50px; background-color: #292929; font-size: 20px}
+.profile-wrap .mydate .cont-header:after{content: ''; display: block; clear: both;}
+.profile-wrap .mydate .cont-header .title{float: left; color: #949494}
+.profile-wrap .mydate .cont-header .all-date{float: right; color: #ffffff;}
+.profile-wrap .mydate .mydate-list{margin: 22px 50px 0;}
+.profile-wrap .mydate .mydate-list li{padding: 13px 0;}
+.profile-wrap .mydate .mydate-list li+li{border-top: 1px solid #d1d1d1;}
+.profile-wrap .mydate .mydate-list li:after{content: ''; display: block; clear: both;}
+.profile-wrap .mydate .mydate-list li div{float: right; font-size: 15px; color: #292929;}
+.profile-wrap .mydate .mydate-list li .title{float: left; color: #6b6b6b;}
+.profile-wrap .mydate .mydate-list li span{display: block; line-height: 23px; text-align: right;}
+.profile-wrap .mydate .mydate-list li span.team{width: 180px;overflow: hidden;text-overflow: ellipsis;word-break: break-all;white-space: nowrap;}
+
+.profile-wrap .career{position: relative; }
+.profile-wrap .career:before{content: '';display: block;position: absolute;left: -1px; top: 0; width: 451px; height: 80px; background-color: #000000; z-index: 0}
+.profile-wrap .career .cont-header{position: relative; left: 0; top: 0;height: 80px; line-height: 80px; padding-left: 50px;width: 320px; font-size: 20px; box-sizing: border-box;}
+.profile-wrap .career .cont-header:after{content: ''; display: block; clear: both;}
+.profile-wrap .career .cont-header .title{float: left; color: #666666}
+.profile-wrap .career .cont-header .lavel{float: right; color: #ffffff;}
+.profile-wrap .career .career-list{margin: 22px 0 0 50px;}
+.profile-wrap .career .career-list li{padding: 13px 0;border-bottom: 1px solid #d1d1d1;}
+.profile-wrap .career .career-list li:after{content: ''; display: block; clear: both;}
+.profile-wrap .career .career-list li div{ font-size: 15px; color: #292929;}
+.profile-wrap .career .career-list li .title{float: left; color: #6b6b6b;}
+.profile-wrap .career .career-list li .text{float: right; color: #db1515; border-bottom: 1px solid #db1515;}
+.profile-wrap .career .career-list li span{display: block; line-height: 23px; text-align: right;}
+.profile-wrap .career .info-text{padding-top: 13px;padding-left: 50px;font-size: 13px;line-height: 20px;}
+
+.refresh-wrap {border-bottom: 1px solid #d1d1d1; height: 356px; background: url('../images/ess_main/bg_01.jpg') 50% 0 no-repeat;}
+.refresh-wrap .refresh{float: left;width: 740px}
+.refresh-wrap .refresh h3{font-size: 30px;line-height: 30px; color: #292929; margin-top: 57px;}
+.refresh-wrap .refresh h3 .btn-more{}
+.refresh-wrap .refresh p{font-size: 32px; line-height: 42px; color: #292929; margin-top: 18px; font-family: '기아 가늘게','기아 Light',"KiaL";}
+.refresh-wrap .refresh p span{display: block; margin: 12px 0  30px; font-size: 15px; line-height: 15px; color: #6b6b6b;}
+.refresh-wrap .refresh .article{float: left;}
+.refresh-wrap .refresh .article{}
+.refresh-wrap .refresh .chart{float: left; margin-left: 45px; margin-top: 12px;}
+.refresh-wrap .refresh .date-list{float: right; width: 175px; margin-right: 50px; margin-top: 24px;}
+.refresh-wrap .refresh .date-list li{padding: 13px 0;}
+.refresh-wrap .refresh .date-list li+li{border-top: 1px solid #d1d1d1;}
+.refresh-wrap .refresh .date-list li:after{content: ''; display: block; clear: both;}
+.refresh-wrap .refresh .date-list li div{ font-size: 15px; color: #292929;}
+.refresh-wrap .refresh .date-list li .title{float: left; color: #6b6b6b;}
+.refresh-wrap .refresh .date-list li .text{float: right; color: #db1515; text-decoration: underline;}
+.refresh-wrap .refresh .date-list li span{display: block; line-height: 23px; text-align: right;}
+
+.refresh-wrap .hr-info{float: left; height: 355px; color: #ffffff; margin-left: 30px;}
+.hr-info .hr-list dt{font-size: 30px; height: 70px;line-height: 70px; width: 100%; background: url('../images/ess_main/ico_up.png') right 36px no-repeat; }
+.hr-info .hr-list dd+dt{border-top: 1px solid #bbb8b7; min-height: 80px; width: 270px}
+.hr-info .hr-list dd {margin-bottom: 34px}
+.hr-info .hr-list dd  p{font-size: 15px; line-height: 24px; margin-bottom: 24px; margin-top: -4px;}
+.hr-info .hr-list dt.active{background: url('../images/ess_main/ico_down.png') right 36px no-repeat; }
+
+.ess-main.production .hr-info{border-left: 0 none;}
+.ess-main.production .hr-info .hr-list{padding-left: 50px;}
+.ess-main.production .hr-info .hr-list dt{font-size: 30px; height: 80px;line-height: 80px; width: 100%; color: #fff;background: 0 none;}
+.ess-main.production .hr-info .hr-list dd {margin-bottom: 54px}
+.ess-main.production .hr-info .hr-list dd  p{font-size: 16px; line-height: 27px;color: #fff; margin-bottom: 52px; margin-top: -4px;}
+.ess-main.production .hr-info .hr-list dt.active{background: 0 none;}
+
+
+
+.hr-notice{float: left;height: 100%;border-right: 1px solid #d1d1d1;}
+.hr-notice h3{font-size: 30px;line-height: 30px; color: #292929;}
+.hr-notice .cont{margin-top: 22px; width: 320px; margin-right: 60px}
+.hr-notice .title{font-size: 26px; line-height: 36px;color: #292929; font-family: '기아 가늘게','기아 Light',"KiaL";}
+.hr-notice .text{margin-top: 9px}
+.hr-notice .text:hover{text-decoration: underline;}
+.btn-control {margin-top: 26px}
+.btn-control .prev{display: inline-block; width: 30px; height: 30px; background: url("../images/common/btn_prev_02.png") 0 0 no-repeat;  font-size: 0; line-height: 999em; text-indent: 999em; overflow: hidden;}
+.btn-control .next{display: inline-block; width: 30px; height: 30px; background: url("../images/common/btn_next_02.png") 0 0 no-repeat;  font-size: 0; line-height: 999em; text-indent: 999em; overflow: hidden; margin-left: 7px;}
+
+.appoint{float: right; width: 640px;}
+.appoint .tab-appoint{position: relative;}
+.appoint .tab{background-color: #ffffff; height: auto; width: auto; position: absolute; right: 0; top: -20px;}
+.appoint .tab li{display: inline-block; font-size: 24px; line-height: 24px; padding-bottom: 5px; box-sizing: border-box;}
+.appoint .tab li+li{margin-left: 10px}
+.appoint .tab li.active{border-bottom: 1px solid #292929; }
+.appoint .tab li a{color: #b3b3b3}
+.appoint .tab li.active a{color: #292929}
+.appoint .tab-cont{ display: none; padding-top: 28px}
+.appoint .tab-cont li+li{margin-top: 10px}
+.appoint .tab-cont li span{display: inline-block;}
+.appoint .tab-cont .text{display: inline-block; width: 380px; vertical-align: top; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.appoint .tab-cont .date{width: 75px; text-align: right; font-family: '기아 가늘게','기아 Light',"KiaL";}
+.appoint .tab-cont .team{width: 155px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;vertical-align: top; font-family: '기아 가늘게','기아 Light',"KiaL";}
+.appoint .tab-cont.active{display: block;}
+
+.team-anniversary{float: left;width: 339px;height: 434px;padding-right: 30px;border-right: 1px solid #d1d1d1;}
+.team-anniversary .notice{clear: both;padding-top: 10px;font-size: 15px;line-height: 20px;color: #555;}
+.team-anniversary .by-team{font-size: 12px;line-height: 20px;color: #555;}
+.team-anniversary .bx-wrapper{min-width: 340px !important;width: 100%;padding-top: 24px;background-color: transparent;}
+.team-anniversary .birthday-slider li{width: 100px;text-align: center;}
+.team-anniversary .birthday-slider li .thumb{width: 100px;height: 100px;border-radius: 10px;-webkit-border-radius: 10px;overflow: hidden;background-color: #000;}
+.team-anniversary .birthday-slider li .thumb img{width: 100%;}
+.team-anniversary .birthday-slider li .btn.type03{position: absolute;top: 87px;left: 0;right: 0;width: 78px;height: 27px;line-height: 26px;margin: 0 auto;padding: 0;font-size: 12px;color: #fff;font-family:'기아 굵게','기아 Bold','KiaB';}
+.team-anniversary .birthday-slider li .btn.type03 .ico.birthday{margin-left: 0 !important;}
+.team-anniversary .birthday-slider li .name{padding-top: 15px;font-size: 14px;line-height: 25px;color: #555555;}
+.team-anniversary .birthday-slider li .position{font-size: 14px;line-height: 18px;color: #555555;}
+.team-anniversary .birthday-slider li .date{font-size: 13px;line-height: 25px;color: #555555;}
+.team-anniversary .bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.team-anniversary .bx-wrapper .bx-pager.bx-default-pager a.active, 
+.team-anniversary .bx-wrapper .bx-pager.bx-default-pager a:focus{background-color: #c41230;}
+.team-anniversary .bx-wrapper .bx-pager.bx-default-pager a{width: 16px;height: 16px;margin: 0 5px;background-color: #ddd;border-radius: 50%;-webkit-border-radius: 50%;}
+.team-anniversary .bx-wrapper .bx-pager, 
+.team-anniversary .bx-wrapper .bx-controls-auto{bottom: -30px;}

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KIA</title>
+<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="wsg.css">
+<style type="text/css">
+.button-area.large .btn-left .btn.type01.small,
+.button-area.large .btn-left .btn.type04.small{margin-top: 10px;}
+</style>
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //gnb 열림
+        $('#allMenu').click(function(){
+            $('.gnb').addClass('active');
+        });
+        //gnb 닫음
+        $('.btn-close').click(function(){
+            $('.gnb').removeClass('active');
+        });
+
+        // 디자인 form요소 적용
+        $('select, input[type=radio], input[type=checkbox], input[type=file]').uniform({
+            fileDefaultHtml: '',
+            fileButtonHtml: '파일첨부'
+        });
+
+
+    });
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+    <div class="header-wrap">
+        <h1><span class="blind">KIA</span></h1>
+        <a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+        <div class="gnb">
+            <div class="gnb-wrap">  
+                <h3>PROGRESS</h3>
+                <ul>
+                    <li><a href="markup.html">markup</a></li>
+                </ul>
+                <h3>UI LIBRARY</h3>
+                <ul>
+                    <li><a href="table.html">layout</a></li>
+                    <li><a href="table.html">layout</a></li>
+                    <li><a href="table.html">table</a></li>
+                    <li><a href="form.html">form</a></li>
+                    <li><a href="fieldset.html">fieldset</a></li>
+                    <li><a href="button.html">button</a></li>
+                    <li><a href="tab.html">tab</a></li>
+                    <li><a href="list.html">list</a></li>
+                    <li><a href="popup.html">popup</a></li>
+                    <li><a href="print.html">print</a></li>
+                    <li><a href="etc.html">etc</a></li>
+                </ul>
+                <a href="#" class="btn-close"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+    <h2>WSG / BUTTON</h2>
+    <!-- section -->
+    <div class="section">
+        <!-- table-wrap -->
+        <div class="table-wrap">
+            <table class="data-table">
+                <caption></caption>
+                <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 20%" />
+                    <col style="width: 20%" />
+                    <col style="width: 20%" />
+                    <col style="width: 20%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>small (height: 30px;)</th>
+                        <th>medium(height: 40px;)</th>
+                        <th>large(height: 50px;)</th>
+                        <th>disabled</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>type01</th>
+                        <td><button type="button" class="btn type01 small">버튼</button></td>
+                        <td><button type="button" class="btn type01 medium">버튼</button></td>
+                        <td><button type="button" class="btn type01 large">버튼</button></td>
+                        <td>
+                            <input type="button" class="btn small type01" disabled="disabled" value="input">
+                            <button type="button" class="btn small type01" disabled="disabled">button</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>type02</th>
+                        <td><button type="button" class="btn type02 small">버튼</button></td>
+                        <td><button type="button" class="btn type02 medium">버튼</button></td>
+                        <td><button type="button" class="btn type02 large">버튼</button></td>
+                        <td><button type="button" class="btn type02 small">버튼</button></td>
+                    </tr>
+                    <tr>
+                        <th>type03</th>
+                        <td><button type="button" class="btn type03 small">버튼</button></td>
+                        <td><button type="button" class="btn type03 medium">버튼</button></td>
+                        <td><button type="button" class="btn type03 large">버튼</button></td>
+                        <td><button type="button" class="btn type03 small">버튼</button></td>
+                    </tr>
+                    <tr>
+                        <th>type04</th>
+                        <td><button type="button" class="btn type04 small">버튼</button></td>
+                        <td><button type="button" class="btn type04 medium">버튼</button></td>
+                        <td><button type="button" class="btn type04 large">버튼</button></td>
+                        <td><button type="button" class="btn type04 small">버튼</button></td>
+                    </tr>
+                    <tr style="background: #292929">
+                        <th>type05</th>
+                        <td><button type="button" class="btn type05 small">버튼</button></td>
+                        <td><button type="button" class="btn type05 medium">버튼</button></td>
+                        <td><button type="button" class="btn type05 large">버튼</button></td>
+                        <td><button type="button" class="btn type05 small">버튼</button></td>
+                    </tr>
+                    <tr>
+                        <th>type07</th>
+                        <td><button type="button" class="btn type07 small">버튼</button></td>
+                        <td><button type="button" class="btn type07 medium">버튼</button></td>
+                        <td><button type="button" class="btn type07 large">버튼</button></td>
+                        <td><button type="button" class="btn type07 small">버튼</button></td>
+                    </tr>
+                    <tr>
+                        <th>type08</th>
+                        <td><button type="button" class="btn type08 small">버튼</button></td>
+                        <td><button type="button" class="btn type08 medium">버튼</button></td>
+                        <td><button type="button" class="btn type08 large">버튼</button></td>
+                        <td><button type="button" class="btn type08 small">버튼</button></td>
+                    </tr>
+                    <tr>
+                        <th>type09</th>
+                        <td><button type="button" class="btn type09 small">버튼</button></td>
+                        <td><button type="button" class="btn type09 medium">버튼</button></td>
+                        <td><button type="button" class="btn type09 large">버튼</button></td>
+                        <td><button type="button" class="btn type09 small">버튼</button></td>
+                    </tr>
+                    <tr>
+                        <th>type10</th>
+                        <td><button type="button" class="btn type10 small">버튼</button></td>
+                        <td><button type="button" class="btn type10 medium">버튼</button></td>
+                        <td><button type="button" class="btn type10 large">버튼</button></td>
+                        <td><button type="button" class="btn type10 small">버튼</button></td>
+                    </tr>
+                    <tr>
+                        <th>type11</th>
+                        <td><button type="button" class="btn type11 small">버튼</button></td>
+                        <td><button type="button" class="btn type11 medium">버튼</button></td>
+                        <td><button type="button" class="btn type11 large">버튼</button></td>
+                        <td><button type="button" class="btn type11 small">버튼</button></td>
+                    </tr>
+                    <tr>
+                        <th>type12</th>
+                        <td><button type="button" class="btn type12 small">버튼</button></td>
+                        <td><button type="button" class="btn type12 medium">버튼</button></td>
+                        <td><button type="button" class="btn type12 large">버튼</button></td>
+                        <td><button type="button" class="btn type12 small">버튼</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- //table-wrap -->
+    </div>
+    <!-- //section -->
+    <!-- section 버튼 -->
+    <div class="section">
+        <h3>버튼이 여러개 경우</h3>
+        <strong class="preview ">PREVIEW</strong>
+        <div class="button-area">
+            <span class="btn-right"><button type="button" class="btn type01 small">버튼</button><button type="button" class="btn type01 small">버튼</button></span>
+            <span class="btn-left"><button type="button" class="btn type01 small">버튼</button><button type="button" class="btn type01 small">버튼</button></span>
+        </div>
+        <div class="button-area large">
+            <button type="button" class="btn type01 small">버튼</button><button type="button" class="btn type01 small">버튼</button>
+        </div>
+
+        <!-- markup -->
+        <div class="markup">
+        <strong>markup 예시</strong>
+<pre>
+&lt;div class="button-area"&gt;
+    &lt;!-- 우측위치 --&gt;
+    &lt;span class="btn-right"&gt;&lt;button type="button" class="btn type01 small"&gt;버튼&lt;/button&gt;&lt;button type="button" class="btn type01 small"&gt;버튼&lt;/button&gt;&lt;/span&gt;
+    &lt;!-- 좌측위치 --&gt;
+    &lt;span class="btn-left"&gt;&lt;button type="button" class="btn type01 small"&gt;버튼&lt;/button&gt;&lt;button type="button" class="btn type01 small"&gt;버튼&lt;/button&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+
+&lt;!-- class large 적용시 margin top, bottom에 20px 적용됨 --&gt;
+
+&lt;div class="button-area large"&gt;
+    &lt;button type="button" class="btn type01 small"&gt;버튼&lt;/button&gt;&lt;button type="button" class="btn type01 small"&gt;버튼&lt;/button&gt;
+&lt;/div&gt;
+
+<pre>
+        </div>
+        <!-- // markup -->
+
+    </div>
+    <!-- //section -->
+
+
+    <!-- section 버튼 -->
+    <div class="section">
+        <h3>타이틀과 같은 라인에 버튼이 함께 있을 경우</h3>
+        <strong class="preview ">PREVIEW</strong>
+        <div class="section-title">
+            <h3>레이아웃 type</h3>
+            <div class="btn-aside">
+                <button type="button" class="btn type01 small">저장</button>
+                <button type="button" class="btn type01 small">인쇄</button>
+            </div>
+        </div>
+        <!-- markup -->
+        <div class="markup">
+        <strong>markup 예시</strong>
+<pre>
+&lt;div class="section"&gt;
+    &lt;h3 class="section-title"&gt;레이아웃 type&lt;/h3&gt;
+    &lt;div class="btn-aside"&gt;
+        &lt;button type="button" class="btn type01 small"&gt;저장&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;인쇄&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+<pre>
+        </div>
+        <!-- // markup -->
+
+    </div>
+    <!-- //section -->
+
+
+
+    <!-- section 버튼 -->
+    <div class="section">
+        <h3>타이틀과 텍스트가 같은 라인에 버튼이 함께 있을 경우</h3>
+        <strong class="preview ">PREVIEW</strong>
+        <!-- <h3 class="section-title">레이아웃 type</h3> -->
+        <div class="content-notice">
+            <h3 class="section-title">레이아웃 type</h3>
+            <p>전결권 기본 표시는 ◎ 이나, ★ 표시일 경우, 다음과 같이 적용됨</p>
+            <div class="btn-aside">
+                <button type="button" class="btn type01 small">저장</button>
+                <button type="button" class="btn type01 small">인쇄</button>
+            </div>
+        </div>
+
+        <!-- markup -->
+        <div class="markup">
+        <strong>markup 예시</strong>
+<pre>
+&lt;h3 class="section-title"&gt;레이아웃 type&lt;/h3&gt;
+&lt;div class="content-notice"&gt;
+    &lt;p&gt;전결권 기본 표시는 ◎ 이나, ★ 표시일 경우, 다음과 같이 적용됨&lt;/p&gt;
+    &lt;div class="btn-aside"&gt;
+        &lt;button type="button" class="btn type01 small"&gt;저장&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;인쇄&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+<pre>
+        </div>
+        <!-- // markup -->
+
+    </div>
+    <!-- //section -->
+
+    <!-- section 버튼 -->
+    <div class="section">
+        <h3>아이콘 버튼(흰색배경)</h3>
+        <strong class="preview ">PREVIEW</strong>
+        <div class="button-area large">
+            <span class="btn-left">
+                <button type="button" class="btn type01 small">다운로드<span class="ico down"></span></button>
+                <button type="button" class="btn type01 small">업로드<span class="ico upload"></span></button>
+                <button type="button" class="btn type01 small">출력<span class="ico print"></span></button>
+                <button type="button" class="btn type01 small">결재<span class="ico check01"></span></button>
+                <button type="button" class="btn type01 small">승인<span class="ico check01"></span></button>
+                <button type="button" class="btn type01 small">마감<span class="ico check01"></span></button>
+                <button type="button" class="btn type01 small">확정<span class="ico check01"></span></button>
+                <button type="button" class="btn type01 small">저장<span class="ico save"></span></button>
+                <button type="button" class="btn type01 small">달력<span class="ico date"></span></button>
+                <button type="button" class="btn type01 small">조회<span class="ico search"></span></button>
+                <button type="button" class="btn type01 small">계산하기<span class="ico sum02"></span></button>
+                <button type="button" class="btn type01 small">신청<span class="ico apply"></span></button>
+                <button type="button" class="btn type01 small">요청<span class="ico apply"></span></button>
+                <button type="button" class="btn type01 small">상신<span class="ico apply"></span></button>
+                <button type="button" class="btn type01 small">확대<span class="ico zoom-in"></span></button>
+                <button type="button" class="btn type01 small">축소<span class="ico zoom-out"></span></button>
+                <button type="button" class="btn type01 small">입력<span class="ico write"></span></button>
+                <button type="button" class="btn type01 small">수정<span class="ico modify"></span></button>
+                <button type="button" class="btn type01 small">취소<span class="ico cancel"></span></button>
+                <button type="button" class="btn type01 small">삭제<span class="ico delete"></span></button>
+                <button type="button" class="btn type01 small">펼치기<span class="ico plus"></span></button>
+                <button type="button" class="btn type01 small">닫기<span class="ico minus"></span></button>
+                <button type="button" class="btn type01 small">메일 전송<span class="ico mail"></span></button>
+                <button type="button" class="btn type01 small">파일첨부<span class="ico attach"></span></button>
+                <button type="button" class="btn type01 small">가이드<span class="ico guide"></span></button>
+                <button type="button" class="btn type01 small">바로가기<span class="ico browser02"></span></button>
+                <button type="button" class="btn type01 small">담당자 안내<span class="ico people"></span></button>
+            </span>
+        </div>
+
+        <!-- markup -->
+        <div class="markup">
+        <strong>markup 예시</strong>
+<pre>
+&lt;div class="button-area large"&gt;
+    &lt;span class="btn-left"&gt;
+        &lt;button type="button" class="btn type01 small"&gt;다운로드&lt;span class="ico down"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;업로드&lt;span class="ico upload"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;출력&lt;span class="ico print"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;결재&lt;span class="ico check01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;승인&lt;span class="ico check01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;마감&lt;span class="ico check01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;확정&lt;span class="ico check01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;저장&lt;span class="ico save"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;달력&lt;span class="ico date"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;조회&lt;span class="ico search"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;계산하기&lt;span class="ico sum02"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;신청&lt;span class="ico apply"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;요청&lt;span class="ico apply"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;상신&lt;span class="ico apply"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;확대&lt;span class="ico zoom-in"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;축소&lt;span class="ico zoom-out"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;입력&lt;span class="ico write"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;수정&lt;span class="ico modify"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;취소&lt;span class="ico cancel"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;삭제&lt;span class="ico delete"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;펼치기&lt;span class="ico plus"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;닫기&lt;span class="ico minus"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;메일 전송&lt;span class="ico mail"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;파일첨부&lt;span class="ico attach"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;가이드&lt;span class="ico guide"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type01 small"&gt;바로가기&lt;span class="ico browser02"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+<pre>
+        </div>
+        <!-- // markup -->
+
+    </div>
+    <!-- //section -->
+
+    <!-- section 버튼 -->
+    <div class="section">
+        <h3>아이콘 버튼(색상배경)</h3>
+        <strong class="preview ">PREVIEW</strong>
+        <div class="button-area large">
+            <span class="btn-left">
+                <button type="button" class="btn type04 small">다운로드<span class="ico down type01"></span></button>
+                <button type="button" class="btn type04 small">업로드<span class="ico upload type01"></span></button>
+                <button type="button" class="btn type04 small">출력<span class="ico print type01"></span></button>
+                <button type="button" class="btn type04 small">결재<span class="ico check01 type01"></span></button>
+                <button type="button" class="btn type04 small">승인<span class="ico check01 type01"></span></button>
+                <button type="button" class="btn type04 small">마감<span class="ico check01 type01"></span></button>
+                <button type="button" class="btn type04 small">확정<span class="ico check01 type01"></span></button>
+                <button type="button" class="btn type04 small">저장<span class="ico save type01"></span></button>
+                <button type="button" class="btn type04 small">달력<span class="ico date type01"></span></button>
+                <button type="button" class="btn type04 small">조회<span class="ico search type01"></span></button>
+                <button type="button" class="btn type04 small">계산하기<span class="ico sum02 type01"></span></button>
+                <button type="button" class="btn type04 small">신청<span class="ico apply type01"></span></button>
+                <button type="button" class="btn type04 small">요청<span class="ico apply type01"></span></button>
+                <button type="button" class="btn type04 small">상신<span class="ico apply type01"></span></button>
+                <button type="button" class="btn type04 small">확대<span class="ico zoom-in type01"></span></button>
+                <button type="button" class="btn type04 small">축소<span class="ico zoom-out type01"></span></button>
+                <button type="button" class="btn type04 small">입력<span class="ico write type01"></span></button>
+                <button type="button" class="btn type04 small">수정<span class="ico modify type01"></span></button>
+                <button type="button" class="btn type04 small">취소<span class="ico cancel type01"></span></button>
+                <button type="button" class="btn type04 small">삭제<span class="ico delete type01"></span></button>
+                <button type="button" class="btn type04 small">메일 전송<span class="ico mail type01"></span></button>
+                <button type="button" class="btn type04 small">파일첨부<span class="ico attach type01"></span></button>
+                <button type="button" class="btn type04 small">가이드<span class="ico guide type01"></span></button>
+                <button type="button" class="btn type04 small">바로가기<span class="ico browser02 type01"></span></button>
+            </span>
+        </div>
+
+        <!-- markup -->
+        <div class="markup">
+        <strong>markup 예시</strong>
+<pre>
+&lt;div class="button-area large"&gt;
+    &lt;span class="btn-left"&gt;
+        &lt;button type="button" class="btn type04 small"&gt;다운로드&lt;span class="ico down type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;업로드&lt;span class="ico upload type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;출력&lt;span class="ico print type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;결재&lt;span class="ico check01 type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;승인&lt;span class="ico check01 type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;마감&lt;span class="ico check01 type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;확정&lt;span class="ico check01 type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;저장&lt;span class="ico save type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;달력&lt;span class="ico date type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;조회&lt;span class="ico search type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;계산하기&lt;span class="ico sum02 type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;신청&lt;span class="ico apply type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;요청&lt;span class="ico apply type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;상신&lt;span class="ico apply type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;확대&lt;span class="ico zoom-in type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;축소&lt;span class="ico zoom-out type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;입력&lt;span class="ico write type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;수정&lt;span class="ico modify type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;취소&lt;span class="ico cancel type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;삭제&lt;span class="ico delete type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;메일 전송&lt;span class="ico mail type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;파일첨부&lt;span class="ico attach type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;가이드&lt;span class="ico attach type01"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" class="btn type04 small"&gt;바로가기&lt;span class="ico browser02 type01"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+<pre>
+        </div>
+        <!-- // markup -->
+
+    </div>
+    <!-- //section -->
+
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTORS CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<link rel="stylesheet" type="text/css" href="../../@resource/css/plugin/jquery.bxslider.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('.member-slider').bxSlider( {
+		slideWidth: 130,
+		slideMargin: 60,
+		maxSlides: 5,
+		moveSlides: 5,
+		pager: false,
+		controls: true,
+		speed: 600,
+		infiniteLoop: false,
+		touchEnabled: false
+	});
+});
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="depth-main diligence-wrap">
+<!-- HEADER -->
+<div id="header">
+		<!-- header-wrap -->
+	<div class="header-wrap">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+		<!-- personal-info -->
+		<div class="personal-info">
+			<div class="belong">양재본사</div>
+			<div class="number">5612336</div>
+			<div class="position"><span class="name">홍길동</span>과장</div>
+			<div class="state logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- // personal-info -->
+		<!-- utill-menu -->
+		<div class="utill-menu">
+			<ul>
+				<li><a href="#">My HR</a></li>
+				<li class="active"><a href="#">근태 담당</a></li>
+			</ul>
+		</div>
+		<!-- // utill-menu -->
+		<!-- gnb -->
+		<div class="gnb">
+			<ul class="nav">
+				<li class="depth01"><a href="#">근태관리</a></li>
+				<li class="depth01"><a href="#">급여관리</a></li>
+				<li class="depth01"><a href="#">직원정보수정</a></li>
+				<li class="depth01"><a href="#">신청업무</a></li>
+				<li class="depth01"><a href="#">현황조회</a></li>
+			</ul>
+		</div>
+		<!-- // gnb -->
+	</div>
+	<!--// header-wrap -->
+</div>
+<!-- // HEADER -->
+
+<!-- CONTENT -->
+<div id="container" class="diligence">
+	<div id="content" class="content-primary">
+		<!-- calender-wrap -->
+		<div class="calender-wrap">
+			<div class="content-header">
+				<h2>근태관리</h2>
+				<!-- 171117 추가 -->
+				<h3>공지사항</h3>
+				<ul>
+					<li>전사 : [2016.04.29] 2016년 5월 6일(금) 임시공휴일입니다.</li>
+					<li>연구소 : [2016.04.29] 2016년 5월 2일(월) 근로자의 날 대체 휴무일입니다.</li>
+				</ul>
+				<a href="" class="btn-more">더보기</a>
+				<!-- // 171117 추가 -->
+				<!-- <p>일일근태 입력, 근태수정, 특근상신 등 근태처리 업무를 지원합니다. <br>
+				<span>당일근태는 10시까지 주말 특근계획은 금요일 17시까지</span> 결재가 완료되어야 합니다.</p> -->
+				<div class="button-area">
+					<a class="btn large type09" href="#">근태담당자 가이드 <span class="ico newly_02"></span></a>
+					<a class="btn large type03" href="#">결재상태로 전환 <span class="ico newly_02"></span></a>
+				</div>
+			</div>
+			<!-- calender -->
+			<div class="calender">
+				<!-- calender-header -->
+				<div class="calender-header">
+					<div class="date"><span class="year">2017</span>.<span class="month">08</span></div>
+					<div class="btn-area">
+						<a class="btn prev" href="#" title="이전달">July</a>
+						<a class="btn next" href="#" title="다음달">September</a>
+					</div>
+					<ul class="info">
+						<li>처리부서 : 의장 1부 실러 A파트</li>
+						<li>담당인원 : 2,019명</li>
+					</ul>
+				</div>
+				<!-- //calender-header -->
+				<!-- calender-body -->
+				<div class="calender-body edit">
+					<table class="item-table">
+						<caption>근태달력</caption>
+						<colgroup>
+							<col style="width: 14.2%" />
+							<col style="width: 14.2%" />
+							<col style="width: 14.2%" />
+							<col style="width: 14.2%" />
+							<col style="width: 14.2%" />
+							<col style="width: 14.2%" />
+							<col style="width: 14.2%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">Sun</th>
+								<th scope="col">Mon</th>
+								<th scope="col">Tue</th>
+								<th scope="col">Wed</th>
+								<th scope="col">Thu</th>
+								<th scope="col">Fri</th>
+								<th scope="col">Sat</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="data-header">
+										<span class="prev-month">25</span>
+									</div>
+									<div class="data-info">
+
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="prev-month">26</span>
+									</div>
+									<div class="data-info">
+
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="prev-month">27</span>
+									</div>
+									<div class="data-info">
+
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="prev-month">28</span>
+									</div>
+									<div class="data-info">
+
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="prev-month">29</span>
+									</div>
+									<div class="data-info">
+
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="prev-month">30</span>
+									</div>
+									<div class="data-info">
+
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">1</span>
+									</div>
+									<div class="data-info">
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="data-header">
+										<span class="day">2</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">3</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">4</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">5</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day today">6</span>
+									</div>
+									<div class="data-info">
+										<a class="tag type06">근태수정</a>
+										<a class="tag type02">휴일실적</a>
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">7</span>
+									</div>
+									<div class="data-info">
+										<a class="tag type02">휴일실적</a>
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">8</span>
+									</div>
+									<div class="data-info">
+										<a class="tag type02">휴일실적</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="data-header">
+										<span class="day">9</span>
+									</div>
+									<div class="data-info">
+										<a class="tag type06">근태수정</a>
+										<a class="tag type08">일일근태</a>
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">10</span>
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">11</span>
+									</div>
+									<div class="data-info">
+										<a class="tag type06">근태수정</a>
+										<a class="tag type07">휴일계획</a>
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">12</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">13</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">14</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">15</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="data-header">
+										<span class="day">16</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">17</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">18</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">19</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">20</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">21</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">22</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="data-header">
+										<span class="day">23</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">24</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">25</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">26</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">27</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">28</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">29</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="data-header">
+										<span class="day">30</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="day">31</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="next-month">1</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="next-month">2</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="next-month">3</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="next-month">4</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+								<td>
+									<div class="data-header">
+										<span class="next-month">5</span>
+									</div>
+									<div class="data-info">
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- // calender-body -->
+				<div class="button-area large">
+					<a class="btn large type04" href="#">예약근태<span class="ico check01 type01"></span></a>
+					<!-- <a class="btn large type04" href="#">피지원근태<span class="ico check01"></span></a> -->
+					<a class="btn large type04" href="#">콘베어 실적<span class="ico check01 type01"></span></a>
+				</div>
+			</div>
+			<!-- //calender -->
+		</div>
+		<!-- // calender-wrap -->
+		<!-- 신청업무 -->
+		<div class="apply-work">
+			<h3 class="subject">신청업무</h3>
+			<p>진료비 지원, 퇴직연금 중도인출, 계좌변경, 사원증 발급 등 각종 신청업무를 처리합니다. <br>
+			신청업무별 제출서류가 상이하오니 준비 시 철저히 확인해주세요.</p>
+			<ul class="work-list">
+				<li><a href="#">작업공정지정</a></li>
+				<li><a href="#">퇴직연금 <br> 중도인출 신청</a></li>
+				<li><a href="#">진료비 신청</a></li>
+				<li></li><!-- 링크없을때는 a태그 없음 -->
+				<li></li><!-- 링크없을때는 a태그 없음 -->
+			</ul>
+		</div>
+		<!-- // 신청업무 -->
+		<!-- 커뮤니케이션 170104 추가 -->
+		<div class="communication">
+			<div class="member-wrap">
+				<h3 class="subject">Communication</h3>
+				<p>사내 구성원의 소식에 관심을 표현해 주세요.</p>
+				<ul class="member-slider">
+					<li>
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_130x150.jpg"></div>
+						<div class="info-wrap">
+							<span class="today"><em>TODAY</em></span>
+							<span class="name">채성훈 과장</span>
+							<span class="date">5월 16일 생일</span>
+						</div>
+					</li>
+					<li>
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_130x150_02.jpg"></div>
+						<div class="info-wrap">
+							<span class="name">서광주 과장</span>
+							<span class="date">5월 17일 장기근속</span>
+						</div>
+					</li>
+					<li>
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_130x150_03.jpg"></div>
+						<div class="info-wrap">
+							<span class="name">배수지 과장</span>
+							<span class="date">5월 22일 입사일</span>
+						</div>
+					</li>
+					<li>
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_130x150.jpg"></div>
+						<div class="info-wrap">
+							<span class="name">김현지 사원</span>
+							<span class="date">5월 11일 결혼기념일</span>
+						</div>
+					</li>
+					<li>
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_130x150_02.jpg"></div>
+						<div class="info-wrap">
+							<span class="name">김현대 차장</span>
+							<span class="date">2월 13일 장기근속</span>
+						</div>
+					</li>
+					<li>
+						<div class="thumb"><img src="../../@resource/images/@thumb/thumb_130x150_03.jpg"></div>
+						<div class="info-wrap">
+							<span class="name">이미연 차장</span>
+							<span class="date">1월 11일 결혼기념일</span>
+						</div>
+					</li>
+					<li>
+						<div class="thumb"></div>
+					</li>
+					<li>
+						<div class="thumb"></div>
+					</li>
+				</ul>
+				<div class="total"><span><img src="../../@resource/images/common/ico_pr_02.png" alt="">총 30명 (생일 12명, 입사일 1명, 장기근속 3명, 결혼기념일 2명)</span></div>
+				<!-- 사원없을 때 -->
+				<!-- <div class="no-data">
+					<p>해당 사원이 없습니다.</p>
+				</div> -->
+				<!-- // 사원없을 때 -->
+			</div>
+		</div>
+		<!-- // 커뮤니케이션 170104 추가 -->
+		<!-- 171204 삭제 -->
+		<!-- 기타업무 -->
+		<!-- <div class="etc-work">
+			<h3 class="subject">기타업무</h3>
+			<ul class="etc-list">
+				<li><a href="#">
+					<span class="thumb"><img src="../../@resource/images/mss/thumb_310x110.jpg"></span>
+					<span class="title">근태담당자 가이드</span>
+					<p>근태담당자의 관리 책임과 역할을 안내해 드립니다. </p>
+				</a></li>
+				<li><a href="#">
+					<span class="thumb"><img src="../../@resource/images/mss/thumb_310x110_02.jpg"></span>
+					<span class="title">직원정보 수정</span>
+					<p>새롭게 업데이트된 직원들의 정보를 수정하실 수 있습니다.</p>
+				</a></li>
+				<li><a href="#">
+					<span class="thumb"><img src="../../@resource/images/mss/thumb_310x110_03.jpg"></span>
+					<span class="title">현황 조회</span>
+					<p>근태 현황 및 여러가지 현황을 조회하실 수 있습니다.</p>
+				</a></li>
+			</ul>
+		</div> -->
+		<!-- // 기타업무 -->
+		<!-- // 171204 삭제 -->
+	</div>
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 HLB CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>
+

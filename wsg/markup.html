@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../@resource/css/style.css">
+<link rel="stylesheet" type="text/css" href="wsg.css?t=20201111">
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="wsg.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		//gnb 열림
+		$('#allMenu').click(function(){
+			$('.gnb').addClass('active');
+		});
+		//gnb 닫음
+		$('.btn-close').click(function(){
+			$('.gnb').removeClass('active');
+		});
+	});
+</script>
+<style tyle="text/css">
+.tab-cont{display: none;padding-top: 30px;}
+.tab-cont.active{display: block;}
+</style>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+	<div class="header-wrap">
+		<h1><span class="blind">HLB</span></h1>
+		<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+		<div class="gnb">
+			<div class="gnb-wrap">
+				<h3>PROGRESS</h3>
+				<ul>
+					<li><a href="markup.html">markup</a></li>
+				</ul>
+				<h3>UI LIBRARY</h3>
+				<ul>
+					<li><a href="table.html">layout</a></li>
+					<li><a href="table.html">table</a></li>
+					<li><a href="form.html">form</a></li>
+					<li><a href="fieldset.html">fieldset</a></li>
+					<li><a href="button.html">button</a></li>
+					<li><a href="tab.html">tab</a></li>
+					<li><a href="list.html">list</a></li>
+					<li><a href="popup.html">popup</a></li>
+					<li><a href="print.html">print</a></li>
+					<li><a href="etc.html">etc</a></li>
+				</ul>
+				<a href="#" class="btn-close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+	<h2>WSG / MARKUP LIST</h2>
+	<div class="tab-wrap">
+		<!-- TAB -->
+		<ul class="tab">
+			<li class="active"><a href="#tab01">ESS</a></li>
+			<li><a href="#tab02">MSS</a></li>
+			<li><a href="#tab03">인사담당 / 평가</a></li>
+			<li><a href="#tab04">템플릿</a></li>
+			<li><a href="#tab05">기타</a></li>
+			<li><a href="#tab06">메일링</a></li>
+		</ul>
+		<!-- // TAB -->
+
+		<!-- ESS -->
+		<div id="tab01" class="tab-cont active">
+			<div class="table-wrap">
+				<table id="progressList" class="data-table">
+				<colgroup>
+				</colgroup>
+					<thead>
+						<tr>
+							<th>번호</th>
+							<th>1 Depth</th>
+							<th>2 Depth</th>
+							<th>3 Depth</th>
+							<th>4 Depth</th>
+							<th>FOLDER</th>
+							<th>PAGE ID</th>
+							<th>완료</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td rowspan="69">ESS</td>
+							<td rowspan="2">MAIN</td>
+							<td>ESS 메인</td>
+							<td></td>
+							<td>ess_main</td>
+							<td class="state">ma000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>ESS 메인(생산직)</td>
+							<td></td>
+							<td>ess_main</td>
+							<td class="state">ma000002</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="4">MY PROFILE</td>
+							<td>SUB MAIN</td>
+							<td></td>
+							<td>my_profile</td>
+							<td class="state">my000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>개인정보</td>
+							<td></td>
+							<td>my_profile</td>
+							<td class="state">my010100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>인사기록카드(인쇄)</td>
+							<td></td>
+							<td>my_profile</td>
+							<td class="state">my010200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>타임라인</td>
+							<td></td>
+							<td>my_profile</td>
+							<td class="state">my010300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="17">성과와 평가</td>
+							<td>성과 SUB MAIN</td>
+							<td></td>
+							<td>result</td>
+							<td class="state">re000001</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>성과 SUB MAIN backup</td>
+							<td></td>
+							<td>result</td>
+							<td class="state">re000001_backup</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가 SUB MAIN</td>
+							<td></td>
+							<td>result</td>
+							<td class="state">re000002</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가 SUB MAIN(생산직)</td>
+							<td></td>
+							<td>result</td>
+							<td class="state">re000003</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="3">인사평가</td>
+							<td>평가개요</td>
+							<td>result</td>
+							<td class="state">re010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가요소</td>
+							<td>result</td>
+							<td class="state">re010100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가결과</td>
+							<td>result</td>
+							<td class="state">re010200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">간부사원 성과평가</td>
+							<td>평가개요</td>
+							<td>result</td>
+							<td class="state">re020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가결과</td>
+							<td>result</td>
+							<td class="state">re020100</td>
+							<td class="state">완료</td>
+						</tr>
+						<!-- <tr>
+							<td></td>
+							<td>역량평가</td>
+							<td>평가가이드</td>
+							<td>result</td>
+							<td class="state">re030000</td>
+							<td class="state">완료</td>
+						</tr> -->
+						<tr>
+							<td></td>
+							<td>임원평가</td>
+							<td>평가가이드</td>
+							<td>result</td>
+							<td class="state">re040000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>다면평가</td>
+							<td>평가가이드</td>
+							<td>result</td>
+							<td class="state">re050000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>역할역량 서베이</td>
+							<td>평가가이드</td>
+							<td>result</td>
+							<td class="state">re060000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="5">기술영업직평가</td>
+							<td>평가가이드(기술직)</td>
+							<td>result</td>
+							<td class="state">re050300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가가이드(영업직)</td>
+							<td>result</td>
+							<td class="state">re050400</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가가이드(생산직)</td>
+							<td>result</td>
+							<td class="state">re050500</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가결과 연람신청</td>
+							<td>result</td>
+							<td class="state">re050100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>인사평가 결과</td>
+							<td>result</td>
+							<td class="state">re050200</td>
+							<td class="state">완료</td>
+						</tr>
+						<!-- <tr>
+							<td></td>
+							<td>기술영업직 평가가이드</td>
+							<td>result</td>
+							<td class="state">re050300</td>
+							<td class="state">미정</td>
+						</tr> -->
+						<tr>
+							<td></td>
+							<td rowspan="5">경력개발</td>
+							<td>SUB MAIN</td>
+							<td></td>
+							<td>career</td>
+							<td class="state">ca000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>사내이력서</td>
+							<td></td>
+							<td>career</td>
+							<td class="state">ca010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>FAQ</td>
+							<td></td>
+							<td>career</td>
+							<td class="state">ca020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">제도안내</td>
+							<td>CDP</td>
+							<td>career</td>
+							<td class="state">ca030000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>사내공모</td>
+							<td>career</td>
+							<td class="state">ca030002</td>
+							<td class="state">완료</td>
+						</tr>
+						<!-- <tr>
+							<td></td>
+							<td>해외주재원</td>
+							<td>career</td>
+							<td class="state"></td>
+							<td class="state">미정</td>
+						</tr> -->
+						<tr>
+							<td></td>
+							<td rowspan="4">근태</td>
+							<td>SUB MAIN</td>
+							<td></td>
+							<td>diligence</td>
+							<td class="state">di000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="3">모성보호</td>
+							<td>임신사실확인</td>
+							<td>diligence</td>
+							<td class="state">di010100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>출산휴가신청</td>
+							<td>diligence</td>
+							<td class="state">di010200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>육아휴직(단축근무)<br> 신청</td>
+							<td>diligence</td>
+							<td class="state">di010300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="14">보상</td>
+							<td rowspan="2">SUB MAIN</td>
+							<td>데이터 있을 경우</td>
+							<td>reward</td>
+							<td class="state">re000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>데이터 없을 경우</td>
+							<td>reward</td>
+							<td class="state">re000100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>급여명세</td>
+							<td></td>
+							<td>reward</td>
+							<td class="state">re010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>급여명세서 인쇄물(전체)</td>
+							<td></td>
+							<td>reward</td>
+							<td class="state">re010002</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>급여명세서 인쇄물(생산직)</td>
+							<td></td>
+							<td>reward</td>
+							<td class="state">re010003</td>
+							<td class="state">완료</td>
+						</tr>
+                        <tr>
+                            <td></td>
+                            <td>급여명세서 인쇄물(임원)</td>
+                            <td></td>
+                            <td>reward</td>
+                            <td class="state">re010600</td>
+                            <td class="state">완료</td>
+                        </tr>
+						<tr>
+							<td></td>
+							<td>건강보험 감면 신청 팝업</td>
+							<td></td>
+							<td>reward</td>
+							<td class="state">re020100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>해외출국보험료<br> 경감 신청 상세 팝업</td>
+							<td></td>
+							<td>reward</td>
+							<td class="state">re020200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>퇴직금 중도인출 신청 안내</td>
+							<td></td>
+							<td>reward</td>
+							<td class="state">re020300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>연봉계약 안내 팝업</td>
+							<td></td>
+							<td>reward</td>
+							<td class="state">re030200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">출력가이드(샘플)</td>
+							<td>세로프린트(연봉계약서)</td>
+							<td>reward</td>
+							<td class="state">re030300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>가로프린트(퇴직금)</td>
+							<td>reward</td>
+							<td class="state">re030400</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">퇴직연금 중도인출 안내</td>
+							<td>중도인출 신청 안내</td>
+							<td>reward</td>
+							<td class="state">re040000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>제출서류 안내</td>
+							<td>reward</td>
+							<td class="state">re040200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="11">GLOBAL HR</td>
+							<td>SUB MAIN</td>
+							<td></td>
+							<td>global_hr</td>
+							<td class="state">gr000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>권역별 지사 팝업</td>
+							<td></td>
+							<td>global_hr</td>
+							<td class="state">gr000100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>주재원 정보</td>
+							<td></td>
+							<td>global_hr</td>
+							<td class="state">gr010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>해외근무확인서-영문(프린트)</td>
+							<td></td>
+							<td>global_hr</td>
+							<td class="state">gr020002</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>해외근무확인서-한글(프린트)</td>
+							<td></td>
+							<td>global_hr</td>
+							<td class="state">gr020003</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="4">부귀임안내</td>
+							<td>부임지원</td>
+							<td>global_hr</td>
+							<td class="state">gr030000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>주재생활지원</td>
+							<td>global_hr</td>
+							<td class="state">gr030100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>귀임지원</td>
+							<td>global_hr</td>
+							<td class="state">gr030200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>업무 담당자 <br> 및 연락처</td>
+							<td>global_hr</td>
+							<td class="state">gr030300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>생활 노하우 팝업</td>
+							<td></td>
+							<td>global_hr</td>
+							<td class="state">gr040000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>해외주재원 서약서 팝업</td>
+							<td></td>
+							<td>global_hr</td>
+							<td class="state">gr050000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="13">HR안내</td>
+							<td>SUB MAIN</td>
+							<td></td>
+							<td>hr_info</td>
+							<td class="state">hr000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>One Click HR</td>
+							<td></td>
+							<td>hr_info</td>
+							<td class="state">hr010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>상담센터</td>
+							<td></td>
+							<td>hr_info</td>
+							<td class="state">hr020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="5">상담센터 팝업</td>
+							<td>양재상담실</td>
+							<td>hr_info</td>
+							<td class="state">hr020100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>소하리공장</td>
+							<td>hr_info</td>
+							<td class="state">hr020200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>화성공장</td>
+							<td>hr_info</td>
+							<td class="state">hr020300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>광주공장</td>
+							<td>hr_info</td>
+							<td class="state">hr020400</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>국내영업부문</td>
+							<td>hr_info</td>
+							<td class="state">hr020500</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>출산과 육아</td>
+							<td></td>
+							<td>hr_info</td>
+							<td class="state">hr030000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>업무전결규정</td>
+							<td>업무구성도</td>
+							<td>hr_info</td>
+							<td class="state">hr040000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">HR 안내</td>
+							<td>복리후생/업무환경<br> 지원</td>
+							<td>hr_info</td>
+							<td class="state">hr050000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>근태</td>
+							<td>hr_info</td>
+							<td class="state">hr060000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>퇴직안내문</td>
+							<td>퇴직절차 안내</td>
+							<td>hr_info</td>
+							<td class="state">hr080000</td>
+							<td class="state">완료</td>
+						</tr>
+						<!-- <tr>
+							<td></td>
+							<td>퇴직금 수령 및<br> 근로정산</td>
+							<td>hr_info</td>
+							<td class="state">hr080100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>사회보험 후속조치</td>
+							<td>hr_info</td>
+							<td class="state">hr080200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>개인연금 안내</td>
+							<td>hr_info</td>
+							<td class="state">hr080300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>잔여 포인트<br> 사용안내</td>
+							<td>hr_info</td>
+							<td class="state">hr080400</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>기타안내</td>
+							<td>hr_info</td>
+							<td class="state">hr080500</td>
+							<td class="state">완료</td>
+						</tr> -->
+						<!--mss(팀장)-->
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- //  ESS -->
+
+		<!-- MSS -->
+		<div id="tab02" class="tab-cont">
+			<div class="table-wrap">
+				<table id="progressList02" class="data-table">
+				<colgroup>
+				</colgroup>
+					<thead>
+						<tr>
+							<th>번호</th>
+							<th>1 Depth</th>
+							<th>2 Depth</th>
+							<th>3 Depth</th>
+							<th>4 Depth</th>
+							<th>FOLDER</th>
+							<th>PAGE ID</th>
+							<th>완료</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- mss (팀장) -->
+						<tr>
+							<td></td>
+							<td rowspan="15">MSS<br> 팀장</td>
+							<td>MAIN</td>
+							<td></td>
+							<td></td>
+							<td>mss_main</td>
+							<td class="state">ma000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">조직과업무</td>
+							<td>SUB MAIN</td>
+							<td></td>
+							<td>mss_organize</td>
+							<td class="state">or000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>워킹그룹 조직도</td>
+							<td></td>
+							<td>mss_organize</td>
+							<td class="state">or010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">성과관리와 평가</td>
+							<td>SUB MAIN</td>
+							<td></td>
+							<td>mss_assessment</td>
+							<td class="state">as000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>SUB MAIN backup</td>
+							<td></td>
+							<td>mss_assessment</td>
+							<td class="state">as000000_backup</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="10">육성과 동기부여</td>
+							<td>SUB MAIN</td>
+							<td></td>
+							<td>mss_motivation</td>
+							<td class="state">mo000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>개요</td>
+							<td></td>
+							<td>mss_motivation</td>
+							<td class="state">mo010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="3">Kingpin Leadership<br>
+							<td>리더의 역할</td>
+							<td>mss_motivation</td>
+							<td class="state">mo020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>리더십 모델</td>
+							<td>mss_motivation</td>
+							<td class="state">mo020100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>리더 육성 체계</td>
+							<td>mss_motivation</td>
+							<td class="state">mo020200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="5">업무 체크리스트</td>
+							<td>근태관리</td>
+							<td>mss_motivation</td>
+							<td class="state">mo030000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>예산관리</td>
+							<td>mss_motivation</td>
+							<td class="state">mo030100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>퇴직관리</td>
+							<td>mss_motivation</td>
+							<td class="state">mo030200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>보안관리</td>
+							<td>mss_motivation</td>
+							<td class="state">mo030300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>문서관리</td>
+							<td>mss_motivation</td>
+							<td class="state">mo030400</td>
+							<td class="state">완료</td>
+						</tr>
+						<!--// mss (팀장) -->
+						<!--mss(임원)-->
+						<tr>
+							<td></td>
+							<td rowspan="11">MSS<br> 임원</td>
+							<td>MAIN</td>
+							<td></td>
+							<td></td>
+							<td>mss_main</td>
+							<td class="state">ma000002</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>주재원 MAIN</td>
+							<td></td>
+							<td></td>
+							<td>mss_main</td>
+							<td class="state">ma000003</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="3">보상</td>
+							<td>서브메인</td>
+							<td></td>
+							<td>mss_reward</td>
+							<td class="state">re000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>급여명세서</td>
+							<td></td>
+							<td>mss_reward</td>
+							<td class="state">re010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>연봉 통보서</td>
+							<td></td>
+							<td>mss_reward</td>
+							<td class="state">re020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="3">현황</td>
+							<td>핵심인재 현황</td>
+							<td></td>
+							<td>mss_state</td>
+							<td class="state">st010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>핵심인재심의 팝업</td>
+							<td></td>
+							<td>mss_state</td>
+							<td class="state">st010100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>공정거래 준수 서약서</td>
+							<td></td>
+							<td>mss_state</td>
+							<td class="state">st020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="3">HR안내</td>
+							<td>서브메인</td>
+							<td></td>
+							<td>mss_info</td>
+							<td class="state">hr000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">시스템 가이드</td>
+							<td>개편사항 안내</td>
+							<td>mss_info</td>
+							<td class="state">hr010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>시스템별 상세 사용법</td>
+							<td>mss_info</td>
+							<td class="state">hr010100</td>
+							<td class="state">완료</td>
+						</tr>
+						<!--// mss (임원) -->
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- // MSS -->
+
+		<!-- 인사담당 / 평가 -->
+		<div id="tab03" class="tab-cont">
+			<div class="table-wrap">
+				<table id="progressList03" class="data-table">
+				<colgroup>
+				</colgroup>
+					<thead>
+						<tr>
+							<th>번호</th>
+							<th>1 Depth</th>
+							<th>2 Depth</th>
+							<th>3 Depth</th>
+							<th>4 Depth</th>
+							<th>FOLDER</th>
+							<th>PAGE ID</th>
+							<th>완료</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td rowspan="18">인사담당</td>
+							<td>MAIN</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>One Click HR 안내 팝업</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh010100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>통합사원증 신청 팝업</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh010200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>사원증 신청서 작성 팝업</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh010300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="5">승진</td>
+							<td>부장승진추천서(인쇄물)</td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh020100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>승진추천서(인쇄물)</td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh020200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>서열조정사유서(인쇄물)</td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh020300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>승진심의마스터(인쇄물)</td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh020400</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>승진심의마스터(웹)</td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh020500</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>징계</td>
+							<td>징계 현황 달력</td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh030000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>핵심인재</td>
+							<td>성과우수자 육성계획서(인쇄)</td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh040100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">업무수행일지</td>
+							<td>로그인</td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh080000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>비밀번호 초기화</td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh080100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>조직임원현황</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh090000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가자 서약 팝업</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh110000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>경고창 팝업</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh120000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>경고창 팝업2</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh120100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>보안동의 팝업</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh130000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="8">평가</td>
+							<td>평가 템플릿 1</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh060000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가 템플릿 2</td>
+							<td></td>
+							<td></td>
+							<td>ehr</td>
+							<td class="state">eh070000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가결과 열람신청</td>
+							<td></td>
+							<td></td>
+							<td>evaluation</td>
+							<td class="state">ev010100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>평가자 종합의견 팝업</td>
+							<td></td>
+							<td></td>
+							<td>evaluation</td>
+							<td class="state">ev010200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>심의위원회실시여부확인 팝업</td>
+							<td></td>
+							<td></td>
+							<td>evaluation</td>
+							<td class="state">ev010300</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>성과우수자 육성계획서 팝업</td>
+							<td></td>
+							<td></td>
+							<td>evaluation</td>
+							<td class="state">ev010400</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>경력직 수습평가 팝업</td>
+							<td></td>
+							<td></td>
+							<td>evaluation</td>
+							<td class="state">ev010500</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>신입직(일반직) 수습평가 팝업</td>
+							<td></td>
+							<td></td>
+							<td>evaluation</td>
+							<td class="state">ev010600</td>
+							<td class="state">완료</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- // 인사담당 / 평가 -->
+
+		<!-- 템플릿 -->
+		<div id="tab04" class="tab-cont">
+			<div class="table-wrap">
+				<table id="progressList04" class="data-table">
+					<colgroup>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>번호</th>
+							<th>1 Depth</th>
+							<th>2 Depth</th>
+							<th>3 Depth</th>
+							<th>4 Depth</th>
+							<th>FOLDER</th>
+							<th>PAGE ID</th>
+							<th>완료</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td rowspan="2">front<br>레이아웃</td>
+							<td>메인</td>
+							<td></td>
+							<td></td>
+							<td>@temp</td>
+							<td class="state">layout_01</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>서브</td>
+							<td></td>
+							<td></td>
+							<td>@temp</td>
+							<td class="state">layout_02</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">인사담당<br>레이아웃</td>
+							<td>header 있는타입</td>
+							<td></td>
+							<td></td>
+							<td>@temp</td>
+							<td class="state">layout_03</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>header 없는 타입</td>
+							<td></td>
+							<td></td>
+							<td>@temp</td>
+							<td class="state">layout_04</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>전체메뉴</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>@temp</td>
+							<td class="state">all_menu</td>
+							<td class="state">완료</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- // 템플릿 -->
+
+		<!-- 기타 -->
+		<div id="tab05" class="tab-cont">
+			<div class="table-wrap">
+				<table id="progressList05" class="data-table">
+				<colgroup>
+				</colgroup>
+					<thead>
+						<tr>
+							<th>번호</th>
+							<th>1 Depth</th>
+							<th>2 Depth</th>
+							<th>3 Depth</th>
+							<th>4 Depth</th>
+							<th>FOLDER</th>
+							<th>PAGE ID</th>
+							<th>완료</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td>로그인</td>
+							<td>로그인</td>
+							<td></td>
+							<td></td>
+							<td>login</td>
+							<td class="state">lo000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="4">근태담당자</td>
+							<td rowspan="2">메인</td>
+							<td>결재상태</td>
+							<td></td>
+							<td>mss_diligence</td>
+							<td class="state">di000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>근태입력</td>
+							<td></td>
+							<td>mss_diligence</td>
+							<td class="state">di000002</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">급여관리</td>
+							<td rowspan="2">공정지원</td>
+							<td>입력</td>
+							<td>mss_diligence</td>
+							<td class="state">di010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>입력 현황</td>
+							<td>mss_diligence</td>
+							<td class="state">di010002</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="5">신규입사자</td>
+							<td>로그인</td>
+							<td></td>
+							<td></td>
+							<td>new_recruit</td>
+							<td class="state">ne000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>개인정보수집동의</td>
+							<td></td>
+							<td></td>
+							<td>new_recruit</td>
+							<td class="state">ne010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>입사관련 안내사항</td>
+							<td></td>
+							<td></td>
+							<td>new_recruit</td>
+							<td class="state">ne020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>개인정보입력</td>
+							<td></td>
+							<td></td>
+							<td>new_recruit</td>
+							<td class="state">ne030000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>가족사항</td>
+							<td></td>
+							<td></td>
+							<td>new_recruit</td>
+							<td class="state">ne040000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="23">기타</td>
+							<td>메뉴권한 알림</td>
+							<td></td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">et000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>오류메시지 알림</td>
+							<td></td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">et010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>오픈배너</td>
+							<td></td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">et020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="8">인사발령</td>
+							<td>사업관리본부 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa000000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>기술파트장 보권임면 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>전보발령 처리</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>파견 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa030000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>징계 인사명령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa040000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>휴복직 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa050000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>보직임면 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa060000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>보직임면 및 전보 外 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa070000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="8">인사발령(SAP)</td>
+							<td>사업관리본부 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa000100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>기술파트장 보권임면 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa010100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>전보발령 처리</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa020100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>파견 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa030100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>징계 인사명령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa040100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>휴복직 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa050100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>보직임면 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa060100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>보직임면 및 전보 外 인사발령</td>
+							<td></td>
+							<td>etc</td>
+							<td class="state">sa070100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="3">시스템개편 <br>초기공지 안내페이지</td>
+							<td>My HR편</td>
+							<td></td>
+							<td>system_info</td>
+							<td class="state">index_old</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>근태담당자편</td>
+							<td></td>
+							<td>system_info</td>
+							<td class="state">index_old2</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>리더편</td>
+							<td></td>
+							<td>system_info</td>
+							<td class="state">index</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>상단 타이틀 개발용</td>
+							<td></td>
+							<td></td>
+							<td>mss_motivation</td>
+							<td class="state">mo040000</td>
+							<td class="state">완료</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- // 기타 -->
+
+		<!-- 메일링 -->
+		<div id="tab06" class="tab-cont">
+			<div class="table-wrap">
+				<table id="progressList06" class="data-table">
+				<colgroup>
+				</colgroup>
+					<thead>
+						<tr>
+							<th>번호</th>
+							<th>1 Depth</th>
+							<th>2 Depth</th>
+							<th>3 Depth</th>
+							<th>4 Depth</th>
+							<th>FOLDER</th>
+							<th>PAGE ID</th>
+							<th>완료</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td rowspan="17">메일링</td>
+							<td rowspan="2">템플릿1</td>
+							<td>타입1(추후사용)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em010000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>타입2(추후사용)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em010100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">템플릿2</td>
+							<td>타입1(추후사용)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em020000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>타입2(추후사용)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em020100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="2">템플릿3</td>
+							<td>타입1(확정)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em030000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>타입2(확정)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em030100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="3">급여명세서</td>
+							<td>타입 1(확정)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em040000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>타입 2(추후사용)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em040100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>타입 3(추후사용)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em040200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>육아휴직 제도 안내</td>
+							<td></td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em050000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>출산휴가 제도 안내</td>
+							<td></td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em050100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>유사산휴가 제도 안내</td>
+							<td></td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em050200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td rowspan="5">시스템안내</td>
+							<td>메인(리더편)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em060000</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>메인(근태담당편)</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em060000_back</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>근태담당자편</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em060100</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>MY HR편</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em060200</td>
+							<td class="state">완료</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>리더편</td>
+							<td></td>
+							<td>ems</td>
+							<td class="state">em060300</td>
+							<td class="state">완료</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- // 메일링 -->
+	</div>
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2020 HLB HR SYSTEM , All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="depth03 exception">
+<!-- HEADER -->
+<div id="header">
+	<!-- header-wrap -->
+	<div class="header-wrap">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+		<!-- personal-info -->
+		<div class="personal-info">
+			<div class="belong">양재본사</div>
+			<div class="number">5612336</div>
+			<div class="position"><span class="name">홍길동</span>과장</div>
+			<div class="state logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- // personal-info -->
+		<!-- utill-menu -->
+		<div class="utill-menu">
+			<ul>
+				<li class="active"><a href="#">My HR</a></li>
+				<li><a href="#">나의 팀</a></li>
+				<li><a href="#">인사 담당</a></li>
+			</ul>
+		</div>
+		<!-- // utill-menu -->
+		<!-- gnb -->
+		<div class="gnb">
+			<ul class="nav">
+				<li class="depth01"><a href="#">근태관리</a></li>
+				<li class="depth01"><a href="#" class="active">급여관리</a></li>
+				<li class="depth01"><a href="#">휴직/복직 신청</a></li>
+				<li class="depth01"><a href="#">4대보험</a></li>
+				<li class="depth01"><a href="#">현황조회</a></li>
+			</ul>
+			<div class="btn-area">
+				<a href="#" class="all-menu"><span class="blind">모든 메뉴</span></a>
+			</div>
+		</div>
+		<!-- // gnb -->
+	</div>
+	<!--// header-wrap -->
+</div>
+<!-- // HEADER -->
+
+<!-- CONTENT -->
+<div id="container" class="supporting-progress">
+	<!-- 사이드 메뉴 -->
+	<div id="aside-menu" class="side-menu">
+		<h2>급여관리</h2>
+		<ul class="lnb">
+			<li><a href="#" class="active">공정지원 입력</a></li>
+			<li><a href="#">가족수당 변경 신청</a></li>
+			<li><a href="#">공정 변경 신청</a></li>
+			<li><a href="#">연말정산 일괄납부 신청</a></li>
+			<li><a href="#">급여 계좌 변경 신청</a></li>
+			<li><a href="#">변동수당 공제 신청</a></li>
+			<li><a href="#">출산전후휴가 보전금액 신청</a></li>
+		</ul>
+	</div>
+	<!-- //사이드 메뉴 -->
+	<div id="content" class="content-primary">
+		<div class="content-header">
+			<h2 class="content-title">공정지원 입력 현황</h2>
+			<a href="#" class="btn type03 large">공정 지원 입력으로 전환 <span class="ico newly_02"></span></a>
+		</div>
+		<form>
+			<fieldset class="fieldset">
+				<legend>검색</legend>
+				<div class="field">
+					<div class="insert">
+						<label class="label" for="userGroup">대상조직</label>
+						<!-- <input type="text" class="input-text" name="" id="userGroup" placeholder="" title="대상조직" style="width: 120px"> -->
+						<select>
+							<option>61003227 소)엔진품질관리부 엔진검사1그룹</option>
+							<option>61003227 소)엔진품질관리부 엔진검사2그룹</option>
+							<option>61003227 소)엔진품질관리부 엔진검사3그룹</option>
+						</select>
+					</div>
+					<div class="insert">
+						<label class="label" for="userNum">사번</label>
+						<div class="input-search" style="width: 110px">
+							<input type="search" name="" id="userNum" title="사번">
+							<button class="btn" type="button"><img alt="검색" src="../../@resource/images/common/search02.png"></button>
+						</div>
+						<a class="btn type01 small">검색</a>
+						<input type="text" class="input-text" name="" title="성명" value="홍길동" style="width: 100px" disabled="disabled">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<!-- CALENDAR -->
+		<div class="calender">
+			<!-- calender-header -->
+			<div class="calender-header">
+				<div class="date">9월</div>
+				<div class="btn-area">
+					<a class="btn prev" href="#" title="이전달">August</a>
+					<a class="btn next" href="#" title="다음달">October</a>
+				</div>
+			</div>
+			<div class="total-state">
+				<div class="item-list">
+					<strong>합계 시간</strong>
+					<span>A등급 : 120시간</span>
+					<span>B등급 : 110시간</span>
+				</div>
+			</div>
+			<!-- //calender-header -->
+			<!-- calender-body -->
+			<div class="calender-body">
+				<table class="item-table">
+					<caption>징계 달력</caption>
+					<colgroup>
+						<col style="width: 14.3%">
+						<col style="width: 14.3%">
+						<col style="width: 14.3%">
+						<col style="width: 14.3%">
+						<col style="width: 14.3%">
+						<col style="width: 14.3%">
+						<col style="width: *">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">Sun</th>
+							<th scope="col">Mon</th>
+							<th scope="col">Tue</th>
+							<th scope="col">Wed</th>
+							<th scope="col">Thu</th>
+							<th scope="col">Fri</th>
+							<th scope="col">Sat</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="data-header">
+									<span class="prev-month">25</span>
+								</div>
+								<div class="data-info">
+
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="prev-month">26</span>
+								</div>
+								<div class="data-info">
+
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="prev-month">27</span>
+								</div>
+								<div class="data-info">
+
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="prev-month">28</span>
+								</div>
+								<div class="data-info">
+
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="prev-month">29</span>
+								</div>
+								<div class="data-info">
+
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="prev-month">30</span>
+								</div>
+								<div class="data-info">
+
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">1</span>
+								</div>
+								<div class="data-info">
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data-header">
+									<span class="day">2</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">3</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">4</span>
+								</div>
+								<div class="data-info">
+									<div>상도터치업(A) :<span>8시간</span></div>
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">5</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">6</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">7</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">8</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data-header">
+									<span class="day">9</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">10</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">11</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">12</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">13</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">14</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">15</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data-header">
+									<span class="day">16</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">17</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">18</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">19</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">20</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">21</span>
+								</div>
+								<div class="data-info">
+									<div>상도터치업(A) :<span>8시간</span></div>
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">22</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data-header">
+									<span class="day">23</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">24</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">25</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">26</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">27</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day today">28</span>
+								</div>
+								<div class="data-info">
+									<div>상도터치업(A) :<span>8시간</span></div>
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">29</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data-header">
+									<span class="day">30</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="day">31</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="next-month">1</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="next-month">2</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="next-month">3</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="next-month">4</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+							<td>
+								<div class="data-header">
+									<span class="next-month">5</span>
+								</div>
+								<div class="data-info">
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- // calender-body -->
+		</div>
+		<!-- // CALENDAR -->
+	</div>
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 HLB CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

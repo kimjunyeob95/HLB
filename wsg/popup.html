@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KIA</title>
+<link rel="stylesheet" type="text/css" href="wsg.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/dhtmlxgrid_dhx_web.css">
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		//gnb 열림
+		$('#allMenu').click(function(){
+			$('.gnb').addClass('active');
+		});
+		//gnb 닫음
+		$('.btn-close').click(function(){
+			$('.gnb').removeClass('active');
+		});
+
+		// 디자인 form요소 적용
+		$('select, input[type=radio], input[type=checkbox], input[type=file]').uniform({
+			fileDefaultHtml: '',
+			fileButtonHtml: '파일첨부'
+		});
+
+	});
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+	<div class="header-wrap">
+		<h1><span class="blind">KIA</span></h1>
+		<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+		<div class="gnb">
+			<div class="gnb-wrap">  
+				<h3>PROGRESS</h3>
+				<ul>
+					<li><a href="markup.html">markup</a></li>
+				</ul>
+				<h3>UI LIBRARY</h3>
+				<ul>
+					<li><a href="table.html">layout</a></li>
+					<li><a href="table.html">table</a></li>
+					<li><a href="form.html">form</a></li>
+					<li><a href="fieldset.html">fieldset</a></li>
+					<li><a href="button.html">button</a></li>
+					<li><a href="tab.html">tab</a></li>
+					<li><a href="list.html">list</a></li>
+					<li><a href="popup.html">popup</a></li>
+					<li><a href="print.html">print</a></li>
+					<li><a href="etc.html">etc</a></li>
+				</ul>
+				<a href="#" class="btn-close"><img src="../@resource/images/common/btn_close.png" alt="팝업닫기"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+	<h2>WSG / POPUP</h2>
+	<!-- section -->
+	<div class="section">
+		<!-- table-wrap -->
+		<h3>popup - window-popup<span>윈도우팝업일 경우</span></h3>
+		<div class="window-popup">
+		<h2 class="popup-title">내가 결재할 문서 상세</h2>
+		<!-- popup-wrap -->
+		<div class="popup-wrap">
+			<!-- button-area -->
+			<div class="content-notice">
+				<p>전결권 기본 표시는 ◎ 이나, ★ 표시일 경우, 다음과 같이 적용됨<br>전결권 기본 표시는 ◎ 이나, ★ 표시일 경우, 다음과 같이 적용됨</p>
+				<div class="btn-aside">
+					<a class="btn type01 small" href="#">저장</a>
+					<a class="btn type01 small" href="#">인쇄</a>
+				</div>
+			</div>
+			<!-- 단위업무 -->
+			<div class="table-wrap">
+				<table class="data-table">
+					<tbody>
+						<tr>
+							<th title="업무군" >업무군</th>
+							<td><input name="txtEjgrp" type="text" id="txtEjgrp" class="input-text"></td>
+							<th title="단위업무명" >단위업무명</th>
+							<td><input name="txtDctl" type="text" id="txtDctl" class="input-text"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="insert">
+					<input name="chkSec" id="chkSec" type="checkbox" class="input-text" onfocus="blur()">
+					<label for="chkSec">보안대상 유무 (※ 보안상 전결단위업무의 선택적 공개가 필요한 경우 V표시)</label>
+				</div>
+			</div>
+			<!-- //단위업무 -->
+
+			<!-- 작성조직 -->
+			<h3 class="section-title">작성조직</h3>
+			<div class="table-wrap">
+				<table class="data-table">
+					<thead>
+						<tr>
+							<th title="본부">본부</th>
+							<th title="사업부">사업부</th>
+							<th title="실">실</th>
+							<th title="팀(부서)">팀(부서)</th>
+							<th title="총괄/직속">총괄/직속</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>가나다라</td>
+							<td>가나다라</td>
+							<td>가나다라</td>
+							<td>가나다라</td>
+							<td>가나다라</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //작성조직 -->
+
+			<!-- 업무분류 -->
+			<h3 class="section-title">업무분류</h3>
+			<div class="table-wrap">
+				<table class="data-table">
+					<thead>
+						<tr>
+							<th title="지역">지역</th>
+							<th title="제품">제품</th>
+							<th title="기능">기능</th>
+							<th title="시점">시점</th>
+							<th title="업무속성">업무속성</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<select name="cboArea" id="cboArea">
+									<option>선택01</option>
+									<option>선택02</option>
+								</select>
+							</td>
+							<td>
+								<select name="cboProd" id="cboProd">
+									<option>선택01</option>
+									<option>선택02</option>
+								</select>
+							</td>
+							<td>
+								<select name="cboFunc" id="cboFunc">
+									<option>선택01</option>
+									<option>선택02</option>
+								</select>
+							</td>
+							<td>
+								<select name="cboTime" id="cboTime">
+									<option>선택01</option>
+									<option>선택02</option>
+								</select>
+							</td>
+							<td>
+								<select name="cboAttr" id="cboAttr">
+									<option>선택01</option>
+									<option>선택02</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--// 업무분류 -->
+
+			<!-- 전결권 -->
+			<h3 class="section-title">전결권</h3>
+			<div class="table-wrap">
+				<table class="data-table">
+					<thead>
+						<tr>
+							<th title="파트/보직과장">파트/보직과장</th>
+							<th title="팀장">팀장</th>
+							<th title="실장">실장</th>
+							<th title="담당(실급)">담당(실급)</th>
+							<th title="사업부장">사업부장</th>
+							<th title="담당(사업부급)">담당(사업부급)</th>
+							<th title="본부장">본부장</th>
+							<th title="담당부회장">담당부회장</th>
+							<th title="사장/부회장">사장/부회장</th>
+							<th title="H/K CEO">H/K CEO</th>
+							<th title="회장">회장</th>
+							<th title="투자/지출승인규정적용">투자/지출<br>승인규정적용</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="radio" name="coopPerm" value="1" onfocus="blur()"></td> 
+							<td><input type="radio" name="coopPerm" value="2" onfocus="blur()" checked></td>
+							<td><input type="radio" name="coopPerm" value="3" onfocus="blur()" ></td>
+							<td><input type="radio" name="coopPerm" value="4" onfocus="blur()" ></td>
+							<td><input type="radio" name="coopPerm" value="5" onfocus="blur()" ></td>
+							<td><input type="radio" name="coopPerm" value="6" onfocus="blur()" ></td>
+							<td><input type="radio" name="coopPerm" value="7" onfocus="blur()" ></td>
+							<td><input type="radio" name="coopPerm" value="8" onfocus="blur()" ></td>
+							<td><input type="radio" name="coopPerm" value="9" onfocus="blur()" ></td>
+							<td><input type="radio" name="coopPerm" value="10" onfocus="blur()" ></td>
+							<td><input type="radio" name="coopPerm" value="11" onfocus="blur()" ></td>
+							<td><input type="radio" name="coopPerm" value="12" onfocus="blur()" ></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- // 전결권 -->
+
+			<!-- 협조부서 -->
+			<h3 class="section-title">협조부서</h3>
+			<div class="field">
+				<p class="notice">※ 업무 완결을 위해 필수적인 결재권한을 가진 팀/부서</p>
+				<input name="txtColla" id="txtColla" type="text" class="input-text" style="width:100%">
+			</div>
+			<!-- //협조부서 -->
+			<!-- 닫기 -->
+			<a class="popup-close" href="javascript:window.open('about:blank','_self').self.close();">팝업닫기</a>
+			<!-- // 닫기 -->
+		</div>
+		<!-- //popup-wrap -->
+	</div>
+	<!-- // Body window-popup-->
+	</div>
+	<!-- //section -->
+		<!-- markup -->
+	<div class="section markup">
+	<strong>markup 예시</strong>
+<pre>
+
+&lt;!--  Body window-popup--&gt;
+&lt;div class="window-popup"&gt;
+
+	&lt;h2 class="popup-title"&gt;내가 결재할 문서 상세&lt;/h2&gt;
+	
+	&lt;!-- popup-wrap --&gt;
+	&lt;div class="popup-wrap"&gt;
+
+	&lt;!-- button-area --&gt;
+	&lt;div class="button-area large"&gt;
+		&lt;div class="btn-right"&gt;
+			&lt;input type="button" class="btn small type01" value="저장"&gt;
+			&lt;input type="button" class="btn small type01" value="신청"&gt;
+			&lt;input type="button" class="btn small type01" value="출력"&gt;
+			&lt;input type="button" class="btn small type01" value="변경"&gt;
+			&lt;input type="button" class="btn small type01" value="삭제"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- //button-area --&gt;
+
+	&lt;!-- 단위업무 --&gt;
+	&lt;div class="table-wrap"&gt;
+		&lt;table class="data-table"&gt;
+			&lt;tbody&gt;
+				&lt;tr&gt;
+					&lt;th title="업무군" &gt;업무군&lt;/th&gt;
+					&lt;td&gt;&lt;input name="txtEjgrp" type="text" id="txtEjgrp" class="input-text"&gt;&lt;/td&gt;
+					&lt;th title="단위업무명" &gt;단위업무명&lt;/th&gt;
+					&lt;td&gt;&lt;input name="txtDctl" type="text" id="txtDctl" class="input-text"&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+		&lt;div class="insert"&gt;
+			&lt;input name="chkSec" id="chkSec" type="checkbox" class="input-text" onfocus="blur()"&gt;
+			&lt;label for="chkSec"&gt;보안대상 유무 (※ 보안상 전결단위업무의 선택적 공개가 필요한 경우 V표시)&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- //단위업무 --&gt;
+
+	&lt;!-- 업무분류 --&gt;
+	&lt;h3 class="section-title"&gt;업무분류&lt;/h3&gt;
+	&lt;div class="table-wrap"&gt;
+		&lt;table class="data-table"&gt;
+			&lt;thead&gt;
+				&lt;tr&gt;
+					&lt;th title="지역"&gt;지역&lt;/th&gt;
+					&lt;th title="제품"&gt;제품&lt;/th&gt;
+					&lt;th title="기능"&gt;기능&lt;/th&gt;
+					&lt;th title="시점"&gt;시점&lt;/th&gt;
+					&lt;th title="업무속성"&gt;업무속성&lt;/th&gt;
+				&lt;/tr&gt;
+			&lt;/thead&gt;
+			&lt;tbody&gt;
+				&lt;tr&gt;
+					&lt;td&gt;
+						&lt;select name="cboArea" id="cboArea"&gt;
+							&lt;option&gt;선택01&lt;/option&gt;
+							&lt;option&gt;선택02&lt;/option&gt;
+						&lt;/select&gt;
+					&lt;/td&gt;
+					&lt;td&gt;
+						&lt;select name="cboProd" id="cboProd"&gt;
+							&lt;option&gt;선택01&lt;/option&gt;
+							&lt;option&gt;선택02&lt;/option&gt;
+						&lt;/select&gt;
+					&lt;/td&gt;
+					&lt;td&gt;
+						&lt;select name="cboFunc" id="cboFunc"&gt;
+							&lt;option&gt;선택01&lt;/option&gt;
+							&lt;option&gt;선택02&lt;/option&gt;
+						&lt;/select&gt;
+					&lt;/td&gt;
+					&lt;td&gt;
+						&lt;select name="cboTime" id="cboTime"&gt;
+							&lt;option&gt;선택01&lt;/option&gt;
+							&lt;option&gt;선택02&lt;/option&gt;
+						&lt;/select&gt;
+					&lt;/td&gt;
+					&lt;td&gt;
+						&lt;select name="cboAttr" id="cboAttr"&gt;
+							&lt;option&gt;선택01&lt;/option&gt;
+							&lt;option&gt;선택02&lt;/option&gt;
+						&lt;/select&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+	&lt;/div&gt;
+	&lt;!--// 업무분류 --&gt;
+
+	&lt;!-- 전결권 --&gt;
+	&lt;h3 class="section-title"&gt;전결권&lt;/h3&gt;
+	&lt;div class="table-wrap"&gt;
+		&lt;table class="data-table"&gt;
+			&lt;thead&gt;
+				&lt;tr&gt;
+					&lt;th title="파트/보직과장"&gt;파트/보직과장&lt;/th&gt;
+					&lt;th title="팀장"&gt;팀장&lt;/th&gt;
+					&lt;th title="실장"&gt;실장&lt;/th&gt;
+					&lt;th title="담당(실급)"&gt;담당(실급)&lt;/th&gt;
+					&lt;th title="사업부장"&gt;사업부장&lt;/th&gt;
+					&lt;th title="담당(사업부급)"&gt;담당(사업부급)&lt;/th&gt;
+					&lt;th title="본부장"&gt;본부장&lt;/th&gt;
+					&lt;th title="담당부회장"&gt;담당부회장&lt;/th&gt;
+					&lt;th title="사장/부회장"&gt;사장/부회장&lt;/th&gt;
+					&lt;th title="H/K CEO"&gt;H/K CEO&lt;/th&gt;
+					&lt;th title="회장"&gt;회장&lt;/th&gt;
+					&lt;th title="투자/지출승인규정적용"&gt;투자/지출&lt;br&gt;승인규정적용&lt;/th&gt;
+				&lt;/tr&gt;
+			&lt;/thead&gt;
+			&lt;tbody&gt;
+				&lt;tr&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="1" onfocus="blur()"&gt;&lt;/td&gt; 
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="2" onfocus="blur()" checked&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="3" onfocus="blur()" &gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="4" onfocus="blur()" &gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="5" onfocus="blur()" &gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="6" onfocus="blur()" &gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="7" onfocus="blur()" &gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="8" onfocus="blur()" &gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="9" onfocus="blur()" &gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="10" onfocus="blur()" &gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="11" onfocus="blur()" &gt;&lt;/td&gt;
+					&lt;td&gt;&lt;input type="radio" name="coopPerm" value="12" onfocus="blur()" &gt;&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+	&lt;/div&gt;
+	&lt;!-- // 전결권 --&gt;
+
+	&lt;!-- 협조부서 --&gt;
+	&lt;h3 class="section-title"&gt;협조부서&lt;/h3&gt;
+	&lt;div class="field"&gt;
+			&lt;p class="notice"&gt;※ 업무 완결을 위해 필수적인 결재권한을 가진 팀/부서&lt;/p&gt;
+			&lt;input name="txtColla" id="txtColla" type="text" class="input-text" style="width:100%"&gt;
+	&lt;/div&gt;
+	&lt;!-- //협조부서 --&gt;
+	&lt;!-- 닫기 --&gt;
+	&lt;a class="popup-close" href="javascript:window.open('about:blank','_self').self.close();"&gt;팝업닫기&lt;/a&gt;
+	&lt;!-- // 닫기 --&gt;
+&lt;/div&gt;
+&lt;!-- //popup-wrap --&gt;
+&lt;/div&gt;
+&lt;!-- // Body window-popup--&gt;
+
+
+
+<pre>
+	</div>
+	<!-- //markup -->
+
+
+
+
+
+
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTORS CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

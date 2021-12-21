@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+   printPage();
+});
+
+function printPage() {
+    IEPrint.left = 0;
+    IEPrint.right = 0;
+    IEPrint.top = 0;
+    IEPrint.bottom = 0;
+    IEPrint.header = "";
+    IEPrint.footer = "";
+    IEPrint.printbg = true;     // 이전버전과 달리 true, false로 설정한다.
+    IEPrint.landscape = true;   // 가로 출력을 원하시면 true로 넣으면 됩니다. 세로출력은 false입니다.
+    //IEPrint.paper = "A4";     // 용지설정입니다.
+
+    self.focus();
+    IEPrint.Print();
+}
+</script>
+<OBJECT ID="IEPrint" WIDTH="1" HEIGHT="1" CLASSID="CLSID:F290B058-CB26-460E-B3D4-8F36AEEDBE44" codebase="<c:url value='/cab/IEPrint.cab#version=1,0,1,1'/>" >
+</OBJECT>
+</head>
+<body>
+<!-- print horizon(가로)-->
+<div id="print" class="horizon">
+	<!-- wrap -->
+	<div class="wrap">
+		<div class="header">
+			<h1 class="print-title">부장 승진 추천서</h1>
+		</div>
+
+		<div class="personnel-info">
+			<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x130.jpg" alt="프로필 사진"></div>
+			<div class="table-wrap">
+				<table class="data-table left">
+					<caption></caption>
+					<colgroup>
+						<col style="width: 11%" />
+						<col style="width: 12.4%" />
+						<col style="width: 10%" />
+						<col style="width: 12%" />
+						<col style="width: 10.8%" />
+						<col />
+						<col style="width: 13%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th rowspan="2">성명/직위(년차)</th>
+							<td rowspan="2">전태현 부장(5)</td>
+							<th rowspan="2">생년월일</th>
+							<td rowspan="2">60.08.01<br>(만 54세)</td>
+							<th rowspan="6" class="center">학력전공</th>
+							<td rowspan="6">
+								<ul>
+									<li>(박) 한양대학교 경영학</li>
+									<li>(석) 한양대학교 경영학</li>
+									<li>(학) 한양대학교 경영학</li>
+									<li>(고) 서울 외국어 대학교</li>
+								</ul>
+							</td>
+							<th>승진점수</th>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th>인사평가</th>
+							<td>60.0 (평가 8회)</td>
+						</tr>
+						<tr>
+							<th rowspan="2">부서/직책</th>
+							<td rowspan="2">차량IT개발센터<br>사업부장</td>
+							<th rowspan="2">근무지</th>
+							<td rowspan="2">양재</td>
+							<th>교육점수</th>
+							<td>19.0</td>
+						</tr>
+						<tr>
+							<th>외국어가점</th>
+							<td>1</td>
+						</tr>
+						<tr>
+							<th rowspan="2">입사일(근속)</th>
+							<td rowspan="2">86.12.01<br>(28년)</td>
+							<th rowspan="2">승진일</th>
+							<td rowspan="2">12.07.03</td>
+							<th>논문가점 (연구직限)</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>징계감점</th>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="section-wrap">
+			<div class="section-left w50">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목">추천내용</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+						<caption></caption>
+						<colgroup>
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+							<col style="width: 20%" />
+							<col style="width: " />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"> 추천서열</th>
+								<td colspan="4">7/23(원서열 9/23)</td>
+							</tr>
+							<tr>
+								<th scope="row">보임계획1 <br>(필수)</th>
+								<td>HR사업부</td>
+								<td>인사지원실</td>
+								<td>인사제도팀</td>
+								<td>2015</td>
+							</tr>
+							<tr>
+								<th scope="row">보임계획2 <br>(필수)</th>
+								<td>HR사업부</td>
+								<td>인사지원실</td>
+								<td>인사제도팀</td>
+								<td>2016</td>
+							</tr>
+							<tr>
+								<th scope="row">종합의견</th>
+								<td colspan="4" class="left top" style="height: 44mm; ">
+									<ul>
+										<li>- 다년간 소재 업무 경험과 문제 해결능력을 고려시. '소재공장장'봉미이 무난</li>
+										<li>- 직원 육성에 소극적이고 지나치게 강직한 부분은 지속적으로 보완이 필요함</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">보임<br> 시기사유</th>
+								<td colspan="4" class="left top" style="height: 36mm; ">2015년 하반기 ㅇㅇㅇ팀장 주재원 부임에 따른 후속 조치</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="section-left w50">
+				<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목">추천사유</h3>
+				<div class="table-wrap">
+					<table class="data-table">
+						<caption></caption>
+						<colgroup>
+							<col style="width: 20%" />
+							<col style="width: *" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">직무역량 <br> (실적중심)</th>
+								<td class="left top" style="height: 36mm;">
+									<ul>
+										<li>- 파워트레인센터 內 소재분야의 전문가이며 대외 교섭력이 우수함</li>
+										<li>- 다년간의 소재 경험을 기반으로 업무를 세세히 파악함</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">리더십<br> 역량</th>
+								<td class="left top" style="height: 36mm;">
+									<ul>
+										<li>- 어려운 상황에 직면하여도 적극적인 대처로 문제 해결하는 능력이 뛰어남</li>
+										<li>- 스트레스 상황에도 감정 및 행동 컨트롤이 뛰어나며, 구성원들을 독려함</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">소통 <br> 역량</th>
+								<td class="left top" style="height: 36mm;">
+									<ul>
+										<li>- 유관 부서와 업무 수행 시, 적극적인 참여로 협업을 이끌어 내어 문제를 해결</li>
+										<li>- 구성원들에게 본인의 업무방향을 명확히 설명하여 신속한 업무 처리를 하게 함</li>
+										<li>- 부하직원 육성에 소극적이고, 조직 내 업무 분장 조율 능력이 다소 떨어짐</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //wrap -->
+</div>
+<!-- // print -->
+</body>
+</html>
+
+
+
+

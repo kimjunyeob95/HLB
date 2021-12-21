@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript">
+$(function (){
+	// 탭
+	$('.tab02 li a').each(function(){
+
+		var this_href=$(this).attr('href');
+		$(this_href).css('display','none');
+		$(this).click(function(e){
+
+			e.preventDefault();
+			//탭활성화
+			$(this).parent('li').addClass('active').siblings('li').removeAttr('class');
+			//타켓 디스플레이
+			$(this_href).css('display','block').siblings('.tab-cont').css('display','none');
+
+		});
+
+	});
+})
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<!--  Body window-popup-->
+<div class="window-popup" id="deliberatePop">
+	<!-- popup-wrap -->
+	<div class="popup-wrap">
+		<h2 class="popup-title">심의</h2>
+		<div class="search-area">
+			<label for=""><span class="ico employee"></span>사번</label>
+			<div class="input-search">
+				<input type="search" name="" value="5612336">
+				<a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+			</div>
+			<input type="text" class="input-text" name="" disabled="" value="홍길동" style="width: 70px;">
+			<input type="text" class="input-text" name="" disabled="" value="과장" style="width: 70px;">
+			<input type="text" class="input-text" name="" disabled="" value="인사제도팀" style="width: 150px;">
+			<div class="btn type01 small">조회</div>
+		</div>
+		<ul class="state-complete">
+			<li class="total">총원 : <span>100</span></li>
+			<li class="complete">완료 : <span>25</span></li>
+			<li>미완료 : <span>75</span></li>
+		</ul>
+		<!-- 프로필 -->
+		<div class="personnel-info">
+			<div class="thumb">
+				<span class="thumb-image"><img src="../../@resource/images/@thumb/thumb_130x170.jpg" alt="프로필 사진"></span>
+			</div>
+			<div class="page-area">
+				<a href="" class="prev">이전</a>
+				<div class="page">
+					<span class="current">5</span>
+					/ 105
+				</div>
+				<a href="" class="next">다음</a>
+			</div>
+			<div class="table-wrap">
+				<table class="data-table left">
+					<caption>인사기록카드정보</caption>
+					<colgroup>
+						<col style="width: 90px" />
+						<col style="width: *" />
+						<col style="width: 90px" />
+						<col style="width: *" />
+						<col style="width: 90px" />
+						<col style="width: *" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">사번</th>
+							<td>5612336</td>
+							<th scope="row">국적</th>
+							<td>대한민국</td>
+							<th scope="row">그룹입사</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">성명(영문)</th>
+							<td>홍길동(Hong, Gil Dong)</td>
+							<th scope="row">생년월일</th>
+							<td>83.01.12</td>
+							<th scope="row">입사일사</th>
+							<td>2006.08.14</td>
+						</tr>
+						<tr>
+							<th scope="row">직위(년차)</th>
+							<td>과장(3)</td>
+							<th scope="row">연령(성별)</th>
+							<td>만 34세(남)</td>
+							<th scope="row">승진일자</th>
+							<td>2015.01.01 (02년 04월)</td>
+						</tr>
+						<tr>
+							<th scope="row">현소속</th>
+							<td>인사제도팀</td>
+							<th scope="row">직무</th>
+							<td>인사기획</td>
+							<th scope="row">승진기준</th>
+							<td>2015.01.01 (02년 04월)</td>
+						</tr>
+						<tr>
+							<th scope="row">보직</th>
+							<td></td>
+							<th scope="row">최종학력</th>
+							<td>서울대학교 학사 / 교육학</td>
+							<th scope="row">외국어</th>
+							<td>SPA / 44 (L4) / 2013</td>
+						</tr>
+						<tr>
+							<th scope="row">연락처</th>
+							<td>010-1234-5678</td>
+							<th scope="row">근무지</th>
+							<td>양재</td>
+							<th scope="row">기타외국어</th>
+							<td>JPT / 1 / 2017</td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td colspan="3">(026541) 서울특별시 서초구 헌릉로 12 현대기아자동차빌딩</td>
+							<th scope="row">병역</th>
+							<td>구분 / 군별 / 계급</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- //프로필 -->
+		<h3 class="section-title">종합인력프로파일</h3>
+		<div class="profile-tab">
+			<ul class="tab02">
+				<li><a href="#info01">발령 / 경력정보</a></li>
+				<li><a href="#info02">평가</a></li>
+				<li><a href="#info03">핵심인재</a></li>
+				<li><a href="#info04">포상 / 징계</a></li>
+				<li><a href="#info05">역할수행 / 선발이력</a></li>
+				<li><a href="#info06">채용이력</a></li>
+				<li><a href="#info07">교육이력</a></li>
+				<li><a href="#info08">A/C Report</a></li>
+				<li><a href="#info09">보상</a></li>
+			</ul>
+			<!-- 발령 / 경력정보 -->
+			<div id="info01" class="tab-cont">
+				<div class="table-wrap">
+            <table class="data-table" id="tb_insaHeader">
+               <caption>학력정보</caption>
+               <colgroup>
+                   <col style="width:">
+                   <col style="width:">
+                   <col style="width:">
+                   <col style="width:">
+                   <col style="width:">
+               </colgroup>
+               <thead>
+               <tr>
+                   <th scope="col">졸업일자</th>
+                   <th scope="col">학교명</th>
+                   <th scope="col">전공명</th>
+                   <th scope="col">수학정도</th>
+                   <th scope="col">소재지</th>
+               </tr>
+               </thead>
+               <tbody id="school">
+
+               <tr name="schoolTr">
+                   <td>2002.02</td>
+                   <td class="left">한양대학교</td>
+                   <td class="left">산업공학</td>
+                   <td>석사</td>
+                   <td>서울성동</td>
+               </tr>
+
+               <tr name="schoolTr">
+                   <td>2000.02</td>
+                   <td class="left">한양대학교</td>
+                   <td class="left">산업공학</td>
+                   <td>학사</td>
+                   <td>서울성동</td>
+               </tr>
+
+               <tr name="schoolTr">
+                   <td>1994.02</td>
+                   <td class="left">서현고</td>
+                   <td class="left">인문</td>
+                   <td>졸업</td>
+                   <td>경기성남</td>
+               </tr>
+
+               <tr name="schoolTr">
+                   <td>1991.02</td>
+                   <td class="left">광운중</td>
+                   <td class="left"></td>
+                   <td>졸업</td>
+                   <td>서울노원</td>
+               </tr>
+
+               <tr name="schoolTr">
+                   <td>1988.02</td>
+                   <td class="left">서울선곡초</td>
+                   <td class="left"></td>
+                   <td>졸업</td>
+                   <td>서울노원</td>
+               </tr>
+
+
+               <tr name="schoolTr">
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+               </tr>
+
+               <tr name="schoolTr">
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+               </tr>
+
+
+               </tbody>
+           	</table>
+       </div>
+			</div>
+			<!-- // 발령 / 경력정보 -->
+			<!-- 평가 -->
+			<div id="info02" class="tab-cont">
+				테이블2
+			</div>
+			<!-- // 평가 -->
+			<!-- 핵심인재 -->
+			<div id="info03" class="tab-cont">
+				테이블3
+			</div>
+			<!-- // 핵심인재 -->
+			<!-- 포상 / 징계 -->
+			<div id="info04" class="tab-cont">
+				테이블4
+			</div>
+			<!-- // 포상 / 징계 -->
+			<!-- 역할수행 / 선발이력 -->
+			<div id="info05" class="tab-cont">
+				테이블5
+			</div>
+			<!-- // 역할수행 / 선발이력 -->
+			<!-- 채용이력 -->
+			<div id="info06" class="tab-cont">
+				테이블6
+			</div>
+			<!-- // 채용이력 -->
+			<div id="info07" class="tab-cont">
+				테이블7
+			</div>
+			<div id="info08" class="tab-cont">
+				테이블8
+			</div>
+			<div id="info09" class="tab-cont">
+				테이블9
+			</div>
+		</div>
+		<h3 class="section-title">심사의견</h3>
+		<div class="opinion-wrap">
+			<div class="item">
+				<div class="title">
+					<h4>1차안</h4>
+					<span class="tag type08">유지</span>
+				</div>
+				<h5>특이사항</h5>
+				<div class="text-area"><textarea name="" id="">내용이 나옵니다. 내용이 나옵니다.내용이 나옵니다.
+내용이 나옵니다.내용이 나옵니다.내용이 나옵니다.
+내용이 나옵니다.내용이 나옵니다.내용이 나옵니다.
+내용이 나옵니다. 내용이 나옵니다.</textarea></div>
+			</div>
+			<div class="item">
+				<div class="title">
+					<h4>본부의견</h4>
+					<span class="tag type07">신규</span>
+				</div>
+				<h5>본부세부의견</h5>
+				<div class="text-area"><textarea name="" id="">내용이 나옵니다. 내용이 나옵니다.내용이 나옵니다.
+내용이 나옵니다.내용이 나옵니다.내용이 나옵니다.
+내용이 나옵니다.내용이 나옵니다.내용이 나옵니다.
+내용이 나옵니다. 내용이 나옵니다.</textarea></div>
+			</div>
+			<div class="item">
+				<div class="title">
+					<h4>인사의견</h4>
+					<span class="tag type09">제외</span>
+					<span class="tag type02">보류</span>
+					<span class="tag type02">닫기</span>
+				</div>
+				<h5>인사세부의견</h5>
+				<div class="text-area"><textarea name="" id="">내용이 나옵니다. 내용이 나옵니다.내용이 나옵니다.
+내용이 나옵니다.내용이 나옵니다.내용이 나옵니다.
+내용이 나옵니다.내용이 나옵니다.내용이 나옵니다.
+내용이 나옵니다. 내용이 나옵니다.</textarea></div>
+			</div>
+		</div>
+		<div class="button-area large">
+			<button type="button" id="" class="btn medium type08">신규<span class="ico new"></span></button>
+			<button type="button" id="" class="btn medium type08">유지<span class="ico keep"></span></button>
+			<button type="button" id="" class="btn medium type08">제외<span class="ico except"></span></button>
+			<button type="button" id="" class="btn medium type08">보류<span class="ico hold"></span></button>
+			<button type="button" id="" class="btn medium type10" onclick="self.close()">닫기</button>
+		</div>
+	</div>
+	<!-- //popup-wrap -->
+</div>
+<!-- // Body window-popup-->
+<!-- // WRAP -->
+</body>
+</html>

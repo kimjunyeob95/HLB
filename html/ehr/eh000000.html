@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/sonic.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<style type="text/css">
+.date{letter-spacing: -1px;}
+</style>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<!--좌측메뉴 활성화 경우에 class : depth03 -->
+<div id="wrap" class="depth03">
+<!-- HEADER -->
+<div id="header">
+	<!-- header-wrap -->
+	<div class="header-wrap">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+		<!-- personal-info -->
+		<div class="personal-info">
+			<div class="belong">양재본사</div>
+			<div class="number">5612336</div>
+			<div class="position"><span class="name">홍길동</span>과장</div>
+			<div class="state logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- // personal-info -->
+		<!-- utill-menu -->
+		<div class="utill-menu">
+			<!-- 활성화 class active -->
+			<ul>
+				<li><a href="#">My HR</a></li>
+				<li><a href="#">나의 팀</a></li>
+				<li class="active"><a href="#">인사 담당</a></li>
+			</ul>
+			<!--// 활성화 class active -->
+		</div>
+		<!--// utill-menu -->
+	</div>
+</div>
+<!-- // HEADER -->
+
+<!-- CONTENT -->
+<div id="container" class="ehr-main"> <!-- 180124 클래스 추가(닫기버튼 눌렀을 경우 aside-open 추가) -->
+	<!-- 사이드 트리 메뉴 -->
+	<div id="aside-menu" class="tree-menu">
+		<h2 class="blind">인사담당 메뉴</h2>
+		<button type="button" class="menu-control"><span class="blind">닫기</span></button> <!-- 180124 버튼 추가 -->
+		<ul class="tree-wrap">
+			<li><a href="#">인사행정</a></li>
+			<li><a href="#">인사기록표</a></li>
+			<li><a href="#">급여</a></li>
+			<li><a href="#">급태</a></li>
+			<!-- 플러스 active시 마이너스로 변경 -->
+			<li class="active"><a href="#">조직정보</a>
+				<ul class="tree">
+					<li class="active">
+						<a href="#">Global HR Knowledge</a>
+						<!-- row 트리 이미지 보임 -->
+						<ul class="row">
+							<li><a href="#">조직정보 수정</a></li>
+							<li class="active"><a href="#">조직정보 수정 조직정보 수정조직정보 수정 조직정보 수정조직정보 수정조직정보 수정조직정보 수정</a></li>
+							<li><a href="#">조직정보 수정</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">업무분장표</a>
+					</li>
+					<li>
+						<a href="#">직무기술서 조회</a>
+					</li>
+					<li>
+						<a href="#">역량사전 조회</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- //사이드 메뉴 -->
+
+	<!-- 내용 -->
+	<div id="content" class="content-primary">
+		<div class="welcome-intro">
+			<strong>홍길동님</strong>
+			<p>인사 시스템에 오신것을 환영합니다.</p>
+		</div>
+		<!-- 사원조회 -->
+		<div class="section">
+			<fieldset class="fieldset large">
+				<legend>사원조회폼</legend>
+				<div class="field">
+					<h4><span class="ico perner"></span> 사원조회</h4>
+					<div class="insert first">
+						<label for="userId" class="label">사번/성명</label>
+						<input type="text" id="userId" class="input-text" style="width: 140px" />
+					</div>
+					<div class="insert">
+						<label for="teamName" class="label">조직코드명</label>
+						<input type="text" id="teamName" class="input-text" style="width: 140px" />
+					</div>
+					<div class="btn-area">
+						<button class="btn small type01" style="margin-left: 6px;">검색하기 <span class="ico search"></span></button>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		<!-- //사원조회 -->
+		<!-- 검색결과 -->
+		<div class="section">
+			<h3 class="section-title">검색결과</h3>
+			<div class="table-wrap">
+				<table class="data-table">
+					<caption>검색결과 표</caption>
+					<colgroup>
+						<col style="width: 11%">
+						<col style="width: 12%">
+						<col style="width: *">
+						<col style="width: 10%">
+						<col style="width: 7%">
+						<col style="width: 7%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">사번</th>
+							<th scope="col">성명</th>
+							<th scope="col">조직</th>
+							<th scope="col">직위</th>
+							<th scope="col">상태</th>
+							<th scope="col">회사</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>6712346</td>
+							<td>이진우</td>
+							<td class="left">지능형안전기술센터</td>
+							<td>상무</td>
+							<td>재직</td>
+							<td>H</td>
+						</tr>
+						<tr>
+							<td>6712346</td>
+							<td>이진우</td>
+							<td class="left">부품개발프로젝트2팀</td>
+							<td>상무</td>
+							<td>재직</td>
+							<td>H</td>
+						</tr>
+						<tr>
+							<td>6712346</td>
+							<td>이진훈</td>
+							<td class="left">버스경인상용지역본부 지역판촉팀</td>
+							<td>상무</td>
+							<td>재직</td>
+							<td>H</td>
+						</tr>
+						<tr>
+							<td>6712346</td>
+							<td>이진우</td>
+							<td class="left">상용엔진품질관리부 엔진품질운영과</td>
+							<td>상무</td>
+							<td>재직</td>
+							<td>H</td>
+						</tr>
+						<tr>
+							<td>6712346</td>
+							<td>이진훈</td>
+							<td class="left">파워트레인전장설계팀 대형가솔린전장설계파트</td>
+							<td>상무</td>
+							<td>퇴직</td>
+							<td>H</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- //검색결과 -->
+		<div class="section">
+			<h3 class="section-title"><a href="#">인사발령 <span class="btn-more">더보기</span></a></h3>
+			<div class="table-wrap">
+				<table class="data-table">
+					<caption>검색결과 표</caption>
+					<colgroup>
+						<col style="width: *">
+						<col style="width: 12%">
+						<col style="width: 20%">
+						<col style="width: 10.5%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">발령제목</th>
+							<th scope="col">담당자</th>
+							<th scope="col">발령부서</th>
+							<th scope="col">게시일자</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="left">촉탁계약직 채용 및 배치 인사발령</td>
+							<td>박진우 사원</td>
+							<td class="left">전주인사팀</td>
+							<td class="date">2017-07-19</td>
+						</tr>
+						<tr>
+							<td class="left">촉탁계약직 채용 및 배치 인사발령</td>
+							<td>박진우 사원</td>
+							<td class="left">전주인사팀</td>
+							<td class="date">2017-07-19</td>
+						</tr>
+						<tr>
+							<td class="left">촉탁계약직 채용 및 배치 인사발령</td>
+							<td>박진우 사원</td>
+							<td class="left">전주인사팀</td>
+							<td class="date">2017-07-19</td>
+						</tr>
+						<tr>
+							<td class="left">촉탁계약직 채용 및 배치 인사발령</td>
+							<td>박진우 사원</td>
+							<td class="left">전주인사팀</td>
+							<td class="date">2017-07-19</td>
+						</tr>
+						<tr>
+							<td class="left">촉탁계약직 채용 및 배치 인사발령</td>
+							<td>박진우 사원</td>
+							<td class="left">전주인사팀</td>
+							<td class="date">2017-07-19</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- // 내용 -->
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 HLB CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>
+

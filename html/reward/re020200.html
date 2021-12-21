@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<!--  Body window-popup-->
+<div class="window-popup">
+	<h2 class="popup-title">해외출국보험료 경감 신청 상세</h2>
+
+	<!-- popup-wrap -->
+	<div class="popup-wrap">
+		<h4>1. 자격확인</h4>
+		<ul class="cont">
+			<li>- 직장가입자가 국외에 1개월 이상 체류하는 경우 그 기간동안 보험급여를 면제</li>
+			<li>- 본인 및 가족이 출입국 신고가 되어있는지 확인 후 신청이 필요한 대상 신청</li>
+			<li>- 확인방법 : 건강보험공단 전화 문의 <em class="em weighty">(☎ 1577-1000)</em></li>
+		</ul>
+		<h4>2. 증빙자료</h4>
+		<ul class="cont">
+			<li>- 여권사본 ( 사진이 붙어있는 면과 대한민국 입국, 출국도장 날인 면 )</li>
+			<li>- 단, 출입국 날짜 도장 미 날인 시 출입국사실조회서 또는 항공권예약권 대체 가능</li>
+			<li>- 증빙자료를 스캔하여 첨부 또는 팩스 발송 <em class="em weighty">(FAX : 02-3464-5928)</em></li>
+		</ul>
+		<h4>3. 신청내용 구분안내</h4>
+		<div class="table-wrap">
+			<table class="data-table">
+				<caption>신청내용 구분안내</caption>
+				<colgroup>
+					<col style="width: 20%" />
+					<col style="width: 40%" />
+					<col style="width: 40%" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col"><span class="blind">구분</span></th>
+					<th scope="col">신청내용선택구분</th>
+					<th scope="col">감면변경내용 반영시점</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>전액면제</td>
+					<td>건강보험증상에 등재되어 있는 인원이 모두 출국한 경우</td>
+					<td>출국일 속한 달의 다음달~</td>
+				</tr>
+				<tr>
+					<td>반액면제</td>
+					<td>건강보험증상에 등재되어 있는 인원중 한명이라도 국내에 남아있을 경우</td>
+					<td>출국일 속한 달의 다음달~</td>
+				</tr>
+				<tr>
+					<td>일시귀국</td>
+					<td>주재중 국내 일시적 입국하여 병,의원을 이용하거나 한달이상 체류할 경우</td>
+					<td>병.의원 이용한 달 보험료 납부</td>
+				</tr>
+				<tr>
+					<td>국내복귀</td>
+					<td>주재원 복귀 발령시</td>
+					<td>입국일 속한 달의 다음달~</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<h4>4. 상신 오류 시 체크사항</h4>
+		<ul class="cont">
+			<li>- 변경내용 등록 부분 모두 입력 ( 성명, 주민등록번호, 관계, 출입구분, 일자)</li>
+			<li>- 일자부분 입력 방법 ( 예: 20140101(O)/2014.01.01(X) )</li>
+			<li>- 해외 접속 오류 시 현지 IT(오토에버)에 문의 바랍니다.</li>
+		</ul>
+		<div class="button-area large">
+			<input type="button" id="btn_appr" class="btn small type01" onclick="storeHlthIsreRaePtt(this)" value="상신">
+			<input type="button" id="btn_delAppl" class="btn small type01" onclick="deleteSecrAacPtt(this)" value="삭제" disabled="">
+			<input type="button" id="btn_close" class="btn small type01" onclick="self.close()" value="닫기">
+		</div>
+	</div>
+	<!-- //popup-wrap -->
+</div>
+<!-- // Body window-popup-->
+<!-- // WRAP -->
+</body>
+</html>

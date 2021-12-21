@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+   printPage();
+});
+
+function printPage() {
+    IEPrint.left = 0;
+    IEPrint.right = 0;
+    IEPrint.top = 0;
+    IEPrint.bottom = 0;
+    IEPrint.header = "";
+    IEPrint.footer = "";
+    IEPrint.printbg = true;     // 이전버전과 달리 true, false로 설정한다.
+    IEPrint.landscape = false;   // 가로 출력을 원하시면 true로 넣으면 됩니다. 세로출력은 false입니다.
+    //IEPrint.paper = "A4";     // 용지설정입니다.
+
+    self.focus();
+    IEPrint.Print();
+}
+</script>
+<OBJECT ID="IEPrint" WIDTH="1" HEIGHT="1" CLASSID="CLSID:F290B058-CB26-460E-B3D4-8F36AEEDBE44" codebase="<c:url value='/cab/IEPrint.cab#version=1,0,1,1'/>" >
+</OBJECT>
+</head>
+<body>
+<!-- print(기본-세로) -->
+<div id="print">
+	<!-- wrap -->
+	<div class="wrap">
+		<div class="header">
+			<span class="serial-number">Issue No : <span class="number">KDAP-20170614-001</span></span>
+			<span class="use-keep"><img class="logo" src="../../@resource/images/common/print_logo.png" alt="기아자동차"></span>
+		</div>
+		<h1 class="print-title02">Certificate of Overseas Assignment</h1>
+		<div class="table-wrap">
+			<table class="data-table">
+				<caption>해외근무자 정보</caption>
+				<colgroup>
+					<col style="width: 33.3%" />
+					<col style="width: 33.3%" />
+					<col style="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Full Name</th>
+						<th>Date of Birth</th>
+						<th>Position</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Haeri Yoon</td>
+						<td>910713-2******</td>
+						<td>Associate</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br>
+		<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목">Record of International Employment</h3>
+		<div class="table-wrap">
+			<table class="data-table left">
+				<caption>해외근무이력 1</caption>
+				<colgroup>
+					<col style="width: 20%;" />
+					<col style="width:  *" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">Company 1</th>
+						<td>HMI</td>
+					</tr>
+					<tr>
+						<th scope="row">Location 1</th>
+						<td>India/Chennai</td>
+					</tr>
+					<tr>
+						<th scope="row">Period 1</th>
+						<td>2006.01.01 ~ Present</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br>
+		<div class="table-wrap">
+			<table class="data-table left">
+				<caption>해외근무이력 2</caption>
+				<colgroup>
+					<col style="width: 20%;" />
+					<col style="width:  *" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">Company 2</th>
+						<td>KMMG</td>
+					</tr>
+					<tr>
+						<th scope="row">Location 2</th>
+						<td>West Point, USA</td>
+					</tr>
+					<tr>
+						<th scope="row">Period 2</th>
+						<td>2002.01.01 ~ 2005.12.31</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br>
+		<div class="table-wrap">
+			<table class="data-table left">
+				<caption>해외근무이력 3</caption>
+				<colgroup>
+					<col style="width: 20%;" />
+					<col style="width:  *" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">Company 3</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">Location 3</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">Period 3</th>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<h3 class="section-title"><img src="../../@resource/images/common/print_bl.png" alt="제목">KMC Overseas Human Resources Team (+82-2-3464-5368)</h3>
+		<br>
+		<p>※ Public Use Only</p>
+
+		<div class="signature abroad">
+			<p class="text">We hereby certify that the above information is true and correct.</p>
+			<div class="date"></div>
+			<div class="signature-data">
+				<span class="label">'June 14, 2017</span>
+			</div>
+			<div class="en-stamp">
+				<span><img src="../../@resource/images/common/kia_stamp_en.jpg" alt="기아인" style="width: 70mm"></span>
+				<p>Han Woo Park<br>President<br>Kia Motors Corporation</p>
+			</div>
+		</div>
+	</div>
+	<!-- //wrap -->
+</div>
+<!-- // print -->
+</body>
+</html>
+
+
+
+

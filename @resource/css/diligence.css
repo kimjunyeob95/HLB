@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/*KIA - 근태*/
+.depth-main#wrap #footer{border: 0 none;-webkit-appearance: none;}
+.depth-main#wrap #container.diligence{background: #f5f5f5 url('../images/diligence/sub_main_visual_01.jpg') 0 0 no-repeat; border-radius: 5px; -webkit-border-radius: 5px;}
+.diligence .content-header{width: 1060px; margin: 0 auto; padding: 50px 0 40px}
+.diligence .content-header p{font-size: 30px; line-height: 40px; color: #ffffff;}
+.diligence .content-header .btn.type03{margin-top: 23px; width: 170px; text-align: center;}
+.diligence .content-primary{width: 1060px; margin: 0 auto;}
+.diligence .calender-wrap{border-radius: 5px; -webkit-border-radius: 5px;background-color: #ffffff;}
+.diligence .calender-wrap:after{content: ''; display: block; clear: both;}
+.diligence .calender{float: left; width: 640px;  height: 900px; padding: 60px 50px 50px 30px; box-sizing: border-box; -webkit-box-sizing: border-box;}
+.diligence .state{position: relative;float: right; width: 420px; height: 900px;  background-color: rgb(171,0,28); padding: 30px 0 50px 50px; box-sizing: border-box; -webkit-box-sizing: border-box; border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+.diligence .state:after{content: ''; display: block; position: absolute; right: 0; top: -23px; width: 62px;height: 58px; background: url('../images/diligence/ico_state.png') 0 0 no-repeat; z-index: 1}
+.diligence .state .month {color: #ffffff; text-align: center; padding-right: 50px; font-size:130px; line-height: 130px; }
+.diligence .state .month span{display: block; font-size: 30px; line-height: 30px; letter-spacing: 0.05em; margin-top: 10px;}
+.diligence .state .tab-wrap{margin-right: 50px; width: auto; margin-top: 65px}
+
+.diligence .calender-header{position: relative; margin-bottom: 30px}
+.diligence .calender-header .date{font-size: 36px; line-height: 36px; text-align: center; color: #292929; }
+.diligence .calender-header .btn-area a{display: inline-block; position: absolute; top: 7px; font-size: 15px; line-height: 15px; color: #868686;}
+.diligence .calender-header .btn-area .btn.prev{left: 40px; padding-left: 25px; background: url('../images/diligence/ico_prev_01.png') left center no-repeat;}
+.diligence .calender-header .btn-area .btn.next{right: 20px; padding-right: 25px; background: url('../images/diligence/ico_next_01.png') right center no-repeat;}
+.diligence .calender-body .item-table{width: 100%; border-bottom: 1px solid #d1d1d1;  text-align: center; border-collapse: collapse;}
+.diligence .calender-body .item-table thead th{height: 70px; border-top: 1px solid #d1d1d1; font-size: 18px; color: #292929; }
+.diligence .calender-body .item-table tbody td{height: 90px; border-top: 1px solid #d1d1d1; vertical-align: top;}
+.diligence .calender-body .item-table .data-header{margin-top: 18px; font-size: 15px; line-height: 15px;}
+.diligence .calender-body .item-table .data-header .prev-month,
+.diligence .calender-body .item-table .data-header .next-month{color: #adadad}
+.diligence .calender-body .item-table .data-info{font-size: 12px; line-height: 12px; margin-top: 12px;padding-bottom: 10px;text-align: center;}
+.diligence .calender-body .item-table .data-info .save,
+.diligence .calender-body .item-table .data-info .complete,
+.diligence .calender-body .item-table .data-info .pending{display: inline-block;}
+.diligence .calender-body .item-table .today{display: block; width: 44px; height: 44px; margin: -7px auto 0; line-height: 999em; overflow: hidden; background: url('../images/diligence/ico_today.png') 0 0 no-repeat;} 
+.diligence .calender-body .work-state {text-align: right; margin: 16px 0 10px}
+.diligence .calender-body .work-state span{margin-left: 27px;}
+.diligence .calender-body  a{display: block;position:relative;text-align: left;line-height: 15px;padding-left: 15px;}
+.diligence .calender-body  a:after{content: '';display: block;position: absolute;left: 0;top: 50%;width: 10px;height: 10px;margin-top: -5px;border-radius: 50%;-webkit-border-radius: 50%;}
+.diligence .calender-body  a span{display: inline-block;max-width: 55px;overflow: hidden;text-overflow: ellipsis;word-break: break-all;white-space: nowrap;vertical-align: -3px;}
+/*.diligence .calender-body .save:after{background-color: #c1c1c1;}
+.diligence .calender-body .complete:after{background-color: #ffa800;}
+.diligence .calender-body .pending:after{background-color: #c41230;}*/
+.diligence .calender-body .save{padding-left: 15px; background: url('../images/diligence/ico_color_01.png') 0 50% no-repeat;}
+.diligence .calender-body .complete{padding-left: 15px; background: url('../images/diligence/ico_color_02.png') 0 50% no-repeat;}
+.diligence .calender-body .pending{padding-left: 15px; background: url('../images/diligence/ico_color_03.png') 0 50% no-repeat;}
+.diligence .calender .button-area .btn.large{width: 230px;}
+.diligence .state .tab-cont {width: 350px ;height: 487px; margin-top: 30px; color: #ffffff; overflow: auto; padding-top: 20px;}
+.diligence .state .tab-cont { 
+		scrollbar-arrow-color: #8b041b;
+		scrollbar-arrow-size: 2px;
+		scrollbar-Track-Color: #8b041b; 
+		scrollbar-base-color: rgb(196,77,96);
+		scrollbar-Face-Color: rgb(196,77,96);
+		scrollbar-3dLight-Color: #8b041b;
+		scrollbar-DarkShadow-Color: #8b041b;
+		scrollbar-Highlight-Color: #8b041b;
+		scrollbar-Shadow-Color: rgb(196,77,96)}
+/* Chrome, Safari용 스크롤 바 */
+.diligence .state .tab-cont ::-webkit-scrollbar {width: 17px; height: 17px;}
+.diligence .state .tab-cont ::-webkit-scrollbar-button:start:decrement, 
+.diligence .state .tab-cont ::-webkit-scrollbar-button:end:increment {display: block; width: 17px;height: 17px; background: url() rgba(0,172,212,1);}
+.diligence .state .tab-cont ::-webkit-scrollbar-track {background:  rgba(0,172,212,1); }
+.diligence .state .tab-cont ::-webkit-scrollbar-thumb { background: rgba(86,206,236,1);}
+.diligence .state .tab-cont .data-list{font-size: 15px; width: 320px;}
+.diligence .state .tab-cont .data-list li{padding: 16px 0; border-bottom: 1px solid rgb(196,77,96); color: #ffffff}
+.diligence .state .tab-cont .cont+.cont{margin-top: 40px}
+.diligence .state .tab-cont h4{padding-left: 20px; font-size: 20px; line-height: 20px; background: url('../images/diligence/bullet_01.png') 0 50% no-repeat; margin-bottom: 8px;}
+.diligence .refresh-wrap{margin-top: 60px;}
+.diligence .refresh-wrap:after{content: ''; display: block; clear: both}
+.diligence .refresh-wrap .subject{font-size: 30px; line-height: 30px; color: #292929;}
+.diligence .refresh-wrap .refresh{float: left;width: 739px; border-right: 1px solid #e1e1e1; }
+.refresh-wrap .refresh{float: left;width: 740px}
+.refresh-wrap .refresh h3{font-size: 30px;line-height: 30px; color: #292929;}
+.refresh-wrap .refresh p{font-size: 32px; line-height: 42px; color: #292929; margin-top: 18px; font-family: '기아 가늘게','기아 Light',"KiaL";}
+.refresh-wrap .refresh p span{display: block; margin: 12px 0  30px; font-size: 15px; line-height: 15px; color: #6b6b6b;}
+.refresh-wrap .refresh .article{float: left;}
+.refresh-wrap .refresh .chart{float: left; margin-left: 45px; margin-top: 12px;}
+.refresh-wrap .date-list{float: right; width: 175px; margin-right: 50px; margin-top: 24px;}
+.refresh-wrap .date-list li{padding: 13px 0;}
+.refresh-wrap .date-list li+li{border-top: 1px solid #e1e1e1;}
+.refresh-wrap .date-list li:after{content: ''; display: block; clear: both;}
+.refresh-wrap .date-list li div{float: right; font-size: 15px; color: #292929;}
+.refresh-wrap .date-list li .title{float: left; color: #6b6b6b; font-family: '기아 가늘게','기아 Light',"KiaL";}
+.refresh-wrap .date-list li .text{ color: #db1515; text-decoration: underline;}
+.refresh-wrap .date-list li span{line-height: 23px; text-align: right;}
+.diligence .refresh-wrap .notice{clear: both;padding-right: 50px;text-align: right;font-size: 15px;color: #6b6b6b;}
+.diligence .refresh-wrap .etc{float: left; margin-left: 50px;}
+.diligence .refresh-wrap .etc .date-list{float: none; width: 270px; margin-right: 0; }
+.diligence .refresh-wrap .etc .ico-info{display: inline-block;}
+.diligence .refresh-wrap .etc .info-massage{font-size: 13px; margin-top: 14px;}
+.diligence .refresh-wrap .etc .info-massage .massage{border-bottom: 1px solid #b0b0b0;}
+.diligence .refresh-state{margin-top: 50px;}
+.diligence .refresh-state h4{font-size: 20px; line-height: 18px; color: #292929; margin-bottom: 20px; font-family: '기아 가늘게','기아 Light',"KiaL"; font-weight: bold;}
+.diligence .refresh-state .data-table thead tr th{background-color: transparent; padding: 18px 10px;}
+.diligence .refresh-state .data-table tbody tr td{background-color: transparent; padding: 12px 10px;}
+
+/*모성보호 - 임신사실확인*/
+.pregnancy .due-date .data-list{margin-bottom: 11px}
+.pregnancy .due-date .btn-link{margin-top: 20px}
+.pregnancy .uploader .action{background-color: #ffffff}
+
+/*출산휴가 신청*/
+.pregnancy .section-apply h4{font-size: 15px; color: #292929; margin: 15px 0;}
+.pregnancy .section-apply .data-list{padding-bottom: 35px; border-bottom: 1px solid #d6d6d6;}
+.pregnancy .section-apply .data-list ul{padding-left: 15px; margin-bottom: 15px;}
+.pregnancy .section-apply .data-list ul li{line-height: 25px;}
+.pregnancy .maternity-leave .data-list{margin-bottom: 15px;}
+.pregnancy .maternity-leave .button-area{position: relative;}
+.pregnancy .maternity-leave .btn-link{position: absolute; left: 0; top: 0}
+.pregnancy .maternity-leave .btn-link+.btn-link{margin-top: 36px;}
+.pregnancy .maternity-leave .btn.large{width: 130px}

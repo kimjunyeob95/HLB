@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+$(function (){
+	$('.ico-info').mouseover(function() {
+		$(this).siblings('.text-box').addClass('active');
+	}).mouseout(function() {
+		$(this).siblings('.text-box').removeClass('active');
+	});
+})
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="depth-main newcomer">
+<!-- HEADER -->
+<div id="header">
+		<!-- header-wrap -->
+	<div class="header-wrap">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+	</div>
+	<!--// header-wrap -->
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container" class="newcomer-info">
+	<div id="content" class="content-primary">
+		<!-- 개인정보 -->
+		<div class="personal-info">
+			<h2 class="content-title">개인정보</h2>
+			<ol class="step">
+				<li class="active"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">6</a></li>
+			</ol>
+			<!-- 180108 추가 -->
+			<div class="alert-text">
+				<strong>* 표시는 필수 입력항목입니다.</strong>
+				<p><span class="ico info02"></span>표시에 마우스를 올리면 정보를 보실 수 있습니다.</p>
+			</div>
+			<!-- // 180108 추가 -->
+			<div class="table-wrap">
+				<table class="data-table left">
+					<caption>개인정보 입력사항표</caption>
+					<colgroup>
+						<col style="width: 12%" />
+						<col style="width: 7%" />
+						<col style="width: 14%" />
+						<col style="width: 7%" />
+						<col style="width: 14%" />
+						<col style="width: *" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">성명(한글)</th>
+							<td colspan="4"><div><input type="text" class="input-text" name="" value="홍길동"></div></td>
+							<td><div class="notice">*성명은 인사기록카드의 기초자료로 사용되오니 정확히 기재해 주세요</div></td>
+						</tr>
+						<tr>
+							<th scope="row">성명(한자)</th>
+							<td class="center"><div>성</div></td>
+							<td><div><input type="text" class="input-text" name="" value="洪"></div></td>
+							<td class="center"><div>이름</div></td>
+							<td><div><input type="text" class="input-text" name="" value="吉東"></div></td>
+							<td><div class="notice">*한글 이름인 경우에는 한자정보란에 한글 이름을 그대로 입력해주시면 됩니다</div></td>
+						</tr>
+						<tr>
+							<th scope="row">성명(영문)</th>
+							<td class="center"><div>성</div></td>
+							<td><div><input type="text" class="input-text" name="" value="Hong"></div></td>
+							<td class="center"><div>이름</div></td>
+							<td><div><input type="text" class="input-text" name="" value="Gildong"></div></td>
+							<td><div class="notice">*여권과 동일하게(띄어쓰기, 대소문자 구분 포함) 입력해 주시기 바랍니다
+								<!-- 말풍선 -->
+								<div class="balloon-word">
+									<span class="ico-info"></span>
+									<div class="text-box">
+										<p>입사 후 명함제작, 인사기록카드 <br>
+										및 해외 출장 신청을 위한 기초자료로<br>
+										사용됩니다. <br><br>
+
+										여권이 없는 경우에는 입력하신<br>
+										영문 성명을 추후 여권을 발급하실 때<br>
+										동일하게 입력하시기 바랍니다.</p>
+									</div>
+								</div>
+								<!-- // 말풍선 -->
+							</div></td>
+						</tr>
+						<tr class="attach">
+							<th scope="row">사진</th>
+							<td colspan="4">
+								<div>
+									<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x130.jpg"></div>
+									<a class="btn type01 small file">파일첨부</a>
+								</div>
+							</td>
+							<td>
+								<ul class="data-list">
+									<li>*사원증 제작, 인사기록표 등에 활용되오니 단정한 차림의 사진을 업로드해주세요</li>
+									<li>*사진은 여권용 사이즈로 촬영하여 jpg, jpeg 파일 형태로 업로드해주시길 바랍니다</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">생일(실제)</th>
+							<td colspan="2">
+								<div>
+									<label for="birth01">양력</label>
+									<input type="radio" name="birth" id="birth01">
+									<label for="birth02">음력</label>
+									<input type="radio" name="birth" id="birth02">
+								</div>
+								</td>
+							<td colspan="2">
+								<div>
+									<span>2018.05.01</span>
+									<a href="#" class="ico date"></a>
+								</div>
+							</td>
+							<td><div></div></td>
+						</tr>
+						<tr>
+							<th scope="row">주민등록번호</th>
+							<td colspan="4"><div><input class="input-text" type="" name="" value="851225  -  2222222"></div></td>
+							<td><div></div></td>
+						</tr>
+						<tr>
+							<th scope="row">국적</th>
+							<td colspan="4">
+								<div><select>
+									<option>대한민국</option>
+									<option>미국</option>
+									<option>일본</option>
+								</select></div>
+							</td>
+							<td><div></div></td>
+						</tr>
+						<tr>
+							<th scope="row">결혼</th>
+							<td colspan="4">
+								<div>
+									<label for="marry01">미혼</label>
+									<input type="radio" name="marry" id="marry01">
+									<label for="marry02">결혼</label>
+									<input type="radio" name="marry" id="marry02">
+								</div>
+							</td>
+							<td><div></div></td>
+						</tr>
+						<tr class="disability">
+							<th scope="row">장애여부</th>
+							<td colspan="2">
+								<div>
+									<label for="disability01">비대상</label>
+									<input type="radio" name="disability" id="disability01">
+									<label for="disability02">대상</label>
+									<input type="radio" name="disability" id="disability02">
+								</div>
+							</td>
+							<td colspan="2">
+								<div class="papers">
+									<span>증명서.jpg</span>
+									<a class="btn type01 small">파일첨부</a>
+								</div>
+							</td>
+							<td><div class="notice">*장애대상자의 경우는 장애인 증명 서류를 첨부하셔야 합니다.
+								<!-- 말풍선 -->
+									<div class="balloon-word">
+										<span class="ico-info"></span>
+										<div class="text-box">
+											<p>증명서류는 [온라인 민원24 <br>
+											(www.minwon.go.kr) > <br>
+											장애인 증명서 검색 > 출력] 에서<br>
+											확인하실 수 있습니다.</p>
+										</div>
+									</div>
+									<!-- // 말풍선 -->
+							</div></td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰</th>
+							<td colspan="4"><div><input type="text" class="input-text" name="" value="010  -  1234  -  5678"></div></td>
+							<td><div class="notice">*휴대폰은 입사 후 명함제작 및 인사기록카드의 기초자료로 사용됩니다
+								<!-- 말풍선 -->
+									<div class="balloon-word">
+									<span class="ico-info"></span>
+									<div class="text-box">
+										<p>입사 후 휴대폰 번호를 <br>
+										변경하신다면, 새로운 번호를<br>
+										재등록 하시기 바랍니다.</p>
+									</div>
+								</div>
+								<!-- // 말풍선 -->
+							</div></td>
+						</tr>
+						<tr>
+							<th scope="row">취미</th>
+							<td colspan="4">
+								<div><select>
+									<option>노래</option>
+									<option>사진찍기</option>
+									<option>여행</option>
+									<option>악기연주</option>
+								</select></div>
+							</td>
+							<td><div></div></td>
+						</tr>
+						<tr>
+							<th scope="row">특기</th>
+							<td colspan="4">
+								<div><select>
+									<option>노래</option>
+									<option>사진찍기</option>
+									<option>여행</option>
+									<option>악기연주</option>
+								</select></div>
+							</td>
+							<td><div></div></td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="4">주소</th>
+							<td class="center"><div>본적</div></td>
+							<td colspan="3">
+								<div class="address">
+									<span><input type="text" class="input-text" name="" value="서울시 성북구 성북동 501번지 (123-001)서울시 성북구 성북동 501번지 (123-001)"></span>
+									<a class="btn type01 small">등록</a>
+								</div>
+							</td>
+							<td><div class="notice">*본적을 모르실 때는 대법원 전자가족관계등록시스템을 통해서 확인하실 수 있습니다</div></td>
+						</tr>
+						<tr>
+							<td class="center"><div>실거주지</div></td>
+							<td colspan="3">
+								<div class="address">
+									<span><input type="text" class="input-text" name="" value="서울 노원구 창동 123-98 (303-211)"></span>
+									<a class="btn type01 small">등록</a>
+								</div>
+							</td>
+							<td><div class="notice">*거주지는 입사 후 우편물 송부 시 기초자료로 사용됩니다
+								<!-- 말풍선 -->
+								<div class="balloon-word">
+									<span class="ico-info"></span>
+									<div class="text-box">
+										<p>실거주지가 임시 거주지인  <br>
+										경우 우편물을 수취할 수 있는<br>
+										주소를 입력하여 주시기 바랍니다.</p>
+									</div>
+								</div>
+								<!-- // 말풍선 -->
+							</div></td>
+						</tr>
+						<tr>
+							<td class="center"><div>주민등록<br>주소</div></td>
+							<td colspan="3">
+								<div class="address">
+									<span><input type="text" class="input-text" name="" value="서울 노원구 창동 123-98 (451-157)"></span>
+									<a class="btn type01 small">등록</a>
+								</div>
+							</td>
+							<td><div class="notice">*주민등록주소는 주민등록등본에 등록되어있는 주소입니다
+								<!-- // 말풍선 -->
+								<div class="balloon-word">
+									<span class="ico-info"></span>
+									<div class="text-box">
+										<p>연말정산 시 기초자료로 사용되니 <br>
+										정확하게 기재하여 주시기 바랍니다.</p>
+									</div>
+								</div>
+								<!-- // 말풍선 -->
+							</div></td>
+						</tr>
+						<tr>
+							<td class="center"><div>본가</div></td>
+							<td colspan="3">
+								<div class="address">
+									<span><input type="text" class="input-text" name="" value="서울시 도봉구 방학동 222-44 (248-715)"></span>
+									<a class="btn type01 small">등록</a>
+								</div>
+							</td>
+							<td><div></div></td>
+						</tr>
+						<tr>
+							<th scope="row">사보 구독신청</th>
+							<td colspan="4">
+								<div><input type="checkbox" name="" id=""></div>
+							</td>
+							<td><div class="notice">*구독 신청시 실거주지 주소로 배송됩니다.</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn-area">
+				<a class="btn type02 large"><span class="ico prev"></span>이전</a>
+				<a class="btn type02 large">임시저장</a>
+				<a class="btn type03 large">다음<span class="ico next"></span></a>
+			</div>
+		</div>
+		<!-- // 개인정보 -->
+	</div>
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTOR COMPANY, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

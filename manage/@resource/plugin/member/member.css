@@ -1,0 +1,62 @@
+.setsize{
+text-align:center;
+}
+.btsize {
+    width: 120px;
+    height: 34px;
+    border: 1px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccc;
+}
+.aa {border-top:0; border-left:0; border-right:0;}  
+
+.btred{
+border:0;
+background-color:#CC3D3D;
+color: #ffffff;
+}
+
+.btblack{
+border:0;
+background-color:#353535;
+color: #ffffff;
+}
+
+.btselectout{
+border:0;
+background-color:#B0B0B0;
+color: black;
+margin-left: -4px;
+}
+
+.btselectin{
+border:0;
+background-color:#FFBB00;
+color: black;
+margin-left: -4px;
+}
+
+
+.btweekgray{
+ background-color: #B0B0B0;
+    border: none;
+     color: black;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-left: -4px;
+}
+
+.btweekgyellow{
+ background-color: #ffff00;
+    border: none;
+     color: black;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-left: -4px;
+}

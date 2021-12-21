@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KIA</title>
+<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="wsg.css">
+<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+<style type="text/css">
+	.section-left{text-align: center;line-height: 100px;height: 100px;font-size: 18px;color: #000;}
+</style>
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		//gnb 열림
+		$('#allMenu').click(function(){
+			$('.gnb').addClass('active');
+		});
+		//gnb 닫음
+		$('.btn-close').click(function(){
+			$('.gnb').removeClass('active');
+		});
+
+		// 디자인 form요소 적용
+		$('select, input[type=radio], input[type=checkbox], input[type=file]').uniform({
+			fileDefaultHtml: '',
+			fileButtonHtml: '파일첨부'
+		});
+
+
+	});
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="wsg">
+<!-- HEADER -->
+<div id="header">
+	<div class="header-wrap">
+		<h1><span class="blind">KIA</span></h1>
+		<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+		<div class="gnb">
+			<div class="gnb-wrap">	
+				<h3>PROGRESS</h3>
+				<ul>
+					<li><a href="markup.html">markup</a></li>
+				</ul>
+				<h3>UI LIBRARY</h3>
+				<ul>
+					<li><a href="layout.html">layout</a></li>
+					<li><a href="table.html">table</a></li>
+					<li><a href="form.html">form</a></li>
+					<li><a href="fieldset.html">fieldset</a></li>
+					<li><a href="button.html">button</a></li>
+					<li><a href="tab.html">tab</a></li>
+					<li><a href="list.html">list</a></li>
+					<li><a href="popup.html">popup</a></li>
+					<li><a href="print.html">print</a></li>
+					<li><a href="etc.html">etc</a></li>
+				</ul>
+				<a href="#" class="btn-close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // HEADER -->
+<!-- CONTENT -->
+<div id="container">
+	<h2>WSG / LAYOUT</h2>
+	<!-- section 버튼 -->
+	<div class="section">
+		<h3>LAYOUT</h3>
+		<p>컨텐츠 영역 화면 비율에 따른 레이아웃 화면입니다. <br>
+		화면 비율은 100%를 기준으로 좌측 우측으로 나뉘고 10%부터 90%까지 있습니다. <br>
+		하단의 markup 예시는  클래스 사용에 따라 변경되는 레이아웃입니다.</p>
+		<strong class="preview" style="padding-top: 50px;">비율 10 : 90</strong>
+		<div class="section-wrap">
+			<div class="section-left w10" style="background-color: pink;">좌측</div>
+			<div class="section-left w90" style="background-color: lightblue;">우측</div>
+		</div>
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;div class="section-wrap"&gt;
+	&lt;div class="section-left w10"&gt;&lt;/div&gt;
+	&lt;div class="section-left w90"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+
+		<strong class="preview" style="padding-top: 50px;">비율 20 : 80</strong>
+		<div class="section-wrap">
+			<div class="section-left w20" style="background-color: pink;">좌측</div>
+			<div class="section-left w80" style="background-color: lightblue;">우측</div>
+		</div>
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;div class="section-wrap"&gt;
+	&lt;div class="section-left w20"&gt;&lt;/div&gt;
+	&lt;div class="section-left w80"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+
+		<strong class="preview" style="padding-top: 50px;">비율 30 : 70</strong>
+		<div class="section-wrap">
+			<div class="section-left w30" style="background-color: pink;">좌측</div>
+			<div class="section-left w70" style="background-color: lightblue;">우측</div>
+		</div>
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;div class="section-wrap"&gt;
+	&lt;div class="section-left w30"&gt;&lt;/div&gt;
+	&lt;div class="section-left w70"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+
+		<strong class="preview" style="padding-top: 50px;">비율 40 : 60</strong>
+		<div class="section-wrap">
+			<div class="section-left w40" style="background-color: pink;">좌측</div>
+			<div class="section-left w60" style="background-color: lightblue;">우측</div>
+		</div>
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;div class="section-wrap"&gt;
+	&lt;div class="section-left w40"&gt;&lt;/div&gt;
+	&lt;div class="section-left w60"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+
+		<strong class="preview" style="padding-top: 50px;">비율 50 : 50</strong>
+		<div class="section-wrap">
+			<div class="section-left w50" style="background-color: pink;">좌측</div>
+			<div class="section-left w50" style="background-color: lightblue;">우측</div>
+		</div>
+		<!-- markup -->
+		<div class="markup">
+		<strong>markup 예시</strong>
+<pre>
+&lt;div class="section-wrap"&gt;
+	&lt;div class="section-left w50"&gt;&lt;/div&gt;
+	&lt;div class="section-left w50"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+		<!-- // markup -->
+
+	</div>
+	<!-- //section -->
+
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTOR CORP, All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>
+

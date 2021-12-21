@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>HLB</title>
+<link rel="stylesheet" type="text/css" href="../../@resource/css/style.css">
+<link rel="stylesheet" type="text/css" href="../../@resource/css/plugin/jquery.bxslider.css">
+
+<script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/common.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+<script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../../@resource/js/sonic.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('.mss-slider').bxSlider( {
+		pager: false,
+		controls: true,
+		auto: true,
+		speed: 600,
+		infiniteLoop: true,
+		touchEnabled: false
+	});
+
+	$('.birthday-slider').bxSlider( {
+		maxSlides: 3,
+		slideWidth: 100,
+		slideMargin: 20,
+		pager: true,
+		controls: false,
+		auto: false,
+		speed: 600,
+		infiniteLoop: false,
+		touchEnabled: false
+	});
+
+	$('.graph-wrap.myself .detail-info').mouseover(function() {
+		$('.take-leave .ballon').addClass('active');
+	}).mouseout(function() {
+		$('.take-leave .ballon').removeClass('active');
+	});
+});
+</script>
+</head>
+<body>
+<a href="#container" class="skip-navi">본문 바로가기</a>
+<!-- WRAP -->
+<div id="wrap" class="depth-main">
+<!-- HEADER -->
+<div id="header">
+	<!-- header-wrap -->
+	<div class="header-wrap">
+		<h1><a href="#"><span class="blind">HLB</span></a></h1>
+		<!-- personal-info -->
+		<div class="personal-info">
+			<div class="belong">양재본사</div>
+			<div class="number">5612336</div>
+			<div class="position"><span class="name">홍길동</span>과장</div>
+			<div class="state logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- // personal-info -->
+		<!-- utill-menu -->
+		<div class="utill-menu">
+			<ul>
+				<li><a href="#">My HR</a></li>
+				<li class="active"><a href="#">나의 팀</a></li>
+				<li><a href="#">인사 담당</a></li>
+			</ul>
+		</div>
+		<!-- // utill-menu -->
+		<!-- gnb -->
+		<div class="gnb">
+			<ul class="nav">
+				<li class="depth01 active"><a href="#">조직과 업무</a>
+					<ul class="depth02">
+						<li><a href="#">워킹그룹 조직도</a></li>
+						<li><a href="#">워킹그룹 관리</a></li>
+						<li><a href="#">업무분장</a></li>
+						<li><a href="#">일반근태</a></li>
+						<li><a href="#">생산근태</a></li>
+					</ul>
+				</li>
+				<li class="depth01"><a href="result.html">성과관리와 평가</a>
+					<ul class="depth02">
+						<li><a href="result02.html">팀 미션 관리</a></li>
+						<li><a href="#">사업계획 관리</a></li>
+						<li><a href="#">성과평가</a></li>
+						<li><a href="#">역량평가</a></li>
+						<li><a href="#">인사평가</a></li>
+						<li><a href="#">다면평가</a></li>
+						<li><a href="#">역할역량서베이</a></li>
+					</ul>
+				</li>
+				<li class="depth01"><a href="education.html">육성과 동기부여</a>
+					<ul class="depth02">
+						<li><a href="#">리더스라운지</a></li>
+						<li><a href="#">인사기록조회</a></li>
+						<li><a href="#">성과평가 관리</a></li>
+						<li><a href="#">적성관찰표</a></li>
+						<li><a href="#">교육지원</a></li>
+						<li><a href="#">커뮤니케이션</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="btn-area">
+				<!-- <a href="#" class="all-menu"><span class="blind">모든 메뉴</span></a> -->
+				<!-- 팀 여러개일 때 -->
+				<!-- <a class="change-team">팀 변경하기</a>
+				<div class="select-team">
+					<span class="current">인사제도팀</span>
+					<ul class="select-list">
+						<li cla><a href="#">인사제도팀</a></li>
+						<li><a href="#">해외커뮤니케이션팀</a></li>
+						<li><a href="#">크리에이티브전략팀</a></li>
+					</ul>
+				</div> -->
+				<!-- 팀 여러개일 때 -->
+				<!-- 팀 하나일 때 171220 추가 -->
+				<div class="solo-team">
+					<span class="current">나의 조직</span>
+					<span class="team">인사제도팀</span>
+				</div>
+				<!-- // 팀 하나일 때 171220 추가 -->
+			</div>
+		</div>
+		<!-- // gnb -->
+	</div>
+	<!--// header-wrap -->
+</div>
+<!-- // HEADER -->
+
+<!-- CONTENT -->
+<div id="container" class="mss-main team-leader">
+	<div id="content" >
+		<div class="mss-visual">
+			<!-- SLIDE -->
+			<ul class="mss-slider">
+				<li>
+					<div class="info-text">
+						<strong>평가</strong>
+						<p>평가 제도가 중심이 되어 HR 각 기능 간의 조화가 이루어지기 위해서는<br>
+						다각적인 측면에서 평가 전반에 대한 철저한 고민이 필요하다.</p>
+						<a class="btn">자세히보기<span class="ico check"></span></a>
+					</div>
+					<a class="btn-guide">보직자 가이드 전체보기<span class="ico check"></span></a>
+					<div class="thumb"><img src="../../@resource/images/@thumb/thumb_1320x300_02.jpg" alt="평가"></div>
+				</li>
+				<li>
+					<div class="info-text">
+						<strong>평가</strong>
+						<p>평가 제도가 중심이 되어 HR 각 기능 간의 조화가 이루어지기 위해서는<br>
+						다각적인 측면에서 평가 전반에 대한 철저한 고민이 필요하다. </p>
+						<a class="btn">자세히보기<span class="ico check"></span></a>
+					</div>
+					<a class="btn-guide">보직자 가이드 전체보기<span class="ico check"></span></a>
+					<div class="thumb"><img src="../../@resource/images/@thumb/thumb_1320x300_03.jpg" alt="평가"></div>
+				</li>
+				<li>
+					<div class="info-text">
+						<strong>평가</strong>
+						<p>평가 제도가 중심이 되어 HR 각 기능 간의 조화가 이루어지기 위해서는<br>
+						다각적인 측면에서 평가 전반에 대한 철저한 고민이 필요하다. </p>
+						<a class="btn">자세히보기<span class="ico check"></span></a>
+					</div>
+					<a class="btn-guide">보직자 가이드 전체보기<span class="ico check"></span></a>
+					<div class="thumb"><img src="../../@resource/images/@thumb/thumb_1320x300_04.jpg" alt="평가"></div>
+				</li>
+			</ul>
+			<!-- SLIDE -->
+		</div>
+		<!-- 업무담당 -->
+		<div class="task">
+			<div class="section">
+				<h2 class="content-title">업무담당</h2>
+				<h3 class="section-title">인사제도팀</h3>
+				<div class="text-info">
+					<span>총원 25명, 부재 2명(휴직1명, 파견1명), 현인원 23명</span>
+				</div>
+				<div class="aside">자세히보기<a href="#" class="btn-more">더보기</a></div>
+				<div class="table-wrap">
+					<table class="data-table info01">
+						<caption>업무담당자 표</caption>
+						<colgroup>
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" class="info01">파트장</th>
+								<th scope="col" class="info01">보직과장</th>
+								<th scope="col" class="info01">파견인원</th>
+								<th scope="col" class="info01">휴직인원</th>
+								<th scope="col" class="info02 first">WG그룹장</th>
+								<th scope="col" class="info02">안전담당</th>
+								<th scope="col" class="info02">근태담당</th>
+								<th scope="col" class="info02">보안담당</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="info01"><div>전태현 과장 외 2명</div></td>
+								<td class="info01"><div>이지영 과장 외 1명</div></td>
+								<td class="info01"><div>김판경 대리 외 2명</div></td>
+								<td class="info01"><div>박준혁 사원 외 2명</div></td>
+								<td class="info02 first"><div>전태현 과장 외2명</div></td>
+								<td class="info02"><div>이지영 과장</div></td>
+								<td class="info02"><div>김판경 대리</div></td>
+								<td class="info02"><div>박준혁 사원</div></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- <table class="data-table info02">
+						<caption>업무담당자 표</caption>
+						<colgroup>
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+							<col style="width: 12.5%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">WG그룹장</th>
+								<th scope="col">안전담당</th>
+								<th scope="col">근태담당</th>
+								<th scope="col">보안담당</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><div>전태현 과장 외2명</div></td>
+								<td><div>이지영 과장</div></td>
+								<td><div>김판경 대리</div></td>
+								<td><div>박준혁 사원</div></td>
+							</tr>
+						</tbody>
+					</table> -->
+				</div>
+				<div class="btn-area">
+					<a class="btn large type06">결제위임신청<span class="ico check"></span></a>
+					<a class="btn large type03">업무담당변경<span class="ico check"></span></a>
+				</div>
+			</div>
+		</div>
+		<!-- // 업무담당 -->
+		<div class="diligence-wrap">
+			<div class="section">
+				<!-- 조직근태관리 -->
+				<div class="diligence-control">
+					<h2 class="content-title">조직근태관리</h2>
+					<div class="aside">자세히보기<a href="#" class="btn-more">더보기</a></div>
+					<p class="text">팀원에 대한 명확한 근태관리는 기본이 확립된 조직문화를 만들어갑니다. <br>
+					<!-- 일일근태는 당일 오전 10:00까지 입력 및 팀장의 확인이 필요합니다. // 180116 삭제 --></p>
+					<div class="date-header">
+						<div class="today">05.17 수요일 <span>(금일)</span></div>
+						<div class="btn-area">
+							<a class="btn prev" href="#" title="이전일">05.16</a>
+							<a class="btn next" href="#" title="다음일">05.19</a>
+						</div>
+					</div>
+					<div class="table-wrap">
+						<table class="data-table">
+							<caption>data-table 가이드</caption>
+							<colgroup>
+								<col style="width: *;" />
+								<col style="width: 10%;" />
+								<col style="width: 10%;" />
+								<col style="width: 10%;" />
+								<col style="width: 10%;" />
+								<col style="width: 10%;" />
+								<col style="width: 10%;" />
+								<col style="width: 10%;" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2">구분</th>
+									<th scope="col" rowspan="2">총원</th>
+									<th scope="col" rowspan="2">근무</th>
+									<th scope="col" colspan="5">사고</th>
+								</tr>
+								<tr>
+									<th scope="col" class="boundary">계</th>
+									<th scope="col" class="boundary">출장</th>
+									<th scope="col" class="boundary">교육</th>
+									<th scope="col" class="boundary">휴가</th>
+									<th scope="col" class="boundary">기타</th> <!-- 180111 텍스트 수정 -->
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>일반/연구직/영업</th> <!-- 180111 텍스트 수정 -->
+									<td>15</td>
+									<td>10</td>
+									<td class="boundary"><span class="total type01">30</span></td>
+									<td class="boundary">2</td>
+									<td class="boundary">1</td>
+									<td class="boundary">1</td>
+									<td class="boundary">1</td>
+								</tr>
+								<!-- 180110 삭제 -->
+								<!-- <tr>
+									<th>영업/기술/정비/생산직</th>
+									<td>10</td>
+									<td>8</td>
+									<td class="boundary"><span class="total type02">2</span></td>
+									<td class="boundary">-</td>
+									<td class="boundary">1</td>
+									<td class="boundary">1</td>
+									<td class="boundary">1</td>
+								</tr>
+								<tr>
+									<th>계</th>
+									<td>25</td>
+									<td>18</td>
+									<td class="boundary">7</td>
+									<td class="boundary"></td>
+									<td class="boundary">2</td>
+									<td class="boundary">2</td>
+									<td class="boundary">2</td>
+								</tr> -->
+								<!-- // 180110 삭제 -->
+							</tbody>
+						</table>
+					</div>
+					<p class="noti">※ 생산/영업/기술직 제외</p> <!-- 180116 텍스트 수정  -->
+					<div class="state-bar">
+						<div class="bar">
+							<span class="total01" style="width: 25%;">5명</span>
+							<!-- <span class="total02" style="width: 18%;">5명</span> --> <!-- 180111 삭제 -->
+						</div>
+						<div class="count">
+							<span class="all">총원 25명</span>
+							<span class="sort">부재 7명(25%)</span>
+						</div>
+					</div>
+				</div>
+				<!-- // 조직근태관리 -->
+				<!-- 팀 미션/사업계획 -->
+				<!-- <div class="plan">
+					<h2 class="content-title">팀 미션/사업계획</h2>
+					<div class="detail">
+						<h3>팀 미션</h3>
+						<div class="aside">편집하기<a href="#" class="btn-more">더보기</a></div>
+						<p>인적 자원의 전략적, 효율적 운영 및 <br>
+						효과적 업무실행 체계 확립을 통한 <br>
+						경영성과 창출 지원</p>
+					</div>
+					<div class="detail">
+						<h3>사업계획</h3>
+						<div class="aside">편집하기<a href="#" class="btn-more">더보기</a></div>
+						<ul class="data-list">
+							<li><span class="tag type02">신규과제</span> 우수 보직자 인력교류 및 보직 순환 추진</li>
+							<li><span class="tag type02">신규과제</span> 동일 보직 장기 수행 팀장급 교체</li>
+							<li><span class="tag type02">장기개선</span> 저성과 인력 활용 강화 및 효율화</li>
+							<li><span class="tag type02">신규과제</span> 전사 조직 효율화 및 통폐합</li>
+						</ul>
+					</div>
+				</div> -->
+				<!-- // 팀 미션/사업계획 -->
+				<!-- 팀원 기념일 -->
+				<div class="team-birthday">
+					<h2 class="content-title">팀원 기념일</h2>
+					<div class="aside">자세히보기<a href="#" class="btn-more">더보기</a></div>
+					<p class="notice">팀원들의 소식에 관심을 표현해주세요.</p>
+					<!-- 180116 추가 -->
+					<ul class="by-team">
+						<li>※ 일반/연구/영업직 : 당일 ~ 2주 이내</li>
+						<li>※ 생산/기술직 : 당일</li>
+					</ul>
+					<!-- // 180116 추가 -->
+					<!-- 기념일이 있을 때 -->
+					<!-- SLIDE -->
+					<ul class="birthday-slider">
+						<li>
+							<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x100_01.jpg"></div>
+							<div class="btn type03 small"><span class="ico birthday"></span>TODAY</div>
+							<div class="name">이성우</div>
+							<div class="position">대리</div>
+							<div class="date">5월 17일 생일</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x100_02.jpg"></div>
+							<div class="name">이성우</div>
+							<div class="position">대리</div>
+							<div class="date">5월 17일 생일</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x100_03.jpg"></div>
+							<div class="name">홍길동</div>
+							<div class="position">과장</div>
+							<div class="date">5월 31일 생일</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x100_01.jpg"></div>
+							<div class="name">최현대</div>
+							<div class="position">대리</div>
+							<div class="date">5월 25일 생일</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x100_02.jpg"></div>
+							<div class="name">홍길동</div>
+							<div class="position">과장</div>
+							<div class="date">5월 31일 생일</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x100_03.jpg"></div>
+							<div class="name">최현대</div>
+							<div class="position">4급 사원</div>
+							<div class="date">5월 25일 생일</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x100_01.jpg"></div>
+							<div class="name">이성우</div>
+							<div class="position">대리</div>
+							<div class="date">5월 17일 생일</div>
+						</li>
+						<li>
+							<div class="thumb"><img src="../../@resource/images/@thumb/thumb_100x100_02.jpg"></div>
+							<div class="name">홍길동</div>
+							<div class="position">과장</div>
+							<div class="date">5월 31일 생일</div>
+						</li>
+					</ul>
+					<!-- // SLIDE -->
+					<!-- // 기념일이 있을 때 -->
+					<!-- 기념일 없을 때 -->
+					<!-- <div class="no-anniversary"><p>해당 팀원이 없습니다.</p></div> -->
+					<!-- // 기념일 없을 때 -->
+				</div>
+				<!-- // 팀원 기념일 -->
+			</div>
+		</div>
+		<!-- 팀 휴가 사용률 -->
+		<div class="take-leave">
+			<div class="section-left">
+				<h2 class="content-title">팀 휴가 사용일수</h2>
+				<div class="aside">자세히보기<a href="#" class="btn-more">더보기</a></div>
+				<div class="vacation-info">
+					<p>적절한 휴식이 없으면 <br>
+					구성원들이 지칠 수 있습니다.<br>
+					몰입과 능률향상을 위한 <br>
+					휴가 사용을 권장해 보세요.</p>
+					<div class="graph"><img src="../../@resource/images/@thumb/graph.gif"></div>
+					<ul class="days">
+						<li>
+							<span>부여일수(평균)</span>
+							<strong>25일</strong>
+						</li>
+						<li>
+							<span>사용일수(평균)</span>
+							<strong><em class="em weighty">10일</em></strong>
+						</li>
+						<li>
+							<span>잔여일수(평균)</span>
+							<strong>14일</strong>
+						</li>
+					</ul>
+				</div>
+				<div class="notice">표기된 일수는 팀원들의 1인당 평균 휴가 부여/사용/잔여 일수 입니다.  <br>
+				개인별 부여일수는 근속/직급 등에 따라 상이합니다.<br>
+				휴가사용 권장대상자에서 '생산,영업,기술직'은 제외합니다.</div>
+			</div>
+			<div class="section-left">
+				<!-- 본인휴가 -->
+				<div class="graph-wrap myself">
+					<h3 class="section-title">본인휴가</h3>
+					<div class="graph-state">
+						<div class="graph">
+							<span class="current" style="height: 10%;"></span>
+						</div>
+						<div class="detail-info">
+							<span>본인</span>
+							<strong>사용 1/25</strong>
+						</div>
+					</div>
+					<!-- 말풍선 -->
+					<div class="ballon">
+						<div class="text-wrap">팀장님께서 솔선수범하여 팀장 리프레쉬 휴가 사용을 <br> 적극 권장합니다. </div>
+					</div>
+					<!-- // 말풍선 -->
+				</div>
+				<!-- // 본인휴가 -->
+				<!-- 휴가 사용 권장 대상자 -->
+				<div class="graph-wrap others">
+					<h3 class="section-title">휴가 사용 권장 대상자</h3>
+					<div class="graph-state">
+						<ul class="data-list">
+							<li class="graph01">
+								<div class="graph">
+									<span class="current" style="height: 10%;"></span>
+								</div>
+								<div class="detail-info">
+									<span>서광주 사원</span>
+									<strong>사용 2/25</strong>
+								</div>
+							</li>
+							<li class="graph02">
+								<div class="graph">
+									<span class="current" style="height: 60%;"></span>
+								</div>
+								<div class="detail-info">
+									<span>이소율 사원</span>
+									<strong>사용 4/25</strong>
+								</div>
+							</li>
+							<li class="graph03">
+								<div class="graph">
+									<span class="current" style="height: 80%;"></span>
+								</div>
+								<div class="detail-info">
+									<span>최성렬 대리</span>
+									<strong>사용 10/25</strong>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 휴가 사용 권장 대상자 -->
+			</div>
+		</div>
+		<!-- // 팀 휴가 사용률 -->
+	</div>
+</div>
+<!-- // CONTENT -->
+<!-- FOOTER -->
+<div id="footer">Copyright 2017 KIA MOTORS CORP. All right reserved.</div>
+<!-- // FOOTER -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>
